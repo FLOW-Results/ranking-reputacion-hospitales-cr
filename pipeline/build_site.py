@@ -364,9 +364,10 @@ def construir_contexto(config, ranking, historial):
     universo = ranking.get("universo") or {}
 
     url_base = (config.get("url_publica") or "").rstrip("/")
-    csv_url = "data/latest.csv"
-    json_url = "data/latest.json"
-    historial_url = "data/historial.json"
+    base_datos = (config.get("url_datos_base") or "").rstrip("/")
+    csv_url = f"{base_datos}/data/latest.csv" if base_datos else "data/latest.csv"
+    json_url = f"{base_datos}/data/latest.json" if base_datos else "data/latest.json"
+    historial_url = f"{base_datos}/data/historial.json" if base_datos else "data/historial.json"
     csv_url_absoluto = f"{url_base}/{csv_url}" if url_base else csv_url
 
     jsonld = {
@@ -404,6 +405,10 @@ def construir_contexto(config, ranking, historial):
         "csv_url": csv_url,
         "json_url": json_url,
         "historial_url": historial_url,
+        "ruta_fuentes": config.get("ruta_fuentes") or "fonts/",
+        "logo_blanco": config.get("logo_blanco") or "img/flow-logo-white.png",
+        "url_actualizacion": config.get("url_actualizacion") or "",
+        "periodo": ranking.get("periodo"),
         "jsonld": jsonld,
         "tiene_historial": bool(historial),
     }

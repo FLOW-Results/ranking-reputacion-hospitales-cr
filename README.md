@@ -1,7 +1,7 @@
 # Ranking de Reputación Hospitalaria de Costa Rica
 
 Sitio estático que ordena los hospitales privados de Costa Rica según la reputación que muestran sus
-perfiles públicos de Google (Google Business Profile). Se actualiza solo el día 1 de cada mes con GitHub
+perfiles públicos de Google (Google Business Profile). Se actualiza solo el día 22 de cada mes con GitHub
 Actions y se publica en GitHub Pages desde la carpeta `docs/`.
 
 Alcance: `config.json` fija `tipos_incluidos: ["privado"]`. El censo (`data/hospitales.json`) también trae los
@@ -65,7 +65,7 @@ python3 pipeline/gmaps.py ficha "https://www.google.com/maps/place/..."   # prob
 ## Publicación
 
 - GitHub Pages sirve `docs/` desde la rama `main`.
-- El workflow `.github/workflows/actualizacion-mensual.yml` corre el día 1 a las 07:00 de Costa Rica y
+- El workflow `.github/workflows/actualizacion-mensual.yml` corre el día 22 a las 07:00 de Costa Rica y
   también a mano desde la pestaña Actions ("Run workflow"). Necesita el secreto `FIRECRAWL_API_KEY`.
 - Si un mes la captura falla, el workflow queda en rojo y el sitio conserva la edición anterior.
 
