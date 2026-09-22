@@ -1,6 +1,6 @@
 {
  "periodo": "2026-09",
- "capturado": "2026-09-21T23:11:52-06:00",
+ "capturado": "2026-09-21T23:15:26-06:00",
  "fuente": "Google Business Profile (Google Maps) vía Firecrawl",
  "hospitales": [
   {
@@ -911,7 +911,7 @@
    },
    "fuente_total": "ficha",
    "error": null,
-   "capturado": "2026-09-21T23:10:12-06:00"
+   "capturado": "2026-09-21T23:15:08-06:00"
   },
   {
    "id": "hospital-clinica-senora-de-los-angeles-cartago",
@@ -1154,6 +1154,248 @@
    "fuente_total": "ficha",
    "error": null,
    "capturado": "2026-09-21T23:11:05-06:00"
+  },
+  {
+   "id": "hospital-metropolitano-escazu",
+   "cid": "0x8fa0fb43bb584e67:0xe72ac349f53a82c3",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Metropolitano+Escaz%C3%BA/data=!4m7!3m6!1s0x8fa0fb43bb584e67:0xe72ac349f53a82c3!8m2!3d9.9431973!4d-84.1524378!16s%2Fg%2F11z2stclhc!19sChIJZ05Yu0P7oI8Rw4I69UnDKuc?hl=es",
+   "nombre_google": "Hospital Metropolitano Escazú",
+   "calificacion": 4.3,
+   "resenas": 23,
+   "distribucion": {
+    "5": 18,
+    "4": 1,
+    "3": 0,
+    "2": 0,
+    "1": 4
+   },
+   "categoria_google": "Hospital",
+   "direccion": "FRENTE A ESQUINA S.O. DEL CENTRO COMERCIAL MULTIPLAZA, San José, Escazú, 10201, Costa Rica",
+   "telefono": "+506 2521 9595",
+   "sitio_web": "https://metropolitanocr.com/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 3
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:11:59-06:00"
+  },
+  {
+   "id": "hospital-las-americas-perez-zeledon",
+   "cid": "0x8fa14eee7e37475f:0xabc04436646859c0",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Las+Am%C3%A9ricas/data=!4m7!3m6!1s0x8fa14eee7e37475f:0xabc04436646859c0!8m2!3d9.3696227!4d-83.7041878!16s%2Fg%2F11r8tnmrh!19sChIJX0c3fu5OoY8RwFloZDZEwKs?hl=es",
+   "nombre_google": "Hospital Las Américas",
+   "calificacion": 3.7,
+   "resenas": 84,
+   "distribucion": null,
+   "categoria_google": "Hospital",
+   "direccion": "979W+V9G, 50 metros Norte del Ministerio de Salud, San José, San Isidro de El General, 08000, Costa Rica",
+   "telefono": "+506 2771 7115",
+   "sitio_web": "https://www.hospitallasamericas.com/",
+   "muestra_resenas": null,
+   "fuente_total": "búsqueda por nombre",
+   "error": null,
+   "capturado": "2026-09-21T23:12:42-06:00"
+  },
+  {
+   "id": "hospital-unibe-tibas",
+   "cid": "0x8fa0e4f345a0032b:0x26f4438ddf858efa",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Unibe/data=!4m7!3m6!1s0x8fa0e4f345a0032b:0x26f4438ddf858efa!8m2!3d9.9617278!4d-84.064976!16s%2Fm%2F06w74jp!19sChIJKwOgRfPkoI8R-o6F341D9CY?hl=es",
+   "nombre_google": "Hospital Unibe",
+   "calificacion": 3.6,
+   "resenas": 86,
+   "distribucion": {
+    "5": 49,
+    "4": 5,
+    "3": 4,
+    "2": 8,
+    "1": 20
+   },
+   "categoria_google": "Hospital privado",
+   "direccion": "200 metros al Este del ICE, Ruta Nacional Secundaria 102, San José, San Juan, Costa Rica",
+   "telefono": "+506 2297 6300",
+   "sitio_web": "https://hospitalunibecr.com/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 2
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:12:11-06:00"
+  },
+  {
+   "id": "hospital-universal-cartago",
+   "cid": "0x8fa0dfe560b59467:0xf066ee1b97d334ea",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Universal/data=!4m7!3m6!1s0x8fa0dfe560b59467:0xf066ee1b97d334ea!8m2!3d9.8599357!4d-83.9219298!16s%2Fg%2F1ptzh_0t7!19sChIJZ5S1YOXfoI8R6jTTlxvuZvA?hl=es",
+   "nombre_google": "Hospital Universal",
+   "calificacion": 3.7,
+   "resenas": 260,
+   "distribucion": {
+    "5": 157,
+    "4": 19,
+    "3": 3,
+    "2": 10,
+    "1": 71
+   },
+   "categoria_google": "Hospital",
+   "direccion": "Av. 1, Provincia de Cartago, Cartago, 30101, Costa Rica",
+   "telefono": "+506 4052 5700",
+   "sitio_web": "https://hospitaluniversal.com/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:12:14-06:00"
+  },
+  {
+   "id": "hospital-cooperativo-consalud-san-carlos",
+   "cid": "0x8fa0658181102765:0xef2ac471f172cbc6",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Cooperativo/data=!4m7!3m6!1s0x8fa0658181102765:0xef2ac471f172cbc6!8m2!3d10.3441723!4d-84.4332334!16s%2Fg%2F12ml2vtc_!19sChIJZScQgYFloI8Rxsty8XHEKu8?hl=es",
+   "nombre_google": "Hospital Cooperativo",
+   "calificacion": 3.6,
+   "resenas": 37,
+   "distribucion": null,
+   "categoria_google": "Hospital",
+   "direccion": "8HV8+MP6, Ruta Nacional Secundaria 141, Provincia de Alajuela, Cd Quesada, Barrio El Carmen, Costa Rica",
+   "telefono": "+506 2460 1080",
+   "sitio_web": "http://www.hospitalcooperativo.com/",
+   "muestra_resenas": null,
+   "fuente_total": "lista de resultados (descubrimiento)",
+   "error": null,
+   "capturado": "2026-09-21T23:13:35-06:00"
+  },
+  {
+   "id": "hospital-internacional-la-catolica-guadalupe",
+   "cid": "0x8fa0e47d57bfdbd5:0xbd8efb4b06725e69",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Internacional+La+Cat%C3%B3lica/data=!4m7!3m6!1s0x8fa0e47d57bfdbd5:0xbd8efb4b06725e69!8m2!3d9.949655!4d-84.059416!16s%2Fg%2F1tx482y_!19sChIJ1du_V33koI8RaV5yBkv7jr0?hl=es",
+   "nombre_google": "Hospital Internacional La Católica",
+   "calificacion": 3.5,
+   "resenas": 307,
+   "distribucion": {
+    "5": 155,
+    "4": 35,
+    "3": 10,
+    "2": 18,
+    "1": 89
+   },
+   "categoria_google": "Hospital privado",
+   "direccion": "Frente a los Tribunales del 2do circuito judicial San José Guadalupe, Antiguo Oficentro Centauro, San José, Calle Blancos, 10801, Costa Rica",
+   "telefono": "+506 2246 3000",
+   "sitio_web": "https://hilc.cr/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:12:24-06:00"
+  },
+  {
+   "id": "hospital-clinica-santa-rita-san-jose",
+   "cid": "0x8fa0e36505eb4993:0xdb247813f4b6284a",
+   "maps_url": "https://www.google.com/maps/place/Cl%C3%ADnica+Santa+Rita/@9.9298722,-84.0718273,17z/data=!4m6!3m5!1s0x8fa0e36505eb4993:0xdb247813f4b6284a!8m2!3d9.9298722!4d-84.0718273!16s%2Fg%2F1td3h2b6?hl=es",
+   "nombre_google": "Clínica Santa Rita",
+   "calificacion": 3.8,
+   "resenas": 8,
+   "distribucion": {
+    "5": 4,
+    "4": 1,
+    "3": 1,
+    "2": 1,
+    "1": 1
+   },
+   "categoria_google": null,
+   "direccion": "WWHH+W7V, Av. 8, San José, González Lahmann, Costa Rica",
+   "telefono": "+506 2221 6433",
+   "sitio_web": null,
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:12:57-06:00"
+  },
+  {
+   "id": "hospital-cristiano-jerusalen-guadalupe",
+   "cid": "0x8fa0e41554bc9aa1:0xead0e6bb50c1ace0",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Jerusalem/@9.960592,-84.037903,17z/data=!4m6!3m5!1s0x8fa0e41554bc9aa1:0xead0e6bb50c1ace0!8m2!3d9.960592!4d-84.037903!16s%2Fg%2F1v75szpz?hl=es",
+   "nombre_google": "Hospital Jerusalem",
+   "calificacion": 3.1,
+   "resenas": 42,
+   "distribucion": {
+    "5": 16,
+    "4": 7,
+    "3": 2,
+    "2": 1,
+    "1": 16
+   },
+   "categoria_google": null,
+   "direccion": "XX56+RF6, Alto de Guadalupe, 100 mts Este de la Bomba Delta, San José, Guadalupe, Santa Clara, 10805, Costa Rica",
+   "telefono": "+506 2216 9191",
+   "sitio_web": null,
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:13:04-06:00"
+  },
+  {
+   "id": "hospital-clinica-alpha-alajuela",
+   "cid": "0x8fa0f9c37c196735:0x1f153097b622d14c",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Cl%C3%ADnica+Alpha/data=!4m7!3m6!1s0x8fa0f9c37c196735:0x1f153097b622d14c!8m2!3d10.0077694!4d-84.2090375!16s%2Fg%2F1tdyrvrv!19sChIJNWcZfMP5oI8RTNEitpcwFR8?hl=es",
+   "nombre_google": "Hospital Clínica Alpha",
+   "calificacion": 3.7,
+   "resenas": 155,
+   "distribucion": {
+    "5": 99,
+    "4": 3,
+    "3": 5,
+    "2": 6,
+    "1": 42
+   },
+   "categoria_google": "Hospital privado",
+   "direccion": "Provincia de Alajuela, Alajuela, Tomás Guardia, Costa Rica",
+   "telefono": "+506 2440 4050",
+   "sitio_web": "http://clinica-alpha.com/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:15:15-06:00"
+  },
+  {
+   "id": "hospital-clinica-labrador-perez-zeledon",
+   "cid": "0x8fa14eea03f6c763:0x5cae3735513cd915",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Cl%C3%ADnica+Labrador/data=!4m7!3m6!1s0x8fa14eea03f6c763:0x5cae3735513cd915!8m2!3d9.3776379!4d-83.7036484!16s%2Fg%2F11g67xp48z!19sChIJY8f2A-pOoY8RFdk8UTU3rlw?hl=es",
+   "nombre_google": "Hospital Clínica Labrador",
+   "calificacion": 3.5,
+   "resenas": 15,
+   "distribucion": {
+    "5": 7,
+    "4": 3,
+    "3": 0,
+    "2": 0,
+    "1": 5
+   },
+   "categoria_google": "Hospital",
+   "direccion": "97HW+3G5, San José, San Isidro de El General, Costa Rica",
+   "telefono": "+506 2772 6464",
+   "sitio_web": null,
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:15:26-06:00"
   }
  ]
 }

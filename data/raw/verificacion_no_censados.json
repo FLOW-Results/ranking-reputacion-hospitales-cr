@@ -1,0 +1,43 @@
+[
+ {
+  "nombre_google": "Hospital Clínica Alpha",
+  "veredicto": "hospital",
+  "evidencia": "Sitio oficial: atención de Urgencias Médicas las 24 horas los 7 días, con instalaciones dedicadas y una sala de observación de pacientes; se define como el primer hospital privado de Alajuela, fundado en 2011. Publicaciones propias del negocio en Facebook e Instagram mencionan de forma directa y repetida el ingreso de pacientes al quirófano, por ejemplo: las enfermeras antes de entrar al Quirófano, como al salir.",
+  "fuentes": [
+   "http://clinica-alpha.com/",
+   "https://clinica-alpha.com/quienes-somos/",
+   "https://www.facebook.com/clinicaalpha24horas/posts/para-clinicaalpha-es-muy-importante-la-experiencia-que-puedan-tener-nuestros-pac/4770452906374801/",
+   "https://www.instagram.com/p/DYQL6u1Da-b/"
+  ],
+  "provincia": "Alajuela",
+  "canton": "Alajuela",
+  "sitio_web": "http://clinica-alpha.com/"
+ },
+ {
+  "nombre_google": "Hospital Integral de Medistat",
+  "veredicto": "clinica_sin_internamiento",
+  "evidencia": "Sitio oficial: horario de lunes a sábado de 8 a.m. a 5 p.m., no las 24 horas. La atención de urgencias se define como valoración inmediata dentro del horario del hospital y el propio sitio aclara: ante una emergencia que ponga en riesgo la vida, acuda al servicio de emergencias más cercano o llame al 9-1-1. La cirugía que ofrecen es cirugía menor, procedimientos ambulatorios de baja complejidad. Ninguna página del sitio menciona internamiento, hospitalización ni camas.",
+  "fuentes": [
+   "https://hospitalintegral.org/",
+   "https://hospitalintegral.org/servicios",
+   "https://hospitalintegral.org/servicios/urgencias"
+  ],
+  "provincia": "Alajuela",
+  "canton": "Alajuela",
+  "sitio_web": "https://hospitalintegral.org/"
+ },
+ {
+  "nombre_google": "Hospital Clínica Labrador",
+  "veredicto": "hospital",
+  "evidencia": "Una publicación de Facebook de Help Me, al presentarlo como nuevo socio comercial, describe sus servicios como hospitalización, cirugías y urgencias. La cuenta oficial de Instagram publicita un servicio de hospitalización junto a la cirugía y promociona Atención de Emergencias 24 horas. El directorio de médicos de Pérez Zeledón (mediconet) lo describe con Atención de Emergencias las 24 horas, cirugía por laparoscopía y todo tipo de cirugía plástica. Aparece inscrito legalmente como Hospital Clínica Labrador S.A. en una publicación de La Gaceta de 2016.",
+  "fuentes": [
+   "https://www.facebook.com/HelpMeCR/posts/-nuevo-socio-comercial-en-help-menos-complace-dar-la-bienvenida-a-hospital-cl%C3%ADni/1314703454190426/",
+   "https://www.instagram.com/p/DTV0PHgEi9y/",
+   "http://m.mediconet.webnode.es/news/emergencias-e-internamientos-/",
+   "https://www.aselex.cr/boletines/Gaceta/GAC15-7-16.pdf"
+  ],
+  "provincia": "San José",
+  "canton": "Pérez Zeledón",
+  "sitio_web": ""
+ }
+]

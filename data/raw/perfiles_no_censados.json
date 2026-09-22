@@ -11,17 +11,6 @@
   "consulta": "hospitales en San José, Costa Rica"
  },
  {
-  "nombre_google": "Hospital Clínica Alpha",
-  "cid": "0x8fa0f9c37c196735:0x1f153097b622d14c",
-  "maps_url": "https://www.google.com/maps/place/Hospital+Cl%C3%ADnica+Alpha/data=!4m7!3m6!1s0x8fa0f9c37c196735:0x1f153097b622d14c!8m2!3d10.0077694!4d-84.2090375!16s%2Fg%2F1tdyrvrv!19sChIJNWcZfMP5oI8RTNEitpcwFR8?hl=es",
-  "calificacion": 3.7,
-  "resenas": 155,
-  "categoria_google": "Hospital privado",
-  "direccion": "Abierto las 24 horas",
-  "sitio_web": "http://clinica-alpha.com/",
-  "consulta": "hospital privado Alajuela Costa Rica"
- },
- {
   "nombre_google": "Hospital Integral de Medistat",
   "cid": "0x8fa0f93d8da2cf11:0x9d6c825aa76e237",
   "maps_url": "https://www.google.com/maps/place/Hospital+Integral+de+Medistat/data=!4m7!3m6!1s0x8fa0f93d8da2cf11:0x9d6c825aa76e237!8m2!3d10.0174333!4d-84.2123366!16s%2Fg%2F11y2qd02ky!19sChIJEc-ijT35oI8RN-J2qiXI1gk?hl=es",
@@ -84,17 +73,6 @@
   "resenas": 29,
   "categoria_google": "Hospital",
   "direccion": "4 Avenida N.E. Abierto las 24 horas",
-  "sitio_web": null,
-  "consulta": "hospital San Isidro de El General"
- },
- {
-  "nombre_google": "Hospital Clínica Labrador",
-  "cid": "0x8fa14eea03f6c763:0x5cae3735513cd915",
-  "maps_url": "https://www.google.com/maps/place/Hospital+Cl%C3%ADnica+Labrador/data=!4m7!3m6!1s0x8fa14eea03f6c763:0x5cae3735513cd915!8m2!3d9.3776379!4d-83.7036484!16s%2Fg%2F11g67xp48z!19sChIJY8f2A-pOoY8RFdk8UTU3rlw?hl=es",
-  "calificacion": 3.5,
-  "resenas": 15,
-  "categoria_google": "Hospital",
-  "direccion": "97HW+3G5 Cerrado",
   "sitio_web": null,
   "consulta": "hospital San Isidro de El General"
  },

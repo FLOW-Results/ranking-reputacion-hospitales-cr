@@ -26,9 +26,9 @@
   "https://www.santacatalinacr.com/servicios/"
  ],
  "resumen": {
-  "total": 53,
+  "total": 55,
   "publicos": 30,
-  "privados": 23,
+  "privados": 25,
   "por_clasificacion": {
    "nacional": 3,
    "especializado": 6,
@@ -745,7 +745,9 @@
    "nombre_oficial": "Hospital Clínico San Rafael Arcángel",
    "alias": [
     "Hospital San Rafael Arcángel",
-    "HCSRA"
+    "HCSRA",
+    "Clínica Bíblica Liberia",
+    "Hospital Clínica Bíblica Liberia"
    ],
    "tipo": "privado",
    "red": "Privado",
@@ -758,10 +760,11 @@
     "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
    ],
    "confianza": "alta",
-   "notas": "Perfil de Google se busca por nombre (el cruce automático tomó un sublistado).",
-   "cid": null,
-   "maps_url": null,
-   "buscar_por_nombre": true
+   "notas": "Adquirido por Hospital Clínica Bíblica en 2026; el perfil de Google pasó a llamarse Clínica Bíblica Liberia (fuente: clinicabiblica.com/blog, periodicomensaje.com).",
+   "cid": "0x8f7562d5114149bf:0x55742c49bea22e6d",
+   "maps_url": "https://www.google.com/maps/place/Cl%C3%ADnica+B%C3%ADblica+Liberia/data=!4m7!3m6!1s0x8f7562d5114149bf:0x55742c49bea22e6d!8m2!3d10.6299207!4d-85.4357264!16s%2Fg%2F1z449zypg!19sChIJv0lBEdVidY8RbS6ivkksdFU?hl=es",
+   "buscar_por_nombre": false,
+   "nombre_google": "Clínica Bíblica Liberia"
   },
   {
    "id": "hospital-clinica-senora-de-los-angeles-cartago",
@@ -1117,6 +1120,54 @@
    ],
    "confianza": "alta",
    "notas": "Alto de Guadalupe, 100 m este de la antigua gasolinera Delta. Más de 30 años operando; el sitio propio se describe como Hospital Básico, con cirugía general, ginecología con partos y cesáreas, y atención 24 horas."
+  },
+  {
+   "id": "hospital-clinica-alpha-alajuela",
+   "nombre_oficial": "Hospital Clínica Alpha",
+   "nombre_google": "Hospital Clínica Alpha",
+   "alias": [
+    "Clínica Alpha"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "Alajuela",
+   "canton": "Alajuela",
+   "sitio_web": "http://clinica-alpha.com/",
+   "fuentes": [
+    "http://clinica-alpha.com/",
+    "https://clinica-alpha.com/quienes-somos/",
+    "https://www.facebook.com/clinicaalpha24horas/posts/para-clinicaalpha-es-muy-importante-la-experiencia-que-puedan-tener-nuestros-pac/4770452906374801/",
+    "https://www.instagram.com/p/DYQL6u1Da-b/"
+   ],
+   "confianza": "media",
+   "notas": "Verificado el 21 set 2026 como hospital (urgencias 24 h, quirófano u hospitalización): Sitio oficial: atención de Urgencias Médicas las 24 horas los 7 días, con instalaciones dedicadas y una sala de observación de pacientes; se define como el primer hospital privado de Alajuela, fundado en 2011. Publicacio",
+   "cid": "0x8fa0f9c37c196735:0x1f153097b622d14c",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Cl%C3%ADnica+Alpha/data=!4m7!3m6!1s0x8fa0f9c37c196735:0x1f153097b622d14c!8m2!3d10.0077694!4d-84.2090375!16s%2Fg%2F1tdyrvrv!19sChIJNWcZfMP5oI8RTNEitpcwFR8?hl=es"
+  },
+  {
+   "id": "hospital-clinica-labrador-perez-zeledon",
+   "nombre_oficial": "Hospital Clínica Labrador",
+   "nombre_google": "Hospital Clínica Labrador",
+   "alias": [
+    "Clínica Labrador"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "San José",
+   "canton": "Pérez Zeledón",
+   "sitio_web": null,
+   "fuentes": [
+    "https://www.facebook.com/HelpMeCR/posts/-nuevo-socio-comercial-en-help-menos-complace-dar-la-bienvenida-a-hospital-cl%C3%ADni/1314703454190426/",
+    "https://www.instagram.com/p/DTV0PHgEi9y/",
+    "http://m.mediconet.webnode.es/news/emergencias-e-internamientos-/",
+    "https://www.aselex.cr/boletines/Gaceta/GAC15-7-16.pdf"
+   ],
+   "confianza": "media",
+   "notas": "Verificado el 21 set 2026 como hospital (urgencias 24 h, quirófano u hospitalización): Una publicación de Facebook de Help Me, al presentarlo como nuevo socio comercial, describe sus servicios como hospitalización, cirugías y urgencias. La cuenta oficial de Instagram publicita un servicio de hospitalizació",
+   "cid": "0x8fa14eea03f6c763:0x5cae3735513cd915",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Cl%C3%ADnica+Labrador/data=!4m7!3m6!1s0x8fa14eea03f6c763:0x5cae3735513cd915!8m2!3d9.3776379!4d-83.7036484!16s%2Fg%2F11g67xp48z!19sChIJY8f2A-pOoY8RFdk8UTU3rlw?hl=es"
   }
  ],
  "dudosos": [
@@ -1156,6 +1207,15 @@
    "razon": "El Gobierno mencionó esta obra en la cadena nacional del 20 de setiembre de 2026 entre los proyectos de infraestructura de salud en construcción. Todavía no está en operación, por lo que no se incluye en el censo activo; debe agregarse cuando abra.",
    "fuentes": [
     "https://www.facebook.com/ImpactChannelCR/videos/el-gobierno-dedic%C3%B3-la-cadena-nacional-de-este-20-de-septiembre-a-los-proyectos-d/1811366656961059/"
+   ]
+  },
+  {
+   "nombre": "Hospital Integral de Medistat (Alajuela)",
+   "razon": "Horario de lunes a sábado sin urgencias 24 h; su sitio remite a emergencias externas y solo ofrece cirugía menor ambulatoria. Sin internamiento.",
+   "fuentes": [
+    "https://hospitalintegral.org/",
+    "https://hospitalintegral.org/servicios",
+    "https://hospitalintegral.org/servicios/urgencias"
    ]
   }
  ]

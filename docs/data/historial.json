@@ -1,6 +1,5 @@
 {
   "periodos": [
-    "2026-08",
     "2026-09"
   ],
   "hospitales": {
@@ -8,18 +7,23 @@
       "nombre_google": "Hospital Clínica Bíblica",
       "serie": [
         {
-          "periodo": "2026-08",
-          "posicion": 1,
-          "indice": 89.4,
-          "calificacion": 4.6,
-          "resenas": 1971
-        },
-        {
           "periodo": "2026-09",
           "posicion": 1,
-          "indice": 90.6,
+          "indice": 91.8,
           "calificacion": 4.6,
           "resenas": 2001
+        }
+      ]
+    },
+    "0x8fa0657bc6322b91:0xde6cba873afcab84": {
+      "nombre_google": "Hospital Metropolitano • San Carlos",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 2,
+          "indice": 85.3,
+          "calificacion": 4.9,
+          "resenas": 247
         }
       ]
     },
@@ -27,16 +31,9 @@
       "nombre_google": "Hospital Nacional de Niños",
       "serie": [
         {
-          "periodo": "2026-08",
-          "posicion": 3,
-          "indice": 77.4,
-          "calificacion": 4.4,
-          "resenas": 319
-        },
-        {
           "periodo": "2026-09",
-          "posicion": 2,
-          "indice": 78.6,
+          "posicion": 3,
+          "indice": 80.7,
           "calificacion": 4.4,
           "resenas": 349
         }
@@ -46,18 +43,47 @@
       "nombre_google": "Hospital México",
       "serie": [
         {
-          "periodo": "2026-08",
-          "posicion": 2,
-          "indice": 76.2,
-          "calificacion": 4.2,
-          "resenas": 372
-        },
-        {
           "periodo": "2026-09",
-          "posicion": 3,
-          "indice": 77.4,
+          "posicion": 4,
+          "indice": 78.4,
           "calificacion": 4.2,
           "resenas": 402
+        }
+      ]
+    },
+    "0x8fa0fb5f6132f82b:0x7c6ea2e30d6fb86f": {
+      "nombre_google": "Hospital del Trauma",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 5,
+          "indice": 77.7,
+          "calificacion": 4.2,
+          "resenas": 338
+        }
+      ]
+    },
+    "0x8fa0e37d32b821df:0x792188292a4a84b2": {
+      "nombre_google": "Hospital Dr. Rafael Ángel Calderón Guardia - CCSS",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 6,
+          "indice": 77.5,
+          "calificacion": 4.1,
+          "resenas": 457
+        }
+      ]
+    },
+    "0x8f7563f7202f0d5b:0xea47763bff7f1fff": {
+      "nombre_google": "Hospital Metropolitano • Liberia",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 7,
+          "indice": 77.2,
+          "calificacion": 4.5,
+          "resenas": 151
         }
       ]
     },
@@ -65,18 +91,47 @@
       "nombre_google": "Hospital Metropolitano",
       "serie": [
         {
-          "periodo": "2026-08",
-          "posicion": 4,
-          "indice": 75.7,
-          "calificacion": 4.0,
-          "resenas": 568
-        },
-        {
           "periodo": "2026-09",
-          "posicion": 4,
+          "posicion": 8,
           "indice": 76.9,
           "calificacion": 4.0,
           "resenas": 598
+        }
+      ]
+    },
+    "0x8fa0f906f0b359e3:0x5f50c053344378ba": {
+      "nombre_google": "Hospital Clínica Bíblica",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 9,
+          "indice": 76.1,
+          "calificacion": 4.2,
+          "resenas": 239
+        }
+      ]
+    },
+    "0x8fa0e35bb094faad:0x12f8c29c61472d9a": {
+      "nombre_google": "Hospital Nacional de Geriatría y Gerontología",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 10,
+          "indice": 75.4,
+          "calificacion": 4.4,
+          "resenas": 133
+        }
+      ]
+    },
+    "0x8fa0e3b0f0e4bc09:0x8c0e589934d28b36": {
+      "nombre_google": "Hospital Metropolitano • Curridabat",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 11,
+          "indice": 73.8,
+          "calificacion": 3.9,
+          "resenas": 381
         }
       ]
     },
@@ -84,18 +139,107 @@
       "nombre_google": "Hospital San Juan de Dios",
       "serie": [
         {
-          "periodo": "2026-08",
-          "posicion": 5,
-          "indice": 72.9,
-          "calificacion": 3.9,
-          "resenas": 330
-        },
-        {
           "periodo": "2026-09",
-          "posicion": 5,
-          "indice": 74.1,
+          "posicion": 12,
+          "indice": 73.7,
           "calificacion": 3.9,
           "resenas": 360
+        }
+      ]
+    },
+    "0x8fa0fb5b60bba995:0x53a188ab1469c9e2": {
+      "nombre_google": "Centro Nacional de Rehabilitación - CENARE.",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 13,
+          "indice": 72.1,
+          "calificacion": 4.2,
+          "resenas": 102
+        }
+      ]
+    },
+    "0x8fa0e3420ce8341d:0xbffed07585cdbc4f": {
+      "nombre_google": "Hospital Nacional de las Mujeres Adolfo Carit Eva.",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 14,
+          "indice": 71.7,
+          "calificacion": 4.1,
+          "resenas": 113
+        }
+      ]
+    },
+    "0x8f9e3a8dadb1c545:0xb4ec39f3c6e4a45c": {
+      "nombre_google": "Hospital Metropolitano • Huacas de Santa Cruz",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 15,
+          "indice": 71.3,
+          "calificacion": 4.0,
+          "resenas": 131
+        }
+      ]
+    },
+    "0x8fa0d5b9901672cb:0xf52e40417faa7126": {
+      "nombre_google": "Hospital William Allen Taylor",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 16,
+          "indice": 70.5,
+          "calificacion": 4.2,
+          "resenas": 72
+        }
+      ]
+    },
+    "0x8fa0dfe560b59467:0xf066ee1b97d334ea": {
+      "nombre_google": "Hospital Universal",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 17,
+          "indice": 69.9,
+          "calificacion": 3.7,
+          "resenas": 260
+        }
+      ]
+    },
+    "0x8fa0f9c37c196735:0x1f153097b622d14c": {
+      "nombre_google": "Hospital Clínica Alpha",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 18,
+          "indice": 68.7,
+          "calificacion": 3.7,
+          "resenas": 155
+        }
+      ]
+    },
+    "0x8fa0e12ae444e287:0x1eae73b9366b0f57": {
+      "nombre_google": "Hospital Psiquiátrico Roberto Chacón Paut - CCSS",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 19,
+          "indice": 68.6,
+          "calificacion": 4.2,
+          "resenas": 48
+        }
+      ]
+    },
+    "0x8f7562d5114149bf:0x55742c49bea22e6d": {
+      "nombre_google": "Clínica Bíblica Liberia",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 20,
+          "indice": 67.7,
+          "calificacion": 3.7,
+          "resenas": 105
         }
       ]
     },
@@ -103,18 +247,83 @@
       "nombre_google": "Hospital Internacional La Católica",
       "serie": [
         {
-          "periodo": "2026-08",
-          "posicion": 6,
-          "indice": 69.0,
-          "calificacion": 3.5,
-          "resenas": 277
-        },
-        {
           "periodo": "2026-09",
-          "posicion": 6,
-          "indice": 70.2,
+          "posicion": 21,
+          "indice": 67.6,
           "calificacion": 3.5,
           "resenas": 307
+        }
+      ]
+    },
+    "0x8fa14eee7e37475f:0xabc04436646859c0": {
+      "nombre_google": "Hospital Las Américas",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 22,
+          "indice": 67.2,
+          "calificacion": 3.7,
+          "resenas": 84
+        }
+      ]
+    },
+    "0x8f75498071d060f5:0xc33425f52fe8ce6e": {
+      "nombre_google": "Hospital Upala - CCSS",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 23,
+          "indice": 67.1,
+          "calificacion": 3.9,
+          "resenas": 50
+        }
+      ]
+    },
+    "0x8fa0e529c29f3b1d:0xb9d3d70888a949b4": {
+      "nombre_google": "Hospital Metropolitano",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 24,
+          "indice": 67.1,
+          "calificacion": 3.5,
+          "resenas": 234
+        }
+      ]
+    },
+    "0x8fa17251bb3b878f:0xd015cb4d79537c48": {
+      "nombre_google": "Hospital Dr. Max Terán Valls, Quepos",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 25,
+          "indice": 67.0,
+          "calificacion": 3.7,
+          "resenas": 78
+        }
+      ]
+    },
+    "0x8fa44d1b0d5ac585:0x99920203a8aa05dc": {
+      "nombre_google": "Hospital Ciudad Neily",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 26,
+          "indice": 66.8,
+          "calificacion": 3.8,
+          "resenas": 56
+        }
+      ]
+    },
+    "0x8fa044f028eff707:0x6029c6c3937e54ac": {
+      "nombre_google": "Hospital Carlos Luis Valverde Vega",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 27,
+          "indice": 66.8,
+          "calificacion": 3.6,
+          "resenas": 105
         }
       ]
     },
@@ -122,18 +331,323 @@
       "nombre_google": "Hospital CIMA",
       "serie": [
         {
-          "periodo": "2026-08",
-          "posicion": 7,
-          "indice": 68.3,
-          "calificacion": 3.4,
-          "resenas": 347
-        },
-        {
           "periodo": "2026-09",
-          "posicion": 7,
-          "indice": 69.5,
+          "posicion": 28,
+          "indice": 66.6,
           "calificacion": 3.4,
           "resenas": 377
+        }
+      ]
+    },
+    "0x8f0ac421d5a783af:0xbe8a9d975331efe": {
+      "nombre_google": "Hospital Los Chiles",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 29,
+          "indice": 66.4,
+          "calificacion": 4.2,
+          "resenas": 29
+        }
+      ]
+    },
+    "0x8fa0e4f345a0032b:0x26f4438ddf858efa": {
+      "nombre_google": "Hospital Unibe",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 30,
+          "indice": 66.4,
+          "calificacion": 3.6,
+          "resenas": 86
+        }
+      ]
+    },
+    "0x8fa4064d9a8b8e6b:0x9c8264f3e87593a1": {
+      "nombre_google": "Hospital Tomás Casas Casajús.",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 31,
+          "indice": 66.3,
+          "calificacion": 3.8,
+          "resenas": 47
+        }
+      ]
+    },
+    "0x8fa0fb43bb584e67:0xe72ac349f53a82c3": {
+      "nombre_google": "Hospital Metropolitano Escazú",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 32,
+          "indice": 65.8,
+          "calificacion": 4.3,
+          "resenas": 23
+        }
+      ]
+    },
+    "0x8fa0311b7e1e640f:0xbc07e55d09e7cbc": {
+      "nombre_google": "Hospital Monseñor Sanabria Martínez - Puntarenas, CCSS",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 33,
+          "indice": 65.5,
+          "calificacion": 3.7,
+          "resenas": 43
+        }
+      ]
+    },
+    "0x8fa0faddf036ff15:0x446163bcc8f10829": {
+      "nombre_google": "Hospital San Vicente de Paul",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 34,
+          "indice": 65.2,
+          "calificacion": 3.3,
+          "resenas": 393
+        }
+      ]
+    },
+    "0x8fa173ea492152b7:0x6efd729e574f01a": {
+      "nombre_google": "Hospital Metropolitano • Quepos",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 35,
+          "indice": 65.1,
+          "calificacion": 3.6,
+          "resenas": 45
+        }
+      ]
+    },
+    "0x8fa0658181102765:0xef2ac471f172cbc6": {
+      "nombre_google": "Hospital Cooperativo",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 36,
+          "indice": 64.7,
+          "calificacion": 3.6,
+          "resenas": 37
+        }
+      ]
+    },
+    "0x8fa0f9bf41516823:0xd10f9a11431f8093": {
+      "nombre_google": "Hospital San Rafael",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 37,
+          "indice": 64.7,
+          "calificacion": 3.3,
+          "resenas": 269
+        }
+      ]
+    },
+    "0x8fa435b4c75dca47:0xe96314a1144c2f23": {
+      "nombre_google": "Hospital San Vito \"Juana Pirola\"- CCSS",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 38,
+          "indice": 64.5,
+          "calificacion": 3.6,
+          "resenas": 34
+        }
+      ]
+    },
+    "0x8fa14eedfbb0a0e1:0xa8e88afbdf60da74": {
+      "nombre_google": "Hospital Dr. Fernando Escalante Pradilla - CCSS",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 39,
+          "indice": 64.3,
+          "calificacion": 3.3,
+          "resenas": 160
+        }
+      ]
+    },
+    "0x8fa065f2d63fd393:0xa9bc88412257feda": {
+      "nombre_google": "Hospital San Carlos - CCSS",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 40,
+          "indice": 64.1,
+          "calificacion": 3.3,
+          "resenas": 100
+        }
+      ]
+    },
+    "0x8fa4438200fff4f9:0xc7d558db2e2dc3ab": {
+      "nombre_google": "Hospital Manuel Mora Valverde - CCSS",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 41,
+          "indice": 63.5,
+          "calificacion": 3.3,
+          "resenas": 47
+        }
+      ]
+    },
+    "0x8fa70585835f17e7:0xcdff6ee44ed814c9": {
+      "nombre_google": "Hospital Dr. Tony Facio Castro",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 42,
+          "indice": 63.2,
+          "calificacion": 3.2,
+          "resenas": 99
+        }
+      ]
+    },
+    "0x8fa0e41554bc9aa1:0xead0e6bb50c1ace0": {
+      "nombre_google": "Hospital Jerusalem",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 43,
+          "indice": 62.4,
+          "calificacion": 3.1,
+          "resenas": 42
+        }
+      ]
+    },
+    "0x8f9fb748c49a07ff:0x92b136ff16202219": {
+      "nombre_google": "Hospital La Anexión",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 44,
+          "indice": 62.4,
+          "calificacion": 3.1,
+          "resenas": 82
+        }
+      ]
+    },
+    "0x8fa14eea03f6c763:0x5cae3735513cd915": {
+      "nombre_google": "Hospital Clínica Labrador",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 45,
+          "indice": 62.3,
+          "calificacion": 3.5,
+          "resenas": 15
+        }
+      ]
+    },
+    "0x8fa0fb76d17cfa03:0x536b04c8c50f6a2d": {
+      "nombre_google": "Hospital Nacional de Salud Mental",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 46,
+          "indice": 62.2,
+          "calificacion": 3.1,
+          "resenas": 127
+        }
+      ]
+    },
+    "0x8fa0f959ec938e61:0xe2b96b54530cd099": {
+      "nombre_google": "Hospital Metropolitano",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 47,
+          "indice": 62.1,
+          "calificacion": 3.1,
+          "resenas": 300
+        }
+      ]
+    },
+    "0x8fa0b86ea06452df:0x2c10b95a4828ede0": {
+      "nombre_google": "Hospital Guápiles CCSS",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 48,
+          "indice": 61.3,
+          "calificacion": 3.0,
+          "resenas": 110
+        }
+      ]
+    },
+    "0x8fa0dfe5745eae55:0xae130acfe356047": {
+      "nombre_google": "Hospital Clínica Señora de los Ángeles",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 49,
+          "indice": 61.2,
+          "calificacion": 3.0,
+          "resenas": 122
+        }
+      ]
+    },
+    "0x8f75632ebe0dc7bf:0x4c53c7f9cd19f266": {
+      "nombre_google": "Hospital Dr Enrique Baltodano Briceño - Liberia",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 50,
+          "indice": 59.0,
+          "calificacion": 2.8,
+          "resenas": 144
+        }
+      ]
+    },
+    "0x8fa0e3005ad0314b:0x9fde28536dd17f21": {
+      "nombre_google": "Clinica Biblica Aleste",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 51,
+          "indice": 58.9,
+          "calificacion": 2.2,
+          "resenas": 26
+        }
+      ]
+    },
+    "0x8fa059ab9211bbd5:0xa6e97ddd1c2ab7f6": {
+      "nombre_google": "Hospital San Francisco de Asís",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 52,
+          "indice": 58.1,
+          "calificacion": 2.6,
+          "resenas": 91
+        }
+      ]
+    },
+    "0x8fa0dfe58470ceb7:0x3b049d621773a5ba": {
+      "nombre_google": "Hospital Dr. Maximiliano Peralta Jiménez",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 53,
+          "indice": 57.0,
+          "calificacion": 2.7,
+          "resenas": 228
+        }
+      ]
+    },
+    "0x8fa0fbc7c2bb7ccd:0xd38f64de938443bb": {
+      "nombre_google": "Hospital Metropolitano • Heredia",
+      "serie": [
+        {
+          "periodo": "2026-09",
+          "posicion": 54,
+          "indice": 50.4,
+          "calificacion": 1.6,
+          "resenas": 82
         }
       ]
     }
