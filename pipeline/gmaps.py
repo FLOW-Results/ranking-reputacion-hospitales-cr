@@ -348,7 +348,9 @@ def op_capturar(args):
 
     def guardar():
         orden = [resultados[h["id"]] for h in censo if h["id"] in resultados]
-        json.dump({"periodo": periodo, "capturado": ahora_iso(), "fuente": FUENTE, "hospitales": orden},
+        # La fecha de captura del snapshot es la de la lectura más reciente de Google, no la hora de guardado
+        capturado = max((r.get("capturado") for r in orden if r.get("capturado")), default=ahora_iso())
+        json.dump({"periodo": periodo, "capturado": capturado, "fuente": FUENTE, "hospitales": orden},
                   open(salida, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
     respaldo = cargar_respaldo()
