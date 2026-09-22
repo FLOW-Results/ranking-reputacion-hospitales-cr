@@ -302,8 +302,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
             </td>
             <td class="col-calificacion" data-label="Calificación">{{ pintar_estrellas(h.estrellas, h.calificacion_fmt) }}<span class="calificacion-num">{{ h.calificacion_fmt }}</span></td>
             <td class="col-resenas" data-label="Reseñas">{{ h.resenas_fmt }}{% if h.delta_resenas_fmt %}<span class="delta-chico">{{ h.delta_resenas_fmt }}</span>{% endif %}</td>
-            <td class="col-pct5" data-label="% 5 estrellas">{{ h.pct_5_fmt }}%</td>
-            <td class="col-pct1" data-label="% 1 estrella">{{ h.pct_1_fmt }}%</td>
+            <td class="col-pct5" data-label="% 5 estrellas">{{ h.pct_5_fmt ~ "%" if h.pct_5 is not none else "N/D" }}</td>
+            <td class="col-pct1" data-label="% 1 estrella">{{ h.pct_1_fmt ~ "%" if h.pct_1 is not none else "N/D" }}</td>
             <td class="col-indice" data-label="Índice"><strong>{{ h.indice_fmt }}</strong>{{ barra_indice(h.indice_bar_pct) }}</td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-{{ h.id }}">Ver detalle</button>
