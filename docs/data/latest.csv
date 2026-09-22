@@ -1,0 +1,8 @@
+﻿posicion,posicion_tipo,nombre_google,tipo,red,clasificacion,provincia,canton,calificacion,resenas,pct_5,pct_1,calificacion_ajustada,indice,delta_posicion,delta_resenas,maps_url,sitio_web
+1,1,Hospital Clínica Bíblica,privado,Privado,privado,San José,San José,4.6,2001,76.0,7.0,4.5,90.6,,,https://www.google.com/maps/place/?q=place_id:0x8fa0e368060ebcc1:0xf9defc9ecd48e56e,https://www.clinicabiblica.com/
+2,1,Hospital Nacional de Niños,publico,CCSS,especializado,San José,San José,4.4,349,65.9,10.0,4.17,78.6,1,40,https://www.google.com/maps/place/?q=place_id:0x8fa0e3e3f49f3407:0x7b8d9093bb70f8d1,
+3,2,Hospital México,publico,CCSS,nacional,San José,San José,4.2,402,59.7,12.9,4.08,77.4,-1,,https://www.google.com/maps/place/?q=place_id:0x8fa0fb5b747db7bf:0x556ba2b6553f8175,
+4,2,Hospital Metropolitano,privado,Privado,privado,San José,San José,4.0,598,60.2,18.4,3.98,76.9,,,https://www.google.com/maps/place/?q=place_id:0x8fa0e35c7b9a49af:0x5c9078152bba0ab6,https://metropolitanocr.com/
+5,3,Hospital San Juan de Dios,publico,CCSS,nacional,San José,San José,3.9,360,52.8,19.4,3.92,74.1,,,https://www.google.com/maps/place/?q=place_id:0x8fa0e359574bf983:0xb083d7382ae14a3b,
+6,3,Hospital Internacional La Católica,privado,Privado,privado,San José,Goicoechea,3.5,307,48.9,29.3,3.74,70.2,,,https://www.google.com/maps/place/?q=place_id:0x8fa0e47d57bfdbd5:0xbd8efb4b06725e69,https://hilc.cr/
+7,4,Hospital CIMA,privado,Privado,privado,San José,Escazú,3.4,377,48.0,31.8,3.66,69.5,,,https://www.google.com/maps/place/?q=place_id:0x8fa0fc7ff79ff705:0xff329c6bd12843b5,https://hospitalcima.com/

@@ -1,0 +1,1159 @@
+{
+ "periodo": "2026-09",
+ "capturado": "2026-09-21T23:11:52-06:00",
+ "fuente": "Google Business Profile (Google Maps) vía Firecrawl",
+ "hospitales": [
+  {
+   "id": "hospital-san-juan-de-dios",
+   "cid": "0x8fa0e359574bf983:0xb083d7382ae14a3b",
+   "maps_url": "https://www.google.com/maps/place/Hospital+San+Juan+de+Dios/data=!4m7!3m6!1s0x8fa0e359574bf983:0xb083d7382ae14a3b!8m2!3d9.9333619!4d-84.0850975!16s%2Fg%2F11mvrml8q!19sChIJg_lLV1njoI8RO0rhKjjXg7A?hl=es",
+   "nombre_google": "Hospital San Juan de Dios",
+   "calificacion": 3.9,
+   "resenas": 360,
+   "distribucion": {
+    "5": 204,
+    "4": 49,
+    "3": 34,
+    "2": 14,
+    "1": 59
+   },
+   "categoria_google": "Hospital general",
+   "direccion": "Bandera de Costa Rica, Paseo Colón y Avenida segunda, calles 14 y 16, distrito Hospital, 10103, San José, Costa Rica",
+   "telefono": "+506 2547 8000",
+   "sitio_web": "https://www.hospigen.gob.gt/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 3
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:02:37-06:00"
+  },
+  {
+   "id": "hospital-mexico",
+   "cid": "0x8fa0fb5b747db7bf:0x556ba2b6553f8175",
+   "maps_url": "https://www.google.com/maps/place/Hospital+M%C3%A9xico/data=!4m7!3m6!1s0x8fa0fb5b747db7bf:0x556ba2b6553f8175!8m2!3d9.9521285!4d-84.1136583!16s%2Fm%2F06w2zqd!19sChIJv7d9dFv7oI8RdYE_Vbaia1U?hl=es",
+   "nombre_google": "Hospital México",
+   "calificacion": 4.2,
+   "resenas": 402,
+   "distribucion": {
+    "5": 253,
+    "4": 68,
+    "3": 27,
+    "2": 12,
+    "1": 42
+   },
+   "categoria_google": "Hospital general",
+   "direccion": "Opposite the General Cañas Highway, San José, Costa Rica",
+   "telefono": "+506 2242 6700",
+   "sitio_web": null,
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:02:45-06:00"
+  },
+  {
+   "id": "hospital-calderon-guardia",
+   "cid": "0x8fa0e37d32b821df:0x792188292a4a84b2",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Dr.+Rafael+%C3%81ngel+Calder%C3%B3n+Guardia+-+CCSS/data=!4m7!3m6!1s0x8fa0e37d32b821df:0x792188292a4a84b2!8m2!3d9.9367532!4d-84.0695091!16s%2Fg%2F120x66tk!19sChIJ3yG4Mn3joI8RsoRKKimIIXk?hl=es",
+   "nombre_google": "Hospital Dr. Rafael Ángel Calderón Guardia - CCSS",
+   "calificacion": 4.1,
+   "resenas": 457,
+   "distribucion": {
+    "5": 292,
+    "4": 56,
+    "3": 34,
+    "2": 12,
+    "1": 63
+   },
+   "categoria_google": "Hospital",
+   "direccion": "Avenidas 7 y 9, calles 15 y 17, C. 17, San José, Aranjuez, Costa Rica",
+   "telefono": "+506 2212 1000",
+   "sitio_web": "http://www.ccss.sa.cr/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:03:16-06:00"
+  },
+  {
+   "id": "hospital-nacional-de-ninos-carlos-saenz-herrera",
+   "cid": "0x8fa0e3e3f49f3407:0x7b8d9093bb70f8d1",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Nacional+de+Ni%C3%B1os/data=!4m7!3m6!1s0x8fa0e3e3f49f3407:0x7b8d9093bb70f8d1!8m2!3d9.9340276!4d-84.0878143!16s%2Fm%2F06w9n8v!19sChIJBzSf9OPjoI8R0fhwu5OQjXs?hl=es",
+   "nombre_google": "Hospital Nacional de Niños",
+   "calificacion": 4.4,
+   "resenas": 349,
+   "distribucion": {
+    "5": 269,
+    "4": 27,
+    "3": 15,
+    "2": 6,
+    "1": 32
+   },
+   "categoria_google": "Hospital infantil",
+   "direccion": "Calle 20, avenida cero (Paseo Colón), contiguo al Hospital San Juan de Dios, San José, Costa Rica",
+   "telefono": "+506 2523 3600",
+   "sitio_web": "http://www.ccss.sa.cr/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:02:56-06:00"
+  },
+  {
+   "id": "hospital-de-las-mujeres-adolfo-carit-eva",
+   "cid": "0x8fa0e3420ce8341d:0xbffed07585cdbc4f",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Nacional+de+las+Mujeres+Adolfo+Carit+Eva./data=!4m7!3m6!1s0x8fa0e3420ce8341d:0xbffed07585cdbc4f!8m2!3d9.923906!4d-84.0813167!16s%2Fg%2F1tvm3tzy!19sChIJHTToDELjoI8RT7zNhXXQ_r8?hl=es",
+   "nombre_google": "Hospital Nacional de las Mujeres Adolfo Carit Eva.",
+   "calificacion": 4.1,
+   "resenas": 113,
+   "distribucion": {
+    "5": 75,
+    "4": 13,
+    "3": 5,
+    "2": 3,
+    "1": 17
+   },
+   "categoria_google": "Hospital gubernamental",
+   "direccion": "WWF9+H62, C. Central Alfredo Volio, San José, Pacifio, Costa Rica",
+   "telefono": "+506 2523 5900",
+   "sitio_web": "http://www.ccss.sa.cr/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:03:21-06:00"
+  },
+  {
+   "id": "hospital-nacional-psiquiatrico-chapui-y-torres",
+   "cid": "0x8fa0fb76d17cfa03:0x536b04c8c50f6a2d",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Nacional+de+Salud+Mental/data=!4m7!3m6!1s0x8fa0fb76d17cfa03:0x536b04c8c50f6a2d!8m2!3d9.9531634!4d-84.1396117!16s%2Fg%2F1jkypplj3!19sChIJA_p80Xb7oI8RLWoPxcgEa1M?hl=es",
+   "nombre_google": "Hospital Nacional de Salud Mental",
+   "calificacion": 3.1,
+   "resenas": 127,
+   "distribucion": {
+    "5": 56,
+    "4": 8,
+    "3": 8,
+    "2": 6,
+    "1": 49
+   },
+   "categoria_google": "Hospital psiquiátrico",
+   "direccion": "XV36+756, C. Los Varela, San José, Llanos del Sol, Costa Rica",
+   "telefono": "+506 2242 6300",
+   "sitio_web": "http://www.ccss.sa.cr/hospitales?v=22",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:03:11-06:00"
+  },
+  {
+   "id": "hospital-nacional-de-geriatria-raul-blanco-cervantes",
+   "cid": "0x8fa0e35bb094faad:0x12f8c29c61472d9a",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Nacional+de+Geriatr%C3%ADa+y+Gerontolog%C3%ADa/data=!4m7!3m6!1s0x8fa0e35bb094faad:0x12f8c29c61472d9a!8m2!3d9.9317058!4d-84.0876002!16s%2Fg%2F1tcv2hw2!19sChIJrfqUsFvjoI8Rmi1HYZzC-BI?hl=es",
+   "nombre_google": "Hospital Nacional de Geriatría y Gerontología",
+   "calificacion": 4.4,
+   "resenas": 133,
+   "distribucion": {
+    "5": 100,
+    "4": 15,
+    "3": 3,
+    "2": 1,
+    "1": 14
+   },
+   "categoria_google": "Hospital",
+   "direccion": "Av. 8, San José, Merced, Costa Rica",
+   "telefono": "+506 2522 7700",
+   "sitio_web": "http://www.ccss.sa.cr/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:03:45-06:00"
+  },
+  {
+   "id": "cenare-centro-nacional-de-rehabilitacion",
+   "cid": "0x8fa0fb5b60bba995:0x53a188ab1469c9e2",
+   "maps_url": "https://www.google.com/maps/place/Centro+Nacional+de+Rehabilitaci%C3%B3n+-+CENARE./@9.9485174,-84.1162993,17z/data=!4m6!3m5!1s0x8fa0fb5b60bba995:0x53a188ab1469c9e2!8m2!3d9.9485174!4d-84.1162993!16s%2Fm%2F06w2qlj?hl=es",
+   "nombre_google": "Centro Nacional de Rehabilitación - CENARE.",
+   "calificacion": 4.2,
+   "resenas": 102,
+   "distribucion": {
+    "5": 71,
+    "4": 9,
+    "3": 4,
+    "2": 4,
+    "1": 14
+   },
+   "categoria_google": "Hospital",
+   "direccion": "San José, Alborada, Costa Rica",
+   "telefono": "+506 2232 8233",
+   "sitio_web": "http://www.ccss.sa.cr/hospitales?v=1",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:04:05-06:00"
+  },
+  {
+   "id": "hospital-psiquiatrico-roberto-chacon-paut",
+   "cid": "0x8fa0e12ae444e287:0x1eae73b9366b0f57",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Psiqui%C3%A1trico+Roberto+Chac%C3%B3n+Paut+-+CCSS/data=!4m7!3m6!1s0x8fa0e12ae444e287:0x1eae73b9366b0f57!8m2!3d9.9354319!4d-83.9767411!16s%2Fg%2F1vq9nb9b!19sChIJh-JE5CrhoI8RVw9rNrlzrh4?hl=es",
+   "nombre_google": "Hospital Psiquiátrico Roberto Chacón Paut - CCSS",
+   "calificacion": 4.2,
+   "resenas": 48,
+   "distribucion": {
+    "5": 34,
+    "4": 5,
+    "3": 1,
+    "2": 0,
+    "1": 8
+   },
+   "categoria_google": "Hospital psiquiátrico",
+   "direccion": "Ruta Nacional Secundaria 202, Provincia de Cartago, Tres Rios, Costa Rica",
+   "telefono": "+506 2216 6400",
+   "sitio_web": "https://www.ccss.sa.cr/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:03:38-06:00"
+  },
+  {
+   "id": "hospital-max-peralta-jimenez",
+   "cid": "0x8fa0dfe58470ceb7:0x3b049d621773a5ba",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Dr.+Maximiliano+Peralta+Jim%C3%A9nez/data=!4m7!3m6!1s0x8fa0dfe58470ceb7:0x3b049d621773a5ba!8m2!3d9.8618121!4d-83.9217538!16s%2Fm%2F06w1fn6!19sChIJt85whOXfoI8RuqVzF2KdBDs?hl=es",
+   "nombre_google": "Hospital Dr. Maximiliano Peralta Jiménez",
+   "calificacion": 2.7,
+   "resenas": 228,
+   "distribucion": {
+    "5": 68,
+    "4": 24,
+    "3": 17,
+    "2": 14,
+    "1": 105
+   },
+   "categoria_google": "Hospital",
+   "direccion": "V36H+85C, Avenida 6 y 10, Calle 2, y 4, Provincia de Cartago, Cartago, Barrio Asís, 30101, Costa Rica",
+   "telefono": "+506 2550 1999",
+   "sitio_web": null,
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:03:52-06:00"
+  },
+  {
+   "id": "hospital-san-vicente-de-paul",
+   "cid": "0x8fa0faddf036ff15:0x446163bcc8f10829",
+   "maps_url": "https://www.google.com/maps/place/Hospital+San+Vicente+de+Paul/data=!4m7!3m6!1s0x8fa0faddf036ff15:0x446163bcc8f10829!8m2!3d9.9915256!4d-84.12212!16s%2Fg%2F11bw8d_hcg!19sChIJFf828N36oI8RKQjxyLxjYUQ?hl=es",
+   "nombre_google": "Hospital San Vicente de Paul",
+   "calificacion": 3.3,
+   "resenas": 393,
+   "distribucion": {
+    "5": 173,
+    "4": 51,
+    "3": 25,
+    "2": 27,
+    "1": 117
+   },
+   "categoria_google": "Hospital gubernamental",
+   "direccion": "700 m. sur del Estadio Eladio Rosabal Cordero, Heredia, Costa Rica",
+   "telefono": "+506 2562 8100",
+   "sitio_web": "https://es-la.facebook.com/hospitaldeheredia/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:04:14-06:00"
+  },
+  {
+   "id": "hospital-san-rafael-alajuela",
+   "cid": "0x8fa0f9bf41516823:0xd10f9a11431f8093",
+   "maps_url": "https://www.google.com/maps/place/Hospital+San+Rafael/data=!4m7!3m6!1s0x8fa0f9bf41516823:0xd10f9a11431f8093!8m2!3d10.0079133!4d-84.2109155!16s%2Fg%2F121s4d6g!19sChIJI2hRQb_5oI8Rk4AfQxGaD9E?hl=es",
+   "nombre_google": "Hospital San Rafael",
+   "calificacion": 3.3,
+   "resenas": 269,
+   "distribucion": {
+    "5": 103,
+    "4": 40,
+    "3": 30,
+    "2": 23,
+    "1": 73
+   },
+   "categoria_google": "Hospital gubernamental",
+   "direccion": "2Q5Q+5J8, Radial Francisco J. Orlich, Provincia de Alajuela, Alajuela, San Luis, Costa Rica",
+   "telefono": "+506 2436 1000",
+   "sitio_web": null,
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:04:04-06:00"
+  },
+  {
+   "id": "hospital-tony-facio-castro",
+   "cid": "0x8fa70585835f17e7:0xcdff6ee44ed814c9",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Dr.+Tony+Facio+Castro/data=!4m7!3m6!1s0x8fa70585835f17e7:0xcdff6ee44ed814c9!8m2!3d9.9996621!4d-83.0259991!16s%2Fm%2F0j66r3p!19sChIJ5xdfg4UFp48RyRTYTuRu_80?hl=es",
+   "nombre_google": "Hospital Dr. Tony Facio Castro",
+   "calificacion": 3.2,
+   "resenas": 99,
+   "distribucion": {
+    "5": 35,
+    "4": 13,
+    "3": 14,
+    "2": 11,
+    "1": 26
+   },
+   "categoria_google": "Hospital",
+   "direccion": "Limón, Hospital, Costa Rica",
+   "telefono": "+506 2758 2222",
+   "sitio_web": null,
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:04:38-06:00"
+  },
+  {
+   "id": "hospital-escalante-pradilla",
+   "cid": "0x8fa14eedfbb0a0e1:0xa8e88afbdf60da74",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Dr.+Fernando+Escalante+Pradilla+-+CCSS/data=!4m7!3m6!1s0x8fa14eedfbb0a0e1:0xa8e88afbdf60da74!8m2!3d9.3674121!4d-83.703327!16s%2Fg%2F1tfcpdbl!19sChIJ4aCw--1OoY8RdNpg3_uK6Kg?hl=es",
+   "nombre_google": "Hospital Dr. Fernando Escalante Pradilla - CCSS",
+   "calificacion": 3.3,
+   "resenas": 160,
+   "distribucion": {
+    "5": 61,
+    "4": 26,
+    "3": 15,
+    "2": 9,
+    "1": 49
+   },
+   "categoria_google": "Hospital gubernamental",
+   "direccion": "978W+XM7, San José, San Isidro de El General, Costa Rica",
+   "telefono": "+506 2785 0700",
+   "sitio_web": null,
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:04:45-06:00"
+  },
+  {
+   "id": "hospital-enrique-baltodano-briceno",
+   "cid": "0x8f75632ebe0dc7bf:0x4c53c7f9cd19f266",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Dr+Enrique+Baltodano+Brice%C3%B1o+-+Liberia/data=!4m7!3m6!1s0x8f75632ebe0dc7bf:0x4c53c7f9cd19f266!8m2!3d10.6382772!4d-85.4314534!16s%2Fg%2F11bwy_ql90!19sChIJv8cNvi5jdY8RZvIZzfnHU0w?hl=es",
+   "nombre_google": "Hospital Dr Enrique Baltodano Briceño - Liberia",
+   "calificacion": 2.8,
+   "resenas": 144,
+   "distribucion": {
+    "5": 44,
+    "4": 15,
+    "3": 13,
+    "2": 8,
+    "1": 64
+   },
+   "categoria_google": "Hospital",
+   "direccion": "JHQ9+8C7, 918, Provincia de Guanacaste, Liberia, Moracia, 50101, Costa Rica",
+   "telefono": "+506 2690 2300",
+   "sitio_web": null,
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:04:38-06:00"
+  },
+  {
+   "id": "hospital-monsenor-sanabria",
+   "cid": "0x8fa0311b7e1e640f:0xbc07e55d09e7cbc",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Monse%C3%B1or+Sanabria+Mart%C3%ADnez+-+Puntarenas,+CCSS/data=!4m7!3m6!1s0x8fa0311b7e1e640f:0xbc07e55d09e7cbc!8m2!3d9.990467!4d-84.7187432!16s%2Fg%2F11c2kmngjd!19sChIJD2QefhsxoI8RvHye0FV-wAs?hl=es",
+   "nombre_google": "Hospital Monseñor Sanabria Martínez - Puntarenas, CCSS",
+   "calificacion": 3.7,
+   "resenas": 43,
+   "distribucion": {
+    "5": 25,
+    "4": 4,
+    "3": 2,
+    "2": 1,
+    "1": 11
+   },
+   "categoria_google": "Hospital",
+   "direccion": "Provincia de Puntarenas, Barranca, El INVU, 60108, Costa Rica",
+   "telefono": "+506 2630 8000",
+   "sitio_web": "https://www.facebook.com/hospitalmonsenorsanabria",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:05:45-06:00"
+  },
+  {
+   "id": "hospital-de-san-carlos",
+   "cid": "0x8fa065f2d63fd393:0xa9bc88412257feda",
+   "maps_url": "https://www.google.com/maps/place/Hospital+San+Carlos+-+CCSS/data=!4m7!3m6!1s0x8fa065f2d63fd393:0xa9bc88412257feda!8m2!3d10.3435971!4d-84.4322581!16s%2Fg%2F1th7nz38!19sChIJk9M_1vJloI8R2v5XIkGIvKk?hl=es",
+   "nombre_google": "Hospital San Carlos - CCSS",
+   "calificacion": 3.3,
+   "resenas": 100,
+   "distribucion": {
+    "5": 37,
+    "4": 14,
+    "3": 13,
+    "2": 9,
+    "1": 27
+   },
+   "categoria_google": "Hospital",
+   "direccion": "Ruta Nacional Secundaria 141, Provincia de Alajuela, Cd Quesada, Barrio San Roque, Costa Rica",
+   "telefono": "+506 2401 1200",
+   "sitio_web": null,
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:05:42-06:00"
+  },
+  {
+   "id": "hospital-san-francisco-de-asis",
+   "cid": "0x8fa059ab9211bbd5:0xa6e97ddd1c2ab7f6",
+   "maps_url": "https://www.google.com/maps/place/Hospital+San+Francisco+de+As%C3%ADs/data=!4m7!3m6!1s0x8fa059ab9211bbd5:0xa6e97ddd1c2ab7f6!8m2!3d10.0720634!4d-84.3158204!16s%2Fg%2F11cfv0m53!19sChIJ1bsRkqtZoI8R9rcqHN196aY?hl=es",
+   "nombre_google": "Hospital San Francisco de Asís",
+   "calificacion": 2.6,
+   "resenas": 91,
+   "distribucion": {
+    "5": 22,
+    "4": 14,
+    "3": 8,
+    "2": 4,
+    "1": 43
+   },
+   "categoria_google": "Hospital",
+   "direccion": "Av. Central León Cortés Castro, Provincia de Alajuela, Grecia, Costa Rica",
+   "telefono": "+506 2437 9500",
+   "sitio_web": null,
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:04:53-06:00"
+  },
+  {
+   "id": "hospital-max-teran-valls",
+   "cid": "0x8fa17251bb3b878f:0xd015cb4d79537c48",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Dr.+Max+Ter%C3%A1n+Valls,+Quepos/@9.4427802,-84.1365937,17z/data=!4m6!3m5!1s0x8fa17251bb3b878f:0xd015cb4d79537c48!8m2!3d9.4427802!4d-84.1365937!16s%2Fg%2F11h0q6rdq?hl=es",
+   "nombre_google": "Hospital Dr. Max Terán Valls, Quepos",
+   "calificacion": 3.7,
+   "resenas": 78,
+   "distribucion": {
+    "5": 39,
+    "4": 11,
+    "3": 10,
+    "2": 3,
+    "1": 15
+   },
+   "categoria_google": "Hospital",
+   "direccion": "Hospital Dr. Max Terán Valls, Provincia de Puntarenas, Quepos, Costa Rica",
+   "telefono": "+506 2774 9500",
+   "sitio_web": "http://www.ccss.sa.cr/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 2
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:06:12-06:00"
+  },
+  {
+   "id": "hospital-manuel-mora-valverde",
+   "cid": "0x8fa4438200fff4f9:0xc7d558db2e2dc3ab",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Manuel+Mora+Valverde+-+CCSS/@8.6437617,-83.1704272,17z/data=!3m1!4b1!4m6!3m5!1s0x8fa4438200fff4f9:0xc7d558db2e2dc3ab!8m2!3d8.6437617!4d-83.1704272!16s%2Fg%2F1hm4_08hn?hl=es",
+   "nombre_google": "Hospital Manuel Mora Valverde - CCSS",
+   "calificacion": 3.3,
+   "resenas": 47,
+   "distribucion": {
+    "5": 21,
+    "4": 7,
+    "3": 2,
+    "2": 0,
+    "1": 17
+   },
+   "categoria_google": "Hospital",
+   "direccion": "JRVH+GR4, Ruta Nacional Primaria 14, Provincia de Puntarenas, Golfito, Costa Rica",
+   "telefono": "+506 2775 7800",
+   "sitio_web": "https://www.ccss.sa.cr/hospitales?v=17",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:06:56-06:00"
+  },
+  {
+   "id": "hospital-los-chiles",
+   "cid": "0x8f0ac421d5a783af:0xbe8a9d975331efe",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Los+Chiles/@11.0285463,-84.7105552,17z/data=!4m6!3m5!1s0x8f0ac421d5a783af:0xbe8a9d975331efe!8m2!3d11.0285463!4d-84.7105552!16s%2Fg%2F1yj2pcp6v?hl=es",
+   "nombre_google": "Hospital Los Chiles",
+   "calificacion": 4.2,
+   "resenas": 29,
+   "distribucion": {
+    "5": 16,
+    "4": 7,
+    "3": 4,
+    "2": 0,
+    "1": 2
+   },
+   "categoria_google": "Hospital",
+   "direccion": "27HQ+CQ8, 35, Provincia de Alajuela, Los Chiles, Barrio El Seguro, Costa Rica",
+   "telefono": "+506 2471 2000",
+   "sitio_web": "https://www.ccss.sa.cr/hospitales?v=16",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:06:39-06:00"
+  },
+  {
+   "id": "hospital-william-allen-taylor",
+   "cid": "0x8fa0d5b9901672cb:0xf52e40417faa7126",
+   "maps_url": "https://www.google.com/maps/place/Hospital+William+Allen+Taylor/@9.8736073,-83.6515275,17z/data=!4m6!3m5!1s0x8fa0d5b9901672cb:0xf52e40417faa7126!8m2!3d9.8736073!4d-83.6515275!16s%2Fg%2F11fx8b__q1?hl=es",
+   "nombre_google": "Hospital William Allen Taylor",
+   "calificacion": 4.2,
+   "resenas": 72,
+   "distribucion": {
+    "5": 43,
+    "4": 12,
+    "3": 9,
+    "2": 1,
+    "1": 7
+   },
+   "categoria_google": "Hospital",
+   "direccion": "V8FX+C9X, Provincia de Cartago, Turrialba, Costa Rica",
+   "telefono": "+506 2558 1300",
+   "sitio_web": null,
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:06:39-06:00"
+  },
+  {
+   "id": "hospital-de-upala",
+   "cid": "0x8f75498071d060f5:0xc33425f52fe8ce6e",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Upala+-+CCSS/data=!4m7!3m6!1s0x8f75498071d060f5:0xc33425f52fe8ce6e!8m2!3d10.8972178!4d-85.0241563!16s%2Fg%2F1tdgl9s0!19sChIJ9WDQcYBJdY8Rbs7oL_UlNMM?hl=es",
+   "nombre_google": "Hospital Upala - CCSS",
+   "calificacion": 3.9,
+   "resenas": 50,
+   "distribucion": {
+    "5": 25,
+    "4": 11,
+    "3": 5,
+    "2": 2,
+    "1": 7
+   },
+   "categoria_google": "Hospital",
+   "direccion": "VXWG+V8P, Ruta Nacional Primaria 6, Provincia de Alajuela, Upala, Costa Rica",
+   "telefono": "+506 2480 0000",
+   "sitio_web": "http://www.ccss.sa.cr/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:06:46-06:00"
+  },
+  {
+   "id": "hospital-de-san-vito",
+   "cid": "0x8fa435b4c75dca47:0xe96314a1144c2f23",
+   "maps_url": "https://www.google.com/maps/place/Hospital+San+Vito+%22Juana+Pirola%22-+CCSS/data=!4m7!3m6!1s0x8fa435b4c75dca47:0xe96314a1144c2f23!8m2!3d8.813689!4d-82.9676557!16s%2Fg%2F11bw477yyr!19sChIJR8pdx7Q1pI8RIy9MFKEUY-k?hl=es",
+   "nombre_google": "Hospital San Vito \"Juana Pirola\"- CCSS",
+   "calificacion": 3.6,
+   "resenas": 34,
+   "distribucion": {
+    "5": 13,
+    "4": 8,
+    "3": 5,
+    "2": 1,
+    "1": 7
+   },
+   "categoria_google": "Hospital",
+   "direccion": "Ruta Nacional Secundaria 237, Provincia de Puntarenas, San Vito, Tres Ríos, Costa Rica",
+   "telefono": "+506 2773 1100",
+   "sitio_web": "http://www.ccss.sa.cr/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 1
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:06:54-06:00"
+  },
+  {
+   "id": "hospital-de-osa-tomas-casas-casajus",
+   "cid": "0x8fa4064d9a8b8e6b:0x9c8264f3e87593a1",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Tom%C3%A1s+Casas+Casaj%C3%BAs./data=!4m7!3m6!1s0x8fa4064d9a8b8e6b:0x9c8264f3e87593a1!8m2!3d8.987935!4d-83.5462102!16s%2Fg%2F1td_znr8!19sChIJa46Lmk0GpI8RoZN16PNkgpw?hl=es",
+   "nombre_google": "Hospital Tomás Casas Casajús.",
+   "calificacion": 3.8,
+   "resenas": 47,
+   "distribucion": {
+    "5": 27,
+    "4": 6,
+    "3": 3,
+    "2": 1,
+    "1": 10
+   },
+   "categoria_google": "Hospital",
+   "direccion": "Provincia de Puntarenas, Cd Cortés, Barrio Ojo de Agua, 60501, Costa Rica",
+   "telefono": "+506 2786 8148",
+   "sitio_web": null,
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:07:43-06:00"
+  },
+  {
+   "id": "hospital-de-la-anexion",
+   "cid": "0x8f9fb748c49a07ff:0x92b136ff16202219",
+   "maps_url": "https://www.google.com/maps/place/Hospital+La+Anexi%C3%B3n/data=!4m7!3m6!1s0x8f9fb748c49a07ff:0x92b136ff16202219!8m2!3d10.1484218!4d-85.4539963!16s%2Fg%2F1hm27fk2s!19sChIJ_weaxEi3n48RGSIgFv82sZI?hl=es",
+   "nombre_google": "Hospital La Anexión",
+   "calificacion": 3.1,
+   "resenas": 82,
+   "distribucion": {
+    "5": 30,
+    "4": 8,
+    "3": 10,
+    "2": 8,
+    "1": 26
+   },
+   "categoria_google": "Hospital",
+   "direccion": "Provincia de Guanacaste, Nicoya, Santa Lucía, Costa Rica",
+   "telefono": "+506 2685 8400",
+   "sitio_web": "http://www.ccss.sa.cr/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:07:11-06:00"
+  },
+  {
+   "id": "hospital-de-guapiles",
+   "cid": "0x8fa0b86ea06452df:0x2c10b95a4828ede0",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Gu%C3%A1piles+CCSS/@10.2174471,-83.7892796,17z/data=!4m6!3m5!1s0x8fa0b86ea06452df:0x2c10b95a4828ede0!8m2!3d10.2174471!4d-83.7892796!16s%2Fg%2F1tjyvns8?hl=es",
+   "nombre_google": "Hospital Guápiles CCSS",
+   "calificacion": 3.0,
+   "resenas": 110,
+   "distribucion": {
+    "5": 34,
+    "4": 10,
+    "3": 25,
+    "2": 9,
+    "1": 32
+   },
+   "categoria_google": "Hospital",
+   "direccion": "Av. 7, Limón, Guápiles, Costa Rica",
+   "telefono": "+506 2710 6801",
+   "sitio_web": "http://www.ccss.sa.cr/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:07:08-06:00"
+  },
+  {
+   "id": "hospital-de-ciudad-neilly",
+   "cid": "0x8fa44d1b0d5ac585:0x99920203a8aa05dc",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Ciudad+Neily/@8.6318548,-82.9370472,17z/data=!4m6!3m5!1s0x8fa44d1b0d5ac585:0x99920203a8aa05dc!8m2!3d8.6318548!4d-82.9370472!16s%2Fg%2F1vnrrp3d?hl=es",
+   "nombre_google": "Hospital Ciudad Neily",
+   "calificacion": 3.8,
+   "resenas": 56,
+   "distribucion": {
+    "5": 29,
+    "4": 9,
+    "3": 7,
+    "2": 2,
+    "1": 9
+   },
+   "categoria_google": "Hospital",
+   "direccion": "J3J7+P5W, 2, Puntarenas Province, Ciudad Neily, Costa Rica",
+   "telefono": "+506 2785 9600",
+   "sitio_web": "https://www.ccss.sa.cr/hospitales?v=2",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:07:33-06:00"
+  },
+  {
+   "id": "hospital-carlos-luis-valverde-vega",
+   "cid": "0x8fa044f028eff707:0x6029c6c3937e54ac",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Carlos+Luis+Valverde+Vega/data=!4m7!3m6!1s0x8fa044f028eff707:0x6029c6c3937e54ac!8m2!3d10.0926834!4d-84.4696894!16s%2Fg%2F1trqj8hv!19sChIJB_fvKPBEoI8RrFR-k8PGKWA?hl=es",
+   "nombre_google": "Hospital Carlos Luis Valverde Vega",
+   "calificacion": 3.6,
+   "resenas": 105,
+   "distribucion": {
+    "5": 45,
+    "4": 19,
+    "3": 16,
+    "2": 5,
+    "1": 20
+   },
+   "categoria_google": "Hospital",
+   "direccion": "3GVJ+34F, Provincia de Alajuela, San Ramón, Costa Rica",
+   "telefono": "+506 2456 9700",
+   "sitio_web": "http://www.ccss.sa.cr/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:08:14-06:00"
+  },
+  {
+   "id": "hospital-del-trauma-ins",
+   "cid": "0x8fa0fb5f6132f82b:0x7c6ea2e30d6fb86f",
+   "maps_url": "https://www.google.com/maps/place/Hospital+del+Trauma/data=!4m7!3m6!1s0x8fa0fb5f6132f82b:0x7c6ea2e30d6fb86f!8m2!3d9.9495939!4d-84.118103!16s%2Fg%2F1tdd1rhz!19sChIJK_gyYV_7oI8Rb7hvDeOibnw?hl=es",
+   "nombre_google": "Hospital del Trauma",
+   "calificacion": 4.2,
+   "resenas": 338,
+   "distribucion": {
+    "5": 228,
+    "4": 42,
+    "3": 15,
+    "2": 8,
+    "1": 45
+   },
+   "categoria_google": "Hospital",
+   "direccion": "WVXJ+VR5, San José, Alborada, Costa Rica",
+   "telefono": "+506 2296 9599",
+   "sitio_web": null,
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:07:41-06:00"
+  },
+  {
+   "id": "hospital-cima-escazu",
+   "cid": "0x8fa0fc7ff79ff705:0xff329c6bd12843b5",
+   "maps_url": "https://www.google.com/maps/place/Hospital+CIMA/data=!4m7!3m6!1s0x8fa0fc7ff79ff705:0xff329c6bd12843b5!8m2!3d9.9401778!4d-84.1441671!16s%2Fm%2F06w6m1q!19sChIJBfef93_8oI8RtUMo0WucMv8?hl=es",
+   "nombre_google": "Hospital CIMA",
+   "calificacion": 3.4,
+   "resenas": 377,
+   "distribucion": {
+    "5": 181,
+    "4": 36,
+    "3": 19,
+    "2": 21,
+    "1": 120
+   },
+   "categoria_google": "Hospital privado",
+   "direccion": "San José, Próspero Fernández Highway, San José, San Rafael, Los Laureles, 10203, Costa Rica",
+   "telefono": "+506 2208 1000",
+   "sitio_web": "https://hospitalcima.com/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 2
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:07:49-06:00"
+  },
+  {
+   "id": "hospital-clinica-biblica-san-jose",
+   "cid": "0x8fa0e368060ebcc1:0xf9defc9ecd48e56e",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Cl%C3%ADnica+B%C3%ADblica/data=!4m7!3m6!1s0x8fa0e368060ebcc1:0xf9defc9ecd48e56e!8m2!3d9.9275385!4d-84.0795396!16s%2Fm%2F06w7wlc!19sChIJwbwOBmjjoI8RbuVIzZ783vk?hl=es",
+   "nombre_google": "Hospital Clínica Bíblica",
+   "calificacion": 4.6,
+   "resenas": 2001,
+   "distribucion": {
+    "5": 1715,
+    "4": 93,
+    "3": 31,
+    "2": 26,
+    "1": 136
+   },
+   "categoria_google": "Hospital",
+   "direccion": "between, Avenida 14, C. 1, San José, Costa Rica",
+   "telefono": "+506 2522 1000",
+   "sitio_web": "https://www.clinicabiblica.com/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 3
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:07:54-06:00"
+  },
+  {
+   "id": "hospital-clinica-biblica-santa-ana",
+   "cid": "0x8fa0f906f0b359e3:0x5f50c053344378ba",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Cl%C3%ADnica+B%C3%ADblica/data=!4m7!3m6!1s0x8fa0f906f0b359e3:0x5f50c053344378ba!8m2!3d9.9460374!4d-84.1885095!16s%2Fg%2F11g0vzs1lz!19sChIJ41mz8Ab5oI8RunhDNFPAUF8?hl=es",
+   "nombre_google": "Hospital Clínica Bíblica",
+   "calificacion": 4.2,
+   "resenas": 239,
+   "distribucion": {
+    "5": 181,
+    "4": 13,
+    "3": 2,
+    "2": 4,
+    "1": 39
+   },
+   "categoria_google": "Hospital privado",
+   "direccion": "WRW6+CH9, Pozos, Ruta Nacional Treciaria 310, San José, Santa Ana, 10903, Costa Rica",
+   "telefono": "+506 2522 1000",
+   "sitio_web": "https://www.clinicabiblica.com/es/santa-ana",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:08:09-06:00"
+  },
+  {
+   "id": "hospital-clinica-biblica-aleste-curridabat",
+   "cid": "0x8fa0e3005ad0314b:0x9fde28536dd17f21",
+   "maps_url": "https://www.google.com/maps/place/Clinica+Biblica+Aleste/data=!4m7!3m6!1s0x8fa0e3005ad0314b:0x9fde28536dd17f21!8m2!3d9.9218367!4d-84.020846!16s%2Fg%2F11l_4n7x0q!19sChIJSzHQWgDjoI8RIX_RbVMo3p8?hl=es",
+   "nombre_google": "Clinica Biblica Aleste",
+   "calificacion": 2.2,
+   "resenas": 26,
+   "distribucion": {
+    "5": 7,
+    "4": 0,
+    "3": 1,
+    "2": 2,
+    "1": 16
+   },
+   "categoria_google": "Hospital privado",
+   "direccion": "WXCH+PMJ Torre 201, WXCH+MVF, Aleste, San José, Curridabat, Costa Rica",
+   "telefono": "+506 2522 1000",
+   "sitio_web": "http://www.clinicabiblica.com/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:08:58-06:00"
+  },
+  {
+   "id": "hospital-clinico-san-rafael-arcangel-liberia",
+   "cid": "0x8f7562d5114149bf:0x55742c49bea22e6d",
+   "maps_url": "https://www.google.com/maps/place/Cl%C3%ADnica+B%C3%ADblica+Liberia/data=!4m7!3m6!1s0x8f7562d5114149bf:0x55742c49bea22e6d!8m2!3d10.6299207!4d-85.4357264!16s%2Fg%2F1z449zypg!19sChIJv0lBEdVidY8RbS6ivkksdFU?hl=es",
+   "nombre_google": "Clínica Bíblica Liberia",
+   "calificacion": 3.7,
+   "resenas": 105,
+   "distribucion": {
+    "5": 60,
+    "4": 9,
+    "3": 8,
+    "2": 2,
+    "1": 26
+   },
+   "categoria_google": "Hospital",
+   "direccion": "100Este 25 Sur de, Escuela Ascensión Esquivel Ibarra, C. 3, Provincia de Guanacaste, Liberia, La Victoria, 50101, Costa Rica",
+   "telefono": "+506 2690 5500",
+   "sitio_web": "http://www.clinicabiblica.com/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 0
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:10:12-06:00"
+  },
+  {
+   "id": "hospital-clinica-senora-de-los-angeles-cartago",
+   "cid": "0x8fa0dfe5745eae55:0xae130acfe356047",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Cl%C3%ADnica+Se%C3%B1ora+de+los+%C3%81ngeles/data=!4m7!3m6!1s0x8fa0dfe5745eae55:0xae130acfe356047!8m2!3d9.8609542!4d-83.9226511!16s%2Fg%2F1hhjvqn_6!19sChIJVa5edOXfoI8RR2A1_qww4Qo?hl=es",
+   "nombre_google": "Hospital Clínica Señora de los Ángeles",
+   "calificacion": 3.0,
+   "resenas": 122,
+   "distribucion": {
+    "5": 50,
+    "4": 9,
+    "3": 5,
+    "2": 10,
+    "1": 48
+   },
+   "categoria_google": "Centro médico",
+   "direccion": "Esquina Suroeste del Hospital Max Peralta, C. 4, Provincia de Cartago, Cartago, Costa Rica",
+   "telefono": "+506 2552 5252",
+   "sitio_web": "https://www.hospitalclinicalosangeles.com/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 2
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:08:40-06:00"
+  },
+  {
+   "id": "hospital-metropolitano-san-jose",
+   "cid": "0x8fa0e35c7b9a49af:0x5c9078152bba0ab6",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Metropolitano/data=!4m7!3m6!1s0x8fa0e35c7b9a49af:0x5c9078152bba0ab6!8m2!3d9.9312321!4d-84.0851842!16s%2Fg%2F11xhq6yvy!19sChIJr0mae1zjoI8Rtgq6KxV4kFw?hl=es",
+   "nombre_google": "Hospital Metropolitano",
+   "calificacion": 4.0,
+   "resenas": 598,
+   "distribucion": {
+    "5": 420,
+    "4": 30,
+    "3": 11,
+    "2": 15,
+    "1": 122
+   },
+   "categoria_google": "Hospital",
+   "direccion": "C. 14, San José, Merced, 10103, Costa Rica",
+   "telefono": "+506 2521 9595",
+   "sitio_web": "https://metropolitanocr.com/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 3
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:08:51-06:00"
+  },
+  {
+   "id": "hospital-metropolitano-lindora",
+   "cid": "0x8fa0f959ec938e61:0xe2b96b54530cd099",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Metropolitano/data=!4m7!3m6!1s0x8fa0f959ec938e61:0xe2b96b54530cd099!8m2!3d9.9534134!4d-84.190058!16s%2Fg%2F11cjp8thsz!19sChIJYY6T7Fn5oI8RmdAMU1RrueI?hl=es",
+   "nombre_google": "Hospital Metropolitano",
+   "calificacion": 3.1,
+   "resenas": 300,
+   "distribucion": {
+    "5": 137,
+    "4": 22,
+    "3": 8,
+    "2": 13,
+    "1": 120
+   },
+   "categoria_google": "Hospital privado",
+   "direccion": "300 norte de Iglesia de Pozos, Edificio Pekin Santa Ana San José CR 10903, San José, Santa Ana, Costa Rica",
+   "telefono": "+506 2521 9595",
+   "sitio_web": "https://metropolitanocr.com/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 3
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:09:02-06:00"
+  },
+  {
+   "id": "hospital-metropolitano-liberia",
+   "cid": "0x8f7563f7202f0d5b:0xea47763bff7f1fff",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Metropolitano+%E2%80%A2+Liberia/data=!4m7!3m6!1s0x8f7563f7202f0d5b:0xea47763bff7f1fff!8m2!3d10.6364031!4d-85.4323226!16s%2Fg%2F11j2fgj4_b!19sChIJWw0vIPdjdY8R_x9__zt2R-o?hl=es",
+   "nombre_google": "Hospital Metropolitano • Liberia",
+   "calificacion": 4.5,
+   "resenas": 151,
+   "distribucion": {
+    "5": 126,
+    "4": 5,
+    "3": 2,
+    "2": 0,
+    "1": 18
+   },
+   "categoria_google": "Hospital",
+   "direccion": "Frente al Estadio Edgardo Baltodano, Provincia de Guanacaste, Liberia, Moracia, 50101, Costa Rica",
+   "telefono": "+506 2521 9595",
+   "sitio_web": "https://metropolitanocr.com/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 3
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:09:09-06:00"
+  },
+  {
+   "id": "hospital-metropolitano-huacas",
+   "cid": "0x8f9e3a8dadb1c545:0xb4ec39f3c6e4a45c",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Metropolitano+%E2%80%A2+Huacas+de+Santa+Cruz/data=!4m7!3m6!1s0x8f9e3a8dadb1c545:0xb4ec39f3c6e4a45c!8m2!3d10.3856951!4d-85.7897934!16s%2Fg%2F11gc62dc4n!19sChIJRcWxrY06no8RXKTkxvM57LQ?hl=es",
+   "nombre_google": "Hospital Metropolitano • Huacas de Santa Cruz",
+   "calificacion": 4.0,
+   "resenas": 131,
+   "distribucion": {
+    "5": 95,
+    "4": 3,
+    "3": 2,
+    "2": 5,
+    "1": 26
+   },
+   "categoria_google": "Hospital privado",
+   "direccion": "50309, Provincia de Guanacaste, 50309, Costa Rica",
+   "telefono": "+506 2521 9595",
+   "sitio_web": "https://metropolitanocr.com/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 3
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:09:44-06:00"
+  },
+  {
+   "id": "hospital-metropolitano-quepos",
+   "cid": "0x8fa173ea492152b7:0x6efd729e574f01a",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Metropolitano+%E2%80%A2+Quepos/@9.4263265,-84.1668227,17z/data=!3m1!4b1!4m6!3m5!1s0x8fa173ea492152b7:0x6efd729e574f01a!8m2!3d9.4263265!4d-84.1668227!16s%2Fg%2F11cnbvt7r3?hl=es",
+   "nombre_google": "Hospital Metropolitano • Quepos",
+   "calificacion": 3.6,
+   "resenas": 45,
+   "distribucion": {
+    "5": 27,
+    "4": 3,
+    "3": 0,
+    "2": 0,
+    "1": 15
+   },
+   "categoria_google": "Clínica ambulatoria",
+   "direccion": "P.º del Mar, Provincia de Puntarenas, Quepos, Costa Rica",
+   "telefono": "+506 2521 9595",
+   "sitio_web": "https://metropolitanocr.com/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 3
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:10:20-06:00"
+  },
+  {
+   "id": "hospital-metropolitano-lincoln-plaza-moravia",
+   "cid": "0x8fa0e529c29f3b1d:0xb9d3d70888a949b4",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Metropolitano/@9.9618487,-84.0566704,17z/data=!4m6!3m5!1s0x8fa0e529c29f3b1d:0xb9d3d70888a949b4!8m2!3d9.9618487!4d-84.0566704!16s%2Fg%2F11h9bc7z8y?hl=es",
+   "nombre_google": "Hospital Metropolitano",
+   "calificacion": 3.5,
+   "resenas": 234,
+   "distribucion": null,
+   "categoria_google": "Hospital",
+   "direccion": "San José, San Vicente, Los Colegios, Costa Rica",
+   "telefono": "+506 2521 9595",
+   "sitio_web": "https://metropolitanocr.com/",
+   "muestra_resenas": null,
+   "fuente_total": "búsqueda por nombre",
+   "error": null,
+   "capturado": "2026-09-21T23:11:35-06:00"
+  },
+  {
+   "id": "hospital-metropolitano-plaza-del-sol-curridabat",
+   "cid": "0x8fa0e3b0f0e4bc09:0x8c0e589934d28b36",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Metropolitano+%E2%80%A2+Curridabat/data=!4m7!3m6!1s0x8fa0e3b0f0e4bc09:0x8c0e589934d28b36!8m2!3d9.9283041!4d-84.0415186!16s%2Fg%2F11sc2s5bl5!19sChIJCbzk8LDjoI8RNovSNJlYDow?hl=es",
+   "nombre_google": "Hospital Metropolitano • Curridabat",
+   "calificacion": 3.9,
+   "resenas": 381,
+   "distribucion": {
+    "5": 263,
+    "4": 9,
+    "3": 7,
+    "2": 6,
+    "1": 96
+   },
+   "categoria_google": "Hospital",
+   "direccion": "11801, San José, Curridabat, 11801, Costa Rica",
+   "telefono": "+506 2521 9595",
+   "sitio_web": "https://metropolitanocr.com/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 3
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:10:49-06:00"
+  },
+  {
+   "id": "hospital-metropolitano-san-carlos",
+   "cid": "0x8fa0657bc6322b91:0xde6cba873afcab84",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Metropolitano+%E2%80%A2+San+Carlos/data=!4m7!3m6!1s0x8fa0657bc6322b91:0xde6cba873afcab84!8m2!3d10.3419188!4d-84.431935!16s%2Fg%2F11kk4f6y37!19sChIJkSsyxntloI8RhKv8Ooe6bN4?hl=es",
+   "nombre_google": "Hospital Metropolitano • San Carlos",
+   "calificacion": 4.9,
+   "resenas": 247,
+   "distribucion": null,
+   "categoria_google": "Hospital privado",
+   "direccion": "8HR9+Q63, Ruta Nacional Secundaria 141, Provincia de Alajuela, Cd Quesada, Barrio San Roque, 21010, Costa Rica",
+   "telefono": "+506 2521 9595",
+   "sitio_web": "https://metropolitanocr.com/",
+   "muestra_resenas": null,
+   "fuente_total": "lista de resultados (descubrimiento)",
+   "error": null,
+   "capturado": "2026-09-21T23:11:52-06:00"
+  },
+  {
+   "id": "hospital-metropolitano-cariari-belen",
+   "cid": "0x8fa0fbc7c2bb7ccd:0xd38f64de938443bb",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Metropolitano+%E2%80%A2+Heredia/data=!4m7!3m6!1s0x8fa0fbc7c2bb7ccd:0xd38f64de938443bb!8m2!3d9.9809541!4d-84.1601983!16s%2Fg%2F11yb95wzk1!19sChIJzXy7wsf7oI8Ru0OEk95kj9M?hl=es",
+   "nombre_google": "Hospital Metropolitano • Heredia",
+   "calificacion": 1.6,
+   "resenas": 82,
+   "distribucion": {
+    "5": 11,
+    "4": 0,
+    "3": 0,
+    "2": 6,
+    "1": 65
+   },
+   "categoria_google": "Hospital",
+   "direccion": "Sobre la, Cariari C3 Corporate Center del cruce de San Antonio de Belén, Autop. Gral. Cañas, Heredia, 70205, Costa Rica",
+   "telefono": "+506 2521 9595",
+   "sitio_web": "https://metropolitanocr.com/",
+   "muestra_resenas": {
+    "visibles": 3,
+    "con_respuesta": 3
+   },
+   "fuente_total": "ficha",
+   "error": null,
+   "capturado": "2026-09-21T23:11:05-06:00"
+  }
+ ]
+}

@@ -1,0 +1,123 @@
+[
+ {
+  "nombre_google": "Hospital Central",
+  "cid": "0x8fa0e35941a91d27:0x3fcad33d3da435a6",
+  "maps_url": "https://www.google.com/maps/place/Hospital+Central/data=!4m7!3m6!1s0x8fa0e35941a91d27:0x3fcad33d3da435a6!8m2!3d9.9347446!4d-84.0866116!16s%2Fg%2F11f03r33q9!19sChIJJx2pQVnjoI8RpjWkPT3Tyj8?hl=es",
+  "calificacion": 4.0,
+  "resenas": 1,
+  "categoria_google": "Hospital",
+  "direccion": "WWM7+V9R",
+  "sitio_web": null,
+  "consulta": "hospitales en San José, Costa Rica"
+ },
+ {
+  "nombre_google": "Hospital Clínica Alpha",
+  "cid": "0x8fa0f9c37c196735:0x1f153097b622d14c",
+  "maps_url": "https://www.google.com/maps/place/Hospital+Cl%C3%ADnica+Alpha/data=!4m7!3m6!1s0x8fa0f9c37c196735:0x1f153097b622d14c!8m2!3d10.0077694!4d-84.2090375!16s%2Fg%2F1tdyrvrv!19sChIJNWcZfMP5oI8RTNEitpcwFR8?hl=es",
+  "calificacion": 3.7,
+  "resenas": 155,
+  "categoria_google": "Hospital privado",
+  "direccion": "Abierto las 24 horas",
+  "sitio_web": "http://clinica-alpha.com/",
+  "consulta": "hospital privado Alajuela Costa Rica"
+ },
+ {
+  "nombre_google": "Hospital Integral de Medistat",
+  "cid": "0x8fa0f93d8da2cf11:0x9d6c825aa76e237",
+  "maps_url": "https://www.google.com/maps/place/Hospital+Integral+de+Medistat/data=!4m7!3m6!1s0x8fa0f93d8da2cf11:0x9d6c825aa76e237!8m2!3d10.0174333!4d-84.2123366!16s%2Fg%2F11y2qd02ky!19sChIJEc-ijT35oI8RN-J2qiXI1gk?hl=es",
+  "calificacion": 4.3,
+  "resenas": 60,
+  "categoria_google": "Hospital privado",
+  "direccion": "plaza catedral sobre, avenida 1 - frente a, parqueo de Cruz Roja Contiguo a, Av. 1 Cerrado",
+  "sitio_web": "https://hospitalintegral.org/",
+  "consulta": "hospital privado Alajuela Costa Rica"
+ },
+ {
+  "nombre_google": "Hospital de Día HMP",
+  "cid": "0x8fa0dfce4aeb3899:0x79264b13aac28ecc",
+  "maps_url": "https://www.google.com/maps/place/Hospital+de+D%C3%ADa+HMP/data=!4m7!3m6!1s0x8fa0dfce4aeb3899:0x79264b13aac28ecc!8m2!3d9.8626223!4d-83.9206408!16s%2Fg%2F11ll91qwry!19sChIJmTjrSs7foI8RzI7CqhNLJnk?hl=es",
+  "calificacion": 4.6,
+  "resenas": 10,
+  "categoria_google": "Hospital",
+  "direccion": "V37H+2PX +506 2551 6557",
+  "sitio_web": null,
+  "consulta": "hospitales en Cartago, Costa Rica"
+ },
+ {
+  "nombre_google": "Proyecto nuevo Hospital Cartago - CCSS",
+  "cid": "0x8fa11f005cd2c66b:0x152e0755c131e2d1",
+  "maps_url": "https://www.google.com/maps/place/Proyecto+nuevo+Hospital+Cartago+-+CCSS/data=!4m7!3m6!1s0x8fa11f005cd2c66b:0x152e0755c131e2d1!8m2!3d9.8433914!4d-83.9539338!16s%2Fg%2F11m6h5fcc6!19sChIJa8bSXAAfoY8R0eIxwVUHLhU?hl=es",
+  "calificacion": 1.5,
+  "resenas": 2,
+  "categoria_google": "Hospital",
+  "direccion": "R2VW+9C4 Cerrado temporalmente",
+  "sitio_web": null,
+  "consulta": "hospitales en Cartago, Costa Rica"
+ },
+ {
+  "nombre_google": "Torre médica Omega Hospital Clínica Bíblica",
+  "cid": "0x8fa0e342aa8b36d3:0x23a264e33ccf6a88",
+  "maps_url": "https://www.google.com/maps/place/Torre+m%C3%A9dica+Omega+Hospital+Cl%C3%ADnica+B%C3%ADblica/data=!4m7!3m6!1s0x8fa0e342aa8b36d3:0x23a264e33ccf6a88!8m2!3d9.9276293!4d-84.0802504!16s%2Fg%2F11c5j6yctx!19sChIJ0zaLqkLjoI8RiGrPPONkoiM?hl=es",
+  "calificacion": 4.0,
+  "resenas": 17,
+  "categoria_google": "Hospital privado",
+  "direccion": "WWH9+3V5, C. 2",
+  "sitio_web": null,
+  "consulta": "hospital privado San José Costa Rica"
+ },
+ {
+  "nombre_google": "Hospital General San Isidro ESE",
+  "cid": "0x8e477029eb9a73e7:0xc4c03b36ee195048",
+  "maps_url": "https://www.google.com/maps/place/Hospital+General+San+Isidro+ESE/data=!4m7!3m6!1s0x8e477029eb9a73e7:0xc4c03b36ee195048!8m2!3d5.0960076!4d-75.5291706!16s%2Fg%2F1tl0yd4n!19sChIJ53Oa6ylwR44RSFAZ7jY7wMQ?hl=es",
+  "calificacion": 2.6,
+  "resenas": 49,
+  "categoria_google": "Hospital",
+  "direccion": "Cra. 9ª Nte. Abierto las 24 horas",
+  "sitio_web": null,
+  "consulta": "hospital San Isidro de El General"
+ },
+ {
+  "nombre_google": "Hospital General San Isidro",
+  "cid": "0x8f6bcbe54bb0aba7:0x8b5f1658148f5da9",
+  "maps_url": "https://www.google.com/maps/place/Hospital+General+San+Isidro/data=!4m7!3m6!1s0x8f6bcbe54bb0aba7:0x8b5f1658148f5da9!8m2!3d15.662471!4d-86.0016353!16s%2Fg%2F1hhvtkf5_!19sChIJp6uwS-XLa48RqV2PFFgWX4s?hl=es",
+  "calificacion": 3.5,
+  "resenas": 29,
+  "categoria_google": "Hospital",
+  "direccion": "4 Avenida N.E. Abierto las 24 horas",
+  "sitio_web": null,
+  "consulta": "hospital San Isidro de El General"
+ },
+ {
+  "nombre_google": "Hospital Clínica Labrador",
+  "cid": "0x8fa14eea03f6c763:0x5cae3735513cd915",
+  "maps_url": "https://www.google.com/maps/place/Hospital+Cl%C3%ADnica+Labrador/data=!4m7!3m6!1s0x8fa14eea03f6c763:0x5cae3735513cd915!8m2!3d9.3776379!4d-83.7036484!16s%2Fg%2F11g67xp48z!19sChIJY8f2A-pOoY8RFdk8UTU3rlw?hl=es",
+  "calificacion": 3.5,
+  "resenas": 15,
+  "categoria_google": "Hospital",
+  "direccion": "97HW+3G5 Cerrado",
+  "sitio_web": null,
+  "consulta": "hospital San Isidro de El General"
+ },
+ {
+  "nombre_google": "CAIS Hospital de Desamparados",
+  "cid": "0x8fa0e2fdf6b2ef85:0x944711e134dba856",
+  "maps_url": "https://www.google.com/maps/place/CAIS+Hospital+de+Desamparados/data=!4m7!3m6!1s0x8fa0e2fdf6b2ef85:0x944711e134dba856!8m2!3d9.896896!4d-84.061657!16s%2Fg%2F11dxl78479!19sChIJhe-y9v3ioI8RVqjbNOERR5Q?hl=es",
+  "calificacion": 3.0,
+  "resenas": 7,
+  "categoria_google": "Hospital",
+  "direccion": "Peluquería canina Abierto las 24 horas",
+  "sitio_web": null,
+  "consulta": "hospital Desamparados Costa Rica"
+ },
+ {
+  "nombre_google": "Proveeduría Hospital Unibersitario Unibe",
+  "cid": "0x8fa0e5003092d5e1:0x5f59c4a5eba67007",
+  "maps_url": "https://www.google.com/maps/place/Proveedur%C3%ADa+Hospital+Unibersitario+Unibe/data=!4m7!3m6!1s0x8fa0e5003092d5e1:0x5f59c4a5eba67007!8m2!3d9.9611423!4d-84.0655751!16s%2Fg%2F11zbh1djg7!19sChIJ4dWSMADloI8RB3Cm66XEWV8?hl=es",
+  "calificacion": null,
+  "resenas": null,
+  "categoria_google": "Hospital",
+  "direccion": "XW6M+FQ3, C. 29 Cerrado",
+  "sitio_web": null,
+  "consulta": "hospital Tibás Costa Rica"
+ }
+]

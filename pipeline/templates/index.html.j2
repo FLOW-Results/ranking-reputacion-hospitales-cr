@@ -1,0 +1,588 @@
+{% macro pintar_estrellas(cantidad, calificacion_fmt) -%}
+<span class="estrellas" aria-hidden="true">{% for i in range(5) %}{% if i < cantidad %}★{% else %}☆{% endif %}{% endfor %}</span><span class="sr-only">{{ calificacion_fmt }} de 5 estrellas</span>
+{%- endmacro %}
+{% macro celda_cambio(cambio) -%}
+{%- if cambio.tipo == 'nuevo' -%}
+<span class="cambio cambio-nuevo">nuevo</span>
+{%- elif cambio.tipo == 'subio' -%}
+<span class="cambio cambio-sube"><span aria-hidden="true">▲</span> {{ cambio.valor }}</span>
+{%- elif cambio.tipo == 'bajo' -%}
+<span class="cambio cambio-baja"><span aria-hidden="true">▼</span> {{ cambio.valor }}</span>
+{%- else -%}
+<span class="cambio cambio-igual">igual</span>
+{%- endif -%}
+{%- endmacro %}
+{% macro barra_indice(pct) -%}
+<div class="barra-indice"><div class="barra-indice-relleno" style="width: {{ pct }}%;"></div></div>
+{%- endmacro %}
+{% macro barra_distribucion(fila) -%}
+<div class="fila-distribucion">
+<span class="fila-distribucion-etiqueta">{{ fila.estrellas }}<span aria-hidden="true"> ★</span></span>
+<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: {{ fila.pct }}%;"></span></span>
+<span class="fila-distribucion-valor">{{ fila.cantidad_fmt }} ({{ fila.pct }}%)</span>
+</div>
+{%- endmacro -%}
+<!DOCTYPE html>
+<html lang="es-CR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ config.nombre_corto }}</title>
+<meta name="description" content="{{ config.descripcion }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ config.nombre_corto }}">
+<meta property="og:description" content="{{ config.descripcion }}">
+<meta property="og:url" content="{{ config.url_publica }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{{ jsonld | tojson }}</script>
+<style>
+:root {
+  color-scheme: light;
+  --color-bg: #ffffff;
+  --color-texto: #111111;
+  --color-muted: #5b5b5b;
+  --color-muted-claro: #8a8a8a;
+  --color-borde: #e2e2e2;
+  --color-borde-fuerte: #c9c9c9;
+  --color-acento: #123B6D;
+  --color-acento-suave: #eaf0f7;
+  --color-sube: #1E7F4F;
+  --color-baja: #B3261E;
+  --fuente-cuerpo: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --fuente-titulo: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --ancho-contenedor: 1100px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { color-scheme: light; }
+body { margin: 0; background: var(--color-bg); color: var(--color-texto); font-family: var(--fuente-cuerpo); font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4 { font-family: var(--fuente-titulo); font-weight: 600; line-height: 1.2; margin: 0 0 .5rem; color: var(--color-texto); }
+h1 { font-size: 1.9rem; }
+h2 { font-size: 1.5rem; margin-top: 0; }
+h3 { font-size: 1.1rem; }
+h4 { font-size: .95rem; }
+p { margin: 0 0 .75rem; }
+ul, ol { margin: 0 0 .75rem; }
+a { color: var(--color-acento); text-decoration: underline; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+[hidden] { display: none !important; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.skip-link { position: absolute; left: -9999px; top: 0; background: var(--color-acento); color: #fff; padding: .6rem 1rem; z-index: 20; border-radius: 0 0 4px 0; }
+.skip-link:focus { left: 0; }
+.contenedor { max-width: var(--ancho-contenedor); margin: 0 auto; padding: 0 16px; }
+button, input, select { font-family: inherit; font-size: 1rem; }
+:focus-visible { outline: 3px solid var(--color-acento); outline-offset: 2px; }
+
+/* Cabecera */
+.cabecera { border-bottom: 1px solid var(--color-borde); padding: 2rem 0 1.5rem; }
+.subtitulo { font-size: 1.1rem; color: var(--color-muted); margin-bottom: .5rem; font-family: var(--fuente-titulo); }
+.linea-datos { font-size: .875rem; color: var(--color-muted); }
+.cifras-universo { display: flex; flex-wrap: wrap; gap: 1.75rem; margin-top: 1.25rem; padding-top: 1.1rem; border-top: 1px solid var(--color-borde); }
+.cifra { display: flex; flex-direction: column; }
+.cifra-numero { font-family: var(--fuente-titulo); font-size: 1.75rem; font-weight: 700; }
+.cifra-etiqueta { font-size: .78rem; color: var(--color-muted); text-transform: uppercase; letter-spacing: .03em; }
+
+main { padding: 2rem 0 1rem; }
+main > .contenedor > section { margin-bottom: 3rem; }
+
+/* Podio */
+.podio-lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.podio-tarjeta { border: 1px solid var(--color-borde); border-radius: 4px; padding: 1.25rem 1.1rem 1.1rem; position: relative; }
+.podio-tarjeta:first-child { border-color: var(--color-acento); border-width: 2px; }
+.podio-posicion { position: absolute; top: -.8rem; left: 1rem; background: var(--color-acento); color: #fff; font-family: var(--fuente-titulo); font-weight: 700; font-size: .95rem; width: 1.75rem; height: 1.75rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.podio-nombre { font-size: 1.05rem; margin: .4rem 0 .1rem; }
+.podio-tipo { font-size: .78rem; color: var(--color-muted); text-transform: uppercase; letter-spacing: .02em; margin-bottom: .6rem; }
+.podio-calificacion { display: flex; align-items: baseline; gap: .4rem; margin-bottom: .15rem; }
+.podio-calificacion-num { font-weight: 600; }
+.podio-resenas { font-size: .875rem; color: var(--color-muted); margin-bottom: .25rem; }
+.podio-indice { font-size: .95rem; margin-bottom: 0; }
+
+/* Estrellas */
+.estrellas { color: var(--color-acento); letter-spacing: 1px; }
+
+/* Controles */
+.controles { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; align-items: flex-end; padding: 1.1rem 0; border-top: 1px solid var(--color-borde); border-bottom: 1px solid var(--color-borde); }
+.tabs { display: flex; gap: .5rem; flex-wrap: wrap; }
+.tab-btn { background: #fff; border: 1px solid var(--color-borde-fuerte); color: var(--color-texto); padding: .45rem 1rem; border-radius: 999px; cursor: pointer; }
+.tab-btn.es-activa { background: var(--color-acento); border-color: var(--color-acento); color: #fff; }
+.filtros-secundarios { display: flex; flex-wrap: wrap; gap: 1rem; margin-left: auto; }
+.campo-filtro { display: flex; flex-direction: column; gap: .25rem; }
+.campo-filtro label { font-size: .8rem; color: var(--color-muted); }
+.campo-filtro select, .campo-filtro input { padding: .4rem .6rem; border: 1px solid var(--color-borde-fuerte); border-radius: 4px; background: #fff; color: var(--color-texto); min-width: 12rem; }
+.resumen-filtro { font-size: .8rem; color: var(--color-muted); margin: .75rem 0 0; }
+
+/* Tabla */
+table.ranking-table { width: 100%; border-collapse: collapse; margin-top: .25rem; }
+table.ranking-table th, table.ranking-table td { text-align: left; padding: .65rem .5rem; border-bottom: 1px solid var(--color-borde); vertical-align: top; }
+table.ranking-table thead th { font-size: .72rem; text-transform: uppercase; letter-spacing: .03em; color: var(--color-muted); border-bottom: 1px solid var(--color-borde-fuerte); white-space: nowrap; }
+table.ranking-table th[data-sort-key] { cursor: pointer; user-select: none; }
+table.ranking-table th[aria-sort="ascending"]::after { content: " ▲"; }
+table.ranking-table th[aria-sort="descending"]::after { content: " ▼"; }
+.hospital-nombre { display: block; font-weight: 600; }
+.hospital-tipo { display: block; font-size: .8rem; color: var(--color-muted); margin-top: .1rem; }
+.hospital-ubicacion { display: block; font-size: .8rem; color: var(--color-muted-claro); }
+.calificacion-num { font-weight: 600; margin-left: .2rem; }
+.delta-chico { display: block; font-size: .75rem; color: var(--color-muted); margin-top: .15rem; }
+.col-indice strong { font-family: var(--fuente-titulo); font-size: 1.05rem; }
+.barra-indice { background: var(--color-acento-suave); border-radius: 3px; height: 6px; margin-top: .35rem; width: 100%; max-width: 120px; overflow: hidden; }
+.barra-indice-relleno { background: var(--color-acento); height: 100%; }
+.btn-detalle { background: none; border: 1px solid var(--color-borde-fuerte); border-radius: 4px; padding: .35rem .75rem; font-size: .8rem; cursor: pointer; color: var(--color-acento); white-space: nowrap; }
+.btn-detalle:hover { background: var(--color-acento-suave); }
+.cambio { font-size: .85rem; font-weight: 600; white-space: nowrap; }
+.cambio-sube { color: var(--color-sube); }
+.cambio-baja { color: var(--color-baja); }
+.cambio-igual { color: var(--color-muted-claro); font-weight: 400; }
+.cambio-nuevo { color: var(--color-acento); font-weight: 400; text-transform: uppercase; font-size: .68rem; letter-spacing: .04em; }
+
+/* Detalle expandible */
+tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-borde); }
+.detalle-contenido { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; padding: .4rem 0; }
+.detalle-bloque h4 { margin-bottom: .5rem; }
+.detalle-nota { font-size: .85rem; color: var(--color-muted); font-style: italic; }
+.fila-distribucion { display: flex; align-items: center; gap: .5rem; margin-bottom: .3rem; font-size: .8rem; }
+.fila-distribucion-etiqueta { width: 1.6rem; flex-shrink: 0; }
+.barra-distribucion { flex: 1; background: var(--color-acento-suave); border-radius: 3px; height: 8px; display: block; overflow: hidden; }
+.barra-distribucion-relleno { display: block; background: var(--color-acento); height: 100%; }
+.fila-distribucion-valor { width: 6.5rem; flex-shrink: 0; color: var(--color-muted); text-align: right; }
+.detalle-cifras dl { margin: 0; }
+.detalle-cifras dl > div { display: flex; justify-content: space-between; gap: .5rem; border-bottom: 1px dotted var(--color-borde); padding: .25rem 0; font-size: .875rem; }
+.detalle-cifras dt { color: var(--color-muted); }
+.detalle-cifras dd { margin: 0; font-weight: 600; }
+.detalle-enlaces { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: .5rem; }
+.tendencias-fila { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.tendencia { display: flex; flex-direction: column; gap: .3rem; }
+.tendencia-etiqueta { font-size: .75rem; color: var(--color-muted); }
+.sparkline { display: block; }
+
+/* Fuera del ranking */
+.fuera-ranking ul { list-style: none; padding: 0; margin: 0; }
+.fuera-ranking li { padding: .5rem 0; border-bottom: 1px dotted var(--color-borde); font-size: .9rem; color: var(--color-muted); }
+.fuera-ranking li strong { color: var(--color-texto); }
+
+/* Qué cambió */
+.cambio-columnas { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.cambio-columnas h3 { font-size: 1rem; }
+.cambio-columnas ul { list-style: none; margin: 0; padding: 0; }
+.cambio-columnas li { padding: .4rem 0; border-bottom: 1px dotted var(--color-borde); font-size: .9rem; }
+.cambio-columnas .cambio-valor-sube { color: var(--color-sube); font-weight: 600; }
+.cambio-columnas .cambio-valor-baja { color: var(--color-baja); font-weight: 600; }
+
+/* Metodología */
+.metodologia p { max-width: 68ch; }
+.metodologia ul { padding-left: 1.2rem; max-width: 68ch; }
+.metodologia strong { font-family: var(--fuente-titulo); }
+
+/* Datos abiertos */
+.datos-abiertos ul { padding-left: 1.1rem; }
+
+/* Pie */
+.pie { border-top: 1px solid var(--color-borde); padding: 1.5rem 0 2.5rem; font-size: .85rem; color: var(--color-muted); }
+.pie p { margin: 0 0 .35rem; }
+
+/* Mobile: tabla a tarjetas apiladas, sin scroll horizontal */
+@media (max-width: 720px) {
+  h1 { font-size: 1.5rem; }
+  .podio-lista { grid-template-columns: 1fr; }
+  .filtros-secundarios { margin-left: 0; }
+  .campo-filtro select, .campo-filtro input { min-width: 0; width: 100%; }
+  .cambio-columnas { grid-template-columns: 1fr; gap: 1rem; }
+
+  table.ranking-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; padding: 0; margin: -1px; }
+  table.ranking-table, table.ranking-table tbody, table.ranking-table tr, table.ranking-table td { display: block; width: 100%; }
+  table.ranking-table tr.row-main { border: 1px solid var(--color-borde); border-radius: 4px; padding: .75rem; margin-bottom: .75rem; }
+  table.ranking-table tr.row-detalle { border: none; }
+  table.ranking-table tr.row-detalle td { border: 1px solid var(--color-borde); border-top: none; border-radius: 0 0 4px 4px; margin: -.75rem 0 .75rem; }
+  table.ranking-table td { border-bottom: none; padding: .3rem 0; }
+  table.ranking-table td[data-label]::before { content: attr(data-label); display: block; font-size: .68rem; text-transform: uppercase; letter-spacing: .03em; color: var(--color-muted-claro); }
+  .barra-indice { max-width: none; }
+}
+
+@media print {
+  .controles, .resumen-filtro, .btn-detalle, .col-detalle, .skip-link { display: none !important; }
+  a { color: var(--color-texto); text-decoration: none; }
+  .cabecera { border-bottom: 1px solid #000; }
+  .podio-tarjeta { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="contenedor">
+    <h1>{{ config.nombre_sitio }}</h1>
+    <p class="subtitulo">{{ etiqueta_periodo }}</p>
+    <p class="linea-datos">Datos capturados el {{ capturado_fmt }}. Próxima actualización: {{ proxima_fmt }}. Fuente: {{ fuente }}.</p>
+    <div class="cifras-universo">
+      <div class="cifra"><span class="cifra-numero">{{ universo.total | fmt_num }}</span><span class="cifra-etiqueta">Hospitales en el universo</span></div>
+      <div class="cifra"><span class="cifra-numero">{{ universo.publicos | fmt_num }}</span><span class="cifra-etiqueta">Públicos</span></div>
+      <div class="cifra"><span class="cifra-numero">{{ universo.privados | fmt_num }}</span><span class="cifra-etiqueta">Privados</span></div>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+  <div class="contenedor">
+
+    <section class="podio" aria-labelledby="titulo-podio">
+      <h2 id="titulo-podio">Los tres primeros</h2>
+      <ol class="podio-lista">
+        {% for h in podio %}
+        <li class="podio-tarjeta">
+          <span class="podio-posicion">{{ h.posicion }}</span>
+          <h3 class="podio-nombre">{{ h.nombre_google }}</h3>
+          <p class="podio-tipo">{{ h.tipo_label }}</p>
+          <p class="podio-calificacion">{{ pintar_estrellas(h.estrellas, h.calificacion_fmt) }}<span class="podio-calificacion-num">{{ h.calificacion_fmt }}</span></p>
+          <p class="podio-resenas">{{ h.resenas_fmt }} reseñas</p>
+          <p class="podio-indice">Índice <strong>{{ h.indice_fmt }}</strong></p>
+        </li>
+        {% endfor %}
+      </ol>
+    </section>
+
+    <section class="tabla-ranking" aria-labelledby="titulo-tabla">
+      <h2 id="titulo-tabla">Ranking completo</h2>
+
+      <div class="controles" aria-label="Controles de la tabla">
+        <div class="tabs" role="group" aria-label="Filtrar por tipo de hospital">
+          <button type="button" class="tab-btn es-activa" data-tab="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="tab-btn" data-tab="privado" aria-pressed="false">Privados</button>
+          <button type="button" class="tab-btn" data-tab="publico" aria-pressed="false">Públicos (CCSS e INS)</button>
+        </div>
+        <div class="filtros-secundarios">
+          <div class="campo-filtro">
+            <label for="filtro-provincia">Provincia</label>
+            <select id="filtro-provincia">
+              <option value="">Todas las provincias</option>
+              {% for p in provincias %}<option value="{{ p }}">{{ p }}</option>{% endfor %}
+            </select>
+          </div>
+          <div class="campo-filtro">
+            <label for="buscador-nombre">Buscar hospital</label>
+            <input type="search" id="buscador-nombre" placeholder="Nombre del hospital" autocomplete="off">
+          </div>
+        </div>
+      </div>
+      <p class="resumen-filtro" id="resumen-filtro" aria-live="polite"></p>
+
+      <table class="ranking-table">
+        <caption class="sr-only">Ranking de hospitales de Costa Rica por reputación en Google: posición, calificación, reseñas e índice.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Posición</th>
+            <th scope="col">Cambio</th>
+            <th scope="col">Hospital</th>
+            <th scope="col" data-sort-key="calificacion" aria-sort="none">Calificación</th>
+            <th scope="col" data-sort-key="resenas" aria-sort="none">Reseñas</th>
+            <th scope="col" data-sort-key="pct5" aria-sort="none">% 5 estrellas</th>
+            <th scope="col" data-sort-key="pct1" aria-sort="none">% 1 estrella</th>
+            <th scope="col" data-sort-key="indice" aria-sort="none">Índice</th>
+            <th scope="col"><span class="sr-only">Detalle</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for h in hospitales %}
+          <tr class="row-main"
+              data-tipo="{{ h.tipo }}"
+              data-provincia="{{ h.provincia }}"
+              data-nombre="{{ h.nombre_google | lower }}"
+              data-pos-todos="{{ h.posicion if h.posicion is not none else '' }}"
+              data-pos-tipo="{{ h.posicion_tipo if h.posicion_tipo is not none else '' }}"
+              data-calificacion="{{ h.calificacion if h.calificacion is not none else '' }}"
+              data-resenas="{{ h.resenas if h.resenas is not none else '' }}"
+              data-pct5="{{ h.pct_5 if h.pct_5 is not none else '' }}"
+              data-pct1="{{ h.pct_1 if h.pct_1 is not none else '' }}"
+              data-indice="{{ h.indice if h.indice is not none else '' }}">
+            <td class="col-posicion" data-label="Posición"><span class="valor-pos">{{ h.posicion if h.posicion is not none else 'N/D' }}</span></td>
+            <td class="col-cambio" data-label="Cambio">{{ celda_cambio(h.cambio) }}</td>
+            <td class="col-hospital" data-label="Hospital">
+              <span class="hospital-nombre">{{ h.nombre_google }}</span>
+              <span class="hospital-tipo">{{ h.tipo_label }}</span>
+              <span class="hospital-ubicacion">{{ h.provincia }}, {{ h.canton }}</span>
+            </td>
+            <td class="col-calificacion" data-label="Calificación">{{ pintar_estrellas(h.estrellas, h.calificacion_fmt) }}<span class="calificacion-num">{{ h.calificacion_fmt }}</span></td>
+            <td class="col-resenas" data-label="Reseñas">{{ h.resenas_fmt }}{% if h.delta_resenas_fmt %}<span class="delta-chico">{{ h.delta_resenas_fmt }}</span>{% endif %}</td>
+            <td class="col-pct5" data-label="% 5 estrellas">{{ h.pct_5_fmt }}%</td>
+            <td class="col-pct1" data-label="% 1 estrella">{{ h.pct_1_fmt }}%</td>
+            <td class="col-indice" data-label="Índice"><strong>{{ h.indice_fmt }}</strong>{{ barra_indice(h.indice_bar_pct) }}</td>
+            <td class="col-detalle">
+              <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-{{ h.id }}">Ver detalle</button>
+            </td>
+          </tr>
+          <tr class="row-detalle" id="detalle-{{ h.id }}" data-abierta="0" hidden>
+            <td colspan="9">
+              <div class="detalle-contenido">
+                {% if h.distribucion %}
+                <div class="detalle-bloque">
+                  <h4>Distribución de reseñas</h4>
+                  {% for fila in h.distribucion %}{{ barra_distribucion(fila) }}{% endfor %}
+                </div>
+                {% else %}
+                <div class="detalle-bloque"><p class="detalle-nota">Distribución por estrellas no disponible este mes.</p></div>
+                {% endif %}
+
+                <div class="detalle-bloque detalle-cifras">
+                  <h4>Cómo se calculó el índice</h4>
+                  <dl>
+                    <div><dt>Calificación ajustada</dt><dd>{{ h.calificacion_ajustada_fmt }}</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>{{ h.puntaje_calificacion_fmt }}</dd></div>
+                    <div><dt>Puntaje de volumen</dt><dd>{{ h.puntaje_volumen_fmt }}</dd></div>
+                  </dl>
+                </div>
+
+                <div class="detalle-bloque">
+                  <h4>Contacto</h4>
+                  {% if h.direccion or h.telefono %}
+                  <p>{% if h.direccion %}{{ h.direccion }}<br>{% endif %}{% if h.telefono %}{{ h.telefono }}{% endif %}</p>
+                  {% endif %}
+                  {% if h.sitio_web or h.maps_url %}
+                  <p class="detalle-enlaces">
+                    {% if h.sitio_web %}<a href="{{ h.sitio_web }}">Sitio web</a>{% endif %}
+                    {% if h.maps_url %}<a href="{{ h.maps_url }}">Ver en Google Maps</a>{% endif %}
+                  </p>
+                  {% endif %}
+                  {% if h.nota_respuesta %}<p class="detalle-nota">{{ h.nota_respuesta }}</p>{% endif %}
+                </div>
+
+                {% if h.tendencias %}
+                <div class="detalle-bloque detalle-tendencias">
+                  <h4>Tendencia ({{ h.tendencias.desde }} a {{ h.tendencias.hasta }})</h4>
+                  <div class="tendencias-fila">
+                    {% if h.tendencias.indice_svg %}<div class="tendencia"><span class="tendencia-etiqueta">Índice</span>{{ h.tendencias.indice_svg }}</div>{% endif %}
+                    {% if h.tendencias.posicion_svg %}<div class="tendencia"><span class="tendencia-etiqueta">Puesto</span>{{ h.tendencias.posicion_svg }}</div>{% endif %}
+                  </div>
+                </div>
+                {% endif %}
+              </div>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+
+    {% if fuera %}
+    <section class="fuera-ranking" aria-labelledby="titulo-fuera">
+      <h2 id="titulo-fuera">Fuera del ranking</h2>
+      <ul>
+        {% for h in fuera %}
+        <li><strong>{{ h.nombre_google }}</strong> ({{ h.tipo_label }}): {{ h.motivo_exclusion }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    <section class="que-cambio" aria-labelledby="titulo-cambio">
+      <h2 id="titulo-cambio">Qué cambió este mes</h2>
+      {% if primera_edicion %}
+      <p>Esta es la primera edición del ranking. Los cambios de posición van a aparecer a partir de la siguiente actualización.</p>
+      {% else %}
+      <div class="cambio-columnas">
+        <div>
+          <h3>Suben</h3>
+          {% if subidas %}
+          <ul>
+            {% for h in subidas %}<li>{{ h.nombre_google }}: <span class="cambio-valor-sube">sube {{ h.cambio.valor }} puesto{{ 's' if h.cambio.valor != 1 else '' }}</span></li>{% endfor %}
+          </ul>
+          {% else %}
+          <p class="detalle-nota">Sin subidas este mes.</p>
+          {% endif %}
+        </div>
+        <div>
+          <h3>Bajan</h3>
+          {% if bajadas %}
+          <ul>
+            {% for h in bajadas %}<li>{{ h.nombre_google }}: <span class="cambio-valor-baja">baja {{ h.cambio.valor }} puesto{{ 's' if h.cambio.valor != 1 else '' }}</span></li>{% endfor %}
+          </ul>
+          {% else %}
+          <p class="detalle-nota">Sin bajadas este mes.</p>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+    </section>
+
+    <section class="metodologia" aria-labelledby="titulo-metodologia">
+      <h2 id="titulo-metodologia">Metodología</h2>
+      <p>Cada mes leemos el perfil público de Google (Google Business Profile) de cada hospital: calificación promedio, número total de reseñas y distribución por estrellas.</p>
+      <p><strong>Calificación ajustada.</strong> La calificación promedio se ajusta por la cantidad de reseñas con un promedio bayesiano: un hospital con pocas reseñas se acerca al promedio nacional hasta que acumula evidencia. La fórmula es ajustada = (n / (n + m)) × calificación + (m / (n + m)) × C, donde n es el número de reseñas del hospital, m es la mediana de reseñas del universo (este mes: {{ meta.m_fmt }}) y C es el promedio nacional ponderado (este mes: {{ meta.C_fmt }}).</p>
+      <p><strong>Volumen de voz.</strong> Cuántas personas han opinado, en escala logarítmica respecto al hospital con más reseñas.</p>
+      <p><strong>Índice de reputación (0 a 100)</strong> = {{ meta.peso_calificacion }}% calificación ajustada, llevada a escala de 0 a 100, más {{ meta.peso_volumen }}% volumen de voz.</p>
+      <p>Para entrar al ranking un hospital necesita al menos {{ meta.minimo_resenas_fmt }} reseñas.</p>
+      <p>El porcentaje de reseñas de 5 estrellas, el de 1 estrella y si el hospital responde reseñas se muestran como señales complementarias. No forman parte del índice.</p>
+      <p><strong>Límites.</strong> Las reseñas de Google son opiniones voluntarias de pacientes y acompañantes; miden reputación percibida, no calidad clínica. Los hospitales públicos y privados atienden poblaciones y volúmenes distintos, por eso también se pueden ver por separado.</p>
+      <p>Los nombres son los que muestra Google en el perfil de cada hospital.</p>
+    </section>
+
+    <section class="datos-abiertos" aria-labelledby="titulo-datos">
+      <h2 id="titulo-datos">Datos abiertos</h2>
+      <p>Puede descargar los datos de esta edición:</p>
+      <ul>
+        <li><a href="{{ json_url }}">Ranking completo en JSON</a></li>
+        <li><a href="{{ csv_url }}">Ranking completo en CSV</a></li>
+        <li><a href="{{ historial_url }}">Historial de ediciones en JSON</a></li>
+      </ul>
+    </section>
+
+  </div>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <p>Elaborado por <a href="{{ config.editor_url }}">{{ config.editor }}</a>. Contacto: <a href="mailto:{{ config.contacto }}">{{ config.contacto }}</a>.</p>
+    <p>Se actualiza el día {{ config.dia_actualizacion }} de cada mes. Generado el {{ generado_fmt }}.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  var tabla = document.querySelector(".ranking-table");
+  if (!tabla) { return; }
+  var cuerpo = tabla.querySelector("tbody");
+  var botonesTab = Array.prototype.slice.call(document.querySelectorAll(".tab-btn"));
+  var selectorProvincia = document.getElementById("filtro-provincia");
+  var buscador = document.getElementById("buscador-nombre");
+  var resumen = document.getElementById("resumen-filtro");
+
+  var estado = { tab: "todos", provincia: "", texto: "" };
+
+  function filasPrincipales() {
+    return Array.prototype.slice.call(cuerpo.querySelectorAll("tr.row-main"));
+  }
+
+  function detalleDe(fila) {
+    var siguiente = fila.nextElementSibling;
+    if (siguiente && siguiente.classList.contains("row-detalle")) { return siguiente; }
+    return null;
+  }
+
+  function aplicarFiltros() {
+    var total = 0;
+    var visibles = 0;
+    filasPrincipales().forEach(function (fila) {
+      total += 1;
+      var coincideTipo = estado.tab === "todos" ? true : fila.dataset.tipo === estado.tab;
+      var coincideProvincia = estado.provincia === "" ? true : fila.dataset.provincia === estado.provincia;
+      var coincideTexto = estado.texto === "" ? true : fila.dataset.nombre.indexOf(estado.texto) !== -1;
+      var visible = coincideTipo && coincideProvincia && coincideTexto;
+      fila.hidden = !visible;
+      var detalle = detalleDe(fila);
+      if (detalle) {
+        if (!visible) {
+          detalle.hidden = true;
+        } else {
+          detalle.hidden = detalle.dataset.abierta !== "1";
+        }
+      }
+      if (visible) { visibles += 1; }
+      var celdaPos = fila.querySelector(".valor-pos");
+      if (celdaPos) {
+        celdaPos.textContent = estado.tab === "todos" ? fila.dataset.posTodos : fila.dataset.posTipo;
+      }
+    });
+    if (resumen) {
+      resumen.textContent = "Mostrando " + visibles + " de " + total + " hospitales.";
+    }
+  }
+
+  botonesTab.forEach(function (boton) {
+    boton.addEventListener("click", function () {
+      botonesTab.forEach(function (b) {
+        b.classList.remove("es-activa");
+        b.setAttribute("aria-pressed", "false");
+      });
+      boton.classList.add("es-activa");
+      boton.setAttribute("aria-pressed", "true");
+      estado.tab = boton.dataset.tab;
+      aplicarFiltros();
+    });
+  });
+
+  if (selectorProvincia) {
+    selectorProvincia.addEventListener("change", function () {
+      estado.provincia = selectorProvincia.value;
+      aplicarFiltros();
+    });
+  }
+
+  if (buscador) {
+    buscador.addEventListener("input", function () {
+      estado.texto = buscador.value.trim().toLowerCase();
+      aplicarFiltros();
+    });
+  }
+
+  var encabezadosOrdenables = Array.prototype.slice.call(tabla.querySelectorAll("th[data-sort-key]"));
+  var ordenActual = { llave: null, direccion: "desc" };
+
+  function ordenarPor(th) {
+    var llave = th.dataset.sortKey;
+    var direccion = "desc";
+    if (ordenActual.llave === llave && ordenActual.direccion === "desc") {
+      direccion = "asc";
+    }
+    ordenActual = { llave: llave, direccion: direccion };
+
+    encabezadosOrdenables.forEach(function (otro) { otro.setAttribute("aria-sort", "none"); });
+    th.setAttribute("aria-sort", direccion === "asc" ? "ascending" : "descending");
+
+    var items = filasPrincipales().map(function (fila) {
+      var crudo = fila.dataset[llave];
+      var valor = crudo === "" ? null : parseFloat(crudo);
+      return { fila: fila, detalle: detalleDe(fila), valor: valor };
+    });
+
+    function comparable(valor) {
+      if (valor === null) { return -Infinity; }
+      if (isNaN(valor)) { return -Infinity; }
+      return valor;
+    }
+
+    items.sort(function (a, b) {
+      var av = comparable(a.valor);
+      var bv = comparable(b.valor);
+      if (av === bv) { return 0; }
+      var mayor = av > bv;
+      if (direccion === "asc") { return mayor ? 1 : -1; }
+      return mayor ? -1 : 1;
+    });
+
+    items.forEach(function (item) {
+      cuerpo.appendChild(item.fila);
+      if (item.detalle) { cuerpo.appendChild(item.detalle); }
+    });
+  }
+
+  encabezadosOrdenables.forEach(function (th) {
+    th.setAttribute("tabindex", "0");
+    th.setAttribute("role", "button");
+    th.addEventListener("click", function () { ordenarPor(th); });
+    th.addEventListener("keydown", function (evento) {
+      var tecla = evento.key;
+      var esActivacion = tecla === "Enter" ? true : tecla === " ";
+      if (esActivacion) {
+        evento.preventDefault();
+        ordenarPor(th);
+      }
+    });
+  });
+
+  Array.prototype.slice.call(tabla.querySelectorAll(".btn-detalle")).forEach(function (boton) {
+    boton.addEventListener("click", function () {
+      var fila = boton.closest("tr");
+      var detalle = detalleDe(fila);
+      if (!detalle) { return; }
+      var estabaAbierta = detalle.dataset.abierta === "1";
+      detalle.dataset.abierta = estabaAbierta ? "0" : "1";
+      detalle.hidden = estabaAbierta;
+      boton.setAttribute("aria-expanded", estabaAbierta ? "false" : "true");
+      boton.textContent = estabaAbierta ? "Ver detalle" : "Ocultar detalle";
+    });
+  });
+
+  aplicarFiltros();
+})();
+</script>
+</body>
+</html>

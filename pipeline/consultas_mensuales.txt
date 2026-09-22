@@ -1,0 +1,26 @@
+# Búsquedas de Google Maps que se corren cada mes antes de la captura (una línea por consulta)
+hospitales en San José, Costa Rica
+hospitales en Alajuela, Costa Rica
+hospitales en Cartago, Costa Rica
+hospitales en Heredia, Costa Rica
+hospitales en Guanacaste, Costa Rica
+hospitales en Puntarenas, Costa Rica
+hospitales en Limón, Costa Rica
+hospital privado San José Costa Rica
+hospital privado Escazú
+hospital privado Santa Ana Costa Rica
+hospital privado Heredia Costa Rica
+hospital privado Alajuela Costa Rica
+hospital privado Guanacaste
+hospital Desamparados Costa Rica
+hospital Guadalupe Goicoechea Costa Rica
+hospital Tibás Costa Rica
+hospital Liberia Guanacaste
+hospital Quepos Costa Rica
+hospital Pérez Zeledón Costa Rica
+hospital San Carlos Costa Rica
+hospital Guápiles Costa Rica
+hospital Nicoya Costa Rica
+hospital Turrialba Costa Rica
+hospital Puntarenas centro
+hospital Limón centro

@@ -1,0 +1,13 @@
+{
+  "nombre_sitio": "Ranking de Reputación Hospitalaria de Costa Rica",
+  "nombre_corto": "Ranking Hospitalario CR",
+  "descripcion": "Ranking mensual de la reputación de los hospitales de Costa Rica según las reseñas públicas de Google. Se actualiza el primer día de cada mes.",
+  "editor": "Flow Results",
+  "editor_url": "https://flowresults.com",
+  "contacto": "hola@flowresults.com",
+  "url_publica": "https://flow-results.github.io/ranking-reputacion-hospitales-cr/",
+  "zona_horaria": "America/Costa_Rica",
+  "dia_actualizacion": 1,
+  "pesos": { "calificacion_ajustada": 0.75, "volumen": 0.25 },
+  "minimo_resenas_para_ranking": 10
+}

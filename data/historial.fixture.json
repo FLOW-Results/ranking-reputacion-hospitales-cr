@@ -1,0 +1,141 @@
+{
+ "periodos": [
+  "2026-08",
+  "2026-09"
+ ],
+ "hospitales": {
+  "0x8fa0e368060ebcc1:0xf9defc9ecd48e56e": {
+   "nombre_google": "Hospital Clínica Bíblica",
+   "serie": [
+    {
+     "periodo": "2026-08",
+     "posicion": 1,
+     "indice": 89.4,
+     "calificacion": 4.6,
+     "resenas": 1971
+    },
+    {
+     "periodo": "2026-09",
+     "posicion": 1,
+     "indice": 90.6,
+     "calificacion": 4.6,
+     "resenas": 2001
+    }
+   ]
+  },
+  "0x8fa0e3e3f49f3407:0x7b8d9093bb70f8d1": {
+   "nombre_google": "Hospital Nacional de Niños",
+   "serie": [
+    {
+     "periodo": "2026-08",
+     "posicion": 3,
+     "indice": 77.4,
+     "calificacion": 4.4,
+     "resenas": 319
+    },
+    {
+     "periodo": "2026-09",
+     "posicion": 2,
+     "indice": 78.6,
+     "calificacion": 4.4,
+     "resenas": 349
+    }
+   ]
+  },
+  "0x8fa0fb5b747db7bf:0x556ba2b6553f8175": {
+   "nombre_google": "Hospital México",
+   "serie": [
+    {
+     "periodo": "2026-08",
+     "posicion": 2,
+     "indice": 76.2,
+     "calificacion": 4.2,
+     "resenas": 372
+    },
+    {
+     "periodo": "2026-09",
+     "posicion": 3,
+     "indice": 77.4,
+     "calificacion": 4.2,
+     "resenas": 402
+    }
+   ]
+  },
+  "0x8fa0e35c7b9a49af:0x5c9078152bba0ab6": {
+   "nombre_google": "Hospital Metropolitano",
+   "serie": [
+    {
+     "periodo": "2026-08",
+     "posicion": 4,
+     "indice": 75.7,
+     "calificacion": 4.0,
+     "resenas": 568
+    },
+    {
+     "periodo": "2026-09",
+     "posicion": 4,
+     "indice": 76.9,
+     "calificacion": 4.0,
+     "resenas": 598
+    }
+   ]
+  },
+  "0x8fa0e359574bf983:0xb083d7382ae14a3b": {
+   "nombre_google": "Hospital San Juan de Dios",
+   "serie": [
+    {
+     "periodo": "2026-08",
+     "posicion": 5,
+     "indice": 72.9,
+     "calificacion": 3.9,
+     "resenas": 330
+    },
+    {
+     "periodo": "2026-09",
+     "posicion": 5,
+     "indice": 74.1,
+     "calificacion": 3.9,
+     "resenas": 360
+    }
+   ]
+  },
+  "0x8fa0e47d57bfdbd5:0xbd8efb4b06725e69": {
+   "nombre_google": "Hospital Internacional La Católica",
+   "serie": [
+    {
+     "periodo": "2026-08",
+     "posicion": 6,
+     "indice": 69.0,
+     "calificacion": 3.5,
+     "resenas": 277
+    },
+    {
+     "periodo": "2026-09",
+     "posicion": 6,
+     "indice": 70.2,
+     "calificacion": 3.5,
+     "resenas": 307
+    }
+   ]
+  },
+  "0x8fa0fc7ff79ff705:0xff329c6bd12843b5": {
+   "nombre_google": "Hospital CIMA",
+   "serie": [
+    {
+     "periodo": "2026-08",
+     "posicion": 7,
+     "indice": 68.3,
+     "calificacion": 3.4,
+     "resenas": 347
+    },
+    {
+     "periodo": "2026-09",
+     "posicion": 7,
+     "indice": 69.5,
+     "calificacion": 3.4,
+     "resenas": 377
+    }
+   ]
+  }
+ }
+}

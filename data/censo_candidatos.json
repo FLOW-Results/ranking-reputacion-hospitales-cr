@@ -1,0 +1,1162 @@
+{
+ "generado": "2026-09-21",
+ "criterio": "Entra todo establecimiento que opera como hospital: internamiento u hospitalización, quirófanos y atención de emergencias. Incluye los hospitales de la CCSS, el Hospital del Trauma del INS y todos los hospitales privados de Costa Rica, contando cada sede física con nombre propio como una entrada aparte. Quedan fuera clínicas sin hospitalización, EBAIS, áreas de salud, clínicas mayores de la CCSS, centros de cirugía ambulatoria, consultorios y veterinarias. Los casos limítrofes van en el arreglo dudosos.",
+ "fuentes_consultadas": [
+  "https://ach.sa.cr/directorio/categorias/hospital",
+  "https://ach.sa.cr/directorio/categorias/privado",
+  "https://ach.sa.cr/directorio/categorias/publico",
+  "https://ach.sa.cr/directorio/categorias/publico/listings?p=2&category=3",
+  "https://clinicajerusalen.com/",
+  "https://contenidos.bupasalud.com/hospital-clinica-santa-rita-sa",
+  "https://es.wikipedia.org/wiki/Anexo:Hospitales_de_Costa_Rica",
+  "https://hilc.cr/",
+  "https://hospitalcima.com/es/",
+  "https://hospitalunibecr.com/",
+  "https://hospitaluniversal.com/",
+  "https://metropolitanocr.com/nuestras-sedes/",
+  "https://salud.grupoins.com/hospitalizacion",
+  "https://www.ccss.sa.cr/hospitales",
+  "https://www.clinicabiblica.com/es-cr/",
+  "https://www.clinicabiblica.com/es/sedes/aleste",
+  "https://www.clinicasantafe.co.cr/",
+  "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/",
+  "https://www.hcsanrafael.com/",
+  "https://www.hospitalclinicalosangeles.com/",
+  "https://www.hospitalcooperativo.com/",
+  "https://www.santacatalinacr.com/servicios/"
+ ],
+ "resumen": {
+  "total": 53,
+  "publicos": 30,
+  "privados": 23,
+  "por_clasificacion": {
+   "nacional": 3,
+   "especializado": 6,
+   "regional": 8,
+   "periferico": 12,
+   "otro": 1,
+   "privado": 23
+  },
+  "por_provincia": {
+   "San José": 25,
+   "Cartago": 4,
+   "Heredia": 2,
+   "Alajuela": 8,
+   "Limón": 2,
+   "Guanacaste": 5,
+   "Puntarenas": 7
+  }
+ },
+ "hospitales": [
+  {
+   "id": "hospital-san-juan-de-dios",
+   "nombre_oficial": "Hospital San Juan de Dios",
+   "alias": [
+    "HSJD"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "nacional",
+   "provincia": "San José",
+   "canton": "San José",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": "Hospital nacional general, el más antiguo del país."
+  },
+  {
+   "id": "hospital-mexico",
+   "nombre_oficial": "Hospital México",
+   "alias": [
+    "Hospital Nacional México"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "nacional",
+   "provincia": "San José",
+   "canton": "San José",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": "La Uruca. Hospital nacional general."
+  },
+  {
+   "id": "hospital-calderon-guardia",
+   "nombre_oficial": "Hospital Rafael Ángel Calderón Guardia",
+   "alias": [
+    "Hospital Dr. Rafael Ángel Calderón Guardia",
+    "Hospital Calderón Guardia"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "nacional",
+   "provincia": "San José",
+   "canton": "San José",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": "Barrio Aranjuez. Hospital nacional general."
+  },
+  {
+   "id": "hospital-nacional-de-ninos-carlos-saenz-herrera",
+   "nombre_oficial": "Hospital Nacional de Niños Dr. Carlos Sáenz Herrera",
+   "alias": [
+    "Hospital Nacional de Niños",
+    "HNN"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "especializado",
+   "provincia": "San José",
+   "canton": "San José",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": "Paseo Colón, contiguo al Hospital San Juan de Dios."
+  },
+  {
+   "id": "hospital-de-las-mujeres-adolfo-carit-eva",
+   "nombre_oficial": "Hospital de las Mujeres Dr. Adolfo Carit Eva",
+   "alias": [
+    "Hospital de las Mujeres Adolfo Carit Eva",
+    "HOMACE",
+    "Hospital Nacional de las Mujeres"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "especializado",
+   "provincia": "San José",
+   "canton": "San José",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico",
+    "https://www.jusahomace.org/p_historia.html"
+   ],
+   "confianza": "alta",
+   "notas": "Avenida 8, San José, distrito Hospital."
+  },
+  {
+   "id": "hospital-nacional-psiquiatrico-chapui-y-torres",
+   "nombre_oficial": "Hospital Nacional Psiquiátrico Manuel Antonio Chapuí y Torres",
+   "alias": [
+    "Hospital Nacional Psiquiátrico",
+    "Hospital Chapuí",
+    "Hospital Nacional de Salud Mental"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "especializado",
+   "provincia": "San José",
+   "canton": "San José",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": "Pavas, 1.5 km al oeste de la Embajada de EE. UU.",
+   "cid": "0x8fa0fb76d17cfa03:0x536b04c8c50f6a2d",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Nacional+de+Salud+Mental/data=!4m7!3m6!1s0x8fa0fb76d17cfa03:0x536b04c8c50f6a2d!8m2!3d9.9531634!4d-84.1396117!16s%2Fg%2F1jkypplj3!19sChIJA_p80Xb7oI8RLWoPxcgEa1M?hl=es",
+   "nombre_google": "Hospital Nacional de Salud Mental"
+  },
+  {
+   "id": "hospital-nacional-de-geriatria-raul-blanco-cervantes",
+   "nombre_oficial": "Hospital Nacional de Geriatría y Gerontología Dr. Raúl Blanco Cervantes",
+   "alias": [
+    "Hospital Blanco Cervantes",
+    "Hospital Dr. Raúl Blanco Cervantes",
+    "Hospital Nacional de Geriatría y Gerontología"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "especializado",
+   "provincia": "San José",
+   "canton": "San José",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico",
+    "https://diccionariousual.poder-judicial.go.cr/index.php/diccionario/Hospital-de-Geriatr%C3%ADa-y-Gerontolog%C3%ADa,-Ra%C3%BAl-Blanco-Cervantes"
+   ],
+   "confianza": "alta",
+   "notas": "Distrito Hospital, San José, cerca del Hospital San Juan de Dios.",
+   "cid": "0x8fa0e35bb094faad:0x12f8c29c61472d9a",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Nacional+de+Geriatr%C3%ADa+y+Gerontolog%C3%ADa/data=!4m7!3m6!1s0x8fa0e35bb094faad:0x12f8c29c61472d9a!8m2!3d9.9317058!4d-84.0876002!16s%2Fg%2F1tcv2hw2!19sChIJrfqUsFvjoI8Rmi1HYZzC-BI?hl=es",
+   "nombre_google": "Hospital Nacional de Geriatría y Gerontología"
+  },
+  {
+   "id": "cenare-centro-nacional-de-rehabilitacion",
+   "nombre_oficial": "Centro Nacional de Rehabilitación Dr. Humberto Araya Rojas",
+   "alias": [
+    "CENARE",
+    "Centro Nacional de Rehabilitación"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "especializado",
+   "provincia": "San José",
+   "canton": "San José",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": "La Uruca. Conocido como CENARE."
+  },
+  {
+   "id": "hospital-psiquiatrico-roberto-chacon-paut",
+   "nombre_oficial": "Hospital Psiquiátrico Dr. Roberto Chacón Paut",
+   "alias": [
+    "Hospital Roberto Chacón Paut",
+    "Hospital Siquiátrico Roberto Chacón Paut",
+    "Hospital Chacón Paut"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "especializado",
+   "provincia": "San José",
+   "canton": "San José",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico",
+    "https://www.binasss.sa.cr/bibliotecas/bhp/cupula/v9n191985/art7.pdf"
+   ],
+   "confianza": "media",
+   "notas": "Pavas. Origen como sanatorio antituberculoso en Cartago (1918); la sede actual está en Pavas, San José, junto al complejo psiquiátrico."
+  },
+  {
+   "id": "hospital-max-peralta-jimenez",
+   "nombre_oficial": "Hospital Maximiliano Peralta Jiménez",
+   "alias": [
+    "Hospital Max Peralta",
+    "Hospital Dr. Maximiliano Peralta Jiménez"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "regional",
+   "provincia": "Cartago",
+   "canton": "Cartago",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": "300 sur del Parque Central (Las Ruinas), Cartago."
+  },
+  {
+   "id": "hospital-san-vicente-de-paul",
+   "nombre_oficial": "Hospital San Vicente de Paúl",
+   "alias": [
+    "Hospital San Vicente de Paul"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "regional",
+   "provincia": "Heredia",
+   "canton": "Heredia",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "hospital-san-rafael-alajuela",
+   "nombre_oficial": "Hospital San Rafael",
+   "alias": [
+    "Hospital San Rafael de Alajuela"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "regional",
+   "provincia": "Alajuela",
+   "canton": "Alajuela",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": "No confundir con el hospital privado Clínico San Rafael Arcángel de Liberia."
+  },
+  {
+   "id": "hospital-tony-facio-castro",
+   "nombre_oficial": "Hospital Dr. Tony Facio Castro",
+   "alias": [
+    "Hospital Tony Facio",
+    "Hospital Tony Facio Castro"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "regional",
+   "provincia": "Limón",
+   "canton": "Limón",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "hospital-escalante-pradilla",
+   "nombre_oficial": "Hospital Dr. Fernando Escalante Pradilla",
+   "alias": [
+    "Hospital Escalante Pradilla",
+    "Hospital de San Isidro de El General"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "regional",
+   "provincia": "San José",
+   "canton": "Pérez Zeledón",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": "Pérez Zeledón es cantón de la provincia de San José (Zona Sur).",
+   "cid": "0x8fa14eedfbb0a0e1:0xa8e88afbdf60da74",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Dr.+Fernando+Escalante+Pradilla+-+CCSS/data=!4m7!3m6!1s0x8fa14eedfbb0a0e1:0xa8e88afbdf60da74!8m2!3d9.3674121!4d-83.703327!16s%2Fg%2F1tfcpdbl!19sChIJ4aCw--1OoY8RdNpg3_uK6Kg?hl=es",
+   "nombre_google": "Hospital Dr. Fernando Escalante Pradilla - CCSS"
+  },
+  {
+   "id": "hospital-enrique-baltodano-briceno",
+   "nombre_oficial": "Hospital Dr. Enrique Baltodano Briceño",
+   "alias": [
+    "Hospital Baltodano Briceño",
+    "Hospital de Liberia"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "regional",
+   "provincia": "Guanacaste",
+   "canton": "Liberia",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "hospital-monsenor-sanabria",
+   "nombre_oficial": "Hospital Víctor Manuel Sanabria Martínez",
+   "alias": [
+    "Hospital Monseñor Sanabria",
+    "Hospital de Puntarenas"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "regional",
+   "provincia": "Puntarenas",
+   "canton": "Puntarenas",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": "",
+   "cid": "0x8fa0311b7e1e640f:0xbc07e55d09e7cbc",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Monse%C3%B1or+Sanabria+Mart%C3%ADnez+-+Puntarenas,+CCSS/data=!4m7!3m6!1s0x8fa0311b7e1e640f:0xbc07e55d09e7cbc!8m2!3d9.990467!4d-84.7187432!16s%2Fg%2F11c2kmngjd!19sChIJD2QefhsxoI8RvHye0FV-wAs?hl=es",
+   "nombre_google": "Hospital Monseñor Sanabria Martínez - Puntarenas, CCSS"
+  },
+  {
+   "id": "hospital-de-san-carlos",
+   "nombre_oficial": "Hospital de San Carlos",
+   "alias": [
+    "Hospital San Carlos",
+    "Hospital Ciudad Quesada"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "regional",
+   "provincia": "Alajuela",
+   "canton": "San Carlos",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico",
+    "https://www.facebook.com/HospitalSanCarlosCR/"
+   ],
+   "confianza": "alta",
+   "notas": "Ciudad Quesada. La CCSS lo clasifica como regional (no periférico); atiende a unas 500 mil personas de la Región Huetar Norte. No confundir con la sede privada Hospital Metropolitano San Carlos."
+  },
+  {
+   "id": "hospital-san-francisco-de-asis",
+   "nombre_oficial": "Hospital San Francisco de Asís",
+   "alias": [],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "periferico",
+   "provincia": "Alajuela",
+   "canton": "Grecia",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "hospital-max-teran-valls",
+   "nombre_oficial": "Hospital Max Terán Valls",
+   "alias": [
+    "Hospital de Quepos"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "periferico",
+   "provincia": "Puntarenas",
+   "canton": "Quepos",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": "La Managua de Quepos."
+  },
+  {
+   "id": "hospital-manuel-mora-valverde",
+   "nombre_oficial": "Hospital Manuel Mora Valverde",
+   "alias": [
+    "Hospital de Golfito",
+    "Hospital Manuel Mora Valverde"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "periferico",
+   "provincia": "Puntarenas",
+   "canton": "Golfito",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": "Perfil de Google se busca por nombre (el cruce automático tomó un sublistado).",
+   "cid": null,
+   "maps_url": null,
+   "buscar_por_nombre": true
+  },
+  {
+   "id": "hospital-los-chiles",
+   "nombre_oficial": "Hospital Los Chiles",
+   "alias": [],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "periferico",
+   "provincia": "Alajuela",
+   "canton": "Los Chiles",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "hospital-william-allen-taylor",
+   "nombre_oficial": "Hospital William Allen Taylor",
+   "alias": [
+    "Hospital de Turrialba"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "periferico",
+   "provincia": "Cartago",
+   "canton": "Turrialba",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": "Periférico tipo 3 según clasificación interna de CCSS."
+  },
+  {
+   "id": "hospital-de-upala",
+   "nombre_oficial": "Hospital Upala",
+   "alias": [
+    "Hospital de Upala"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "periferico",
+   "provincia": "Alajuela",
+   "canton": "Upala",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "hospital-de-san-vito",
+   "nombre_oficial": "Hospital de San Vito",
+   "alias": [
+    "Hospital San Vito de Coto Brus"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "periferico",
+   "provincia": "Puntarenas",
+   "canton": "Coto Brus",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "hospital-de-osa-tomas-casas-casajus",
+   "nombre_oficial": "Hospital de Osa Tomás Casas Casajús",
+   "alias": [
+    "Hospital Tomás Casas Casajús",
+    "Hospital de Ciudad Cortés"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "periferico",
+   "provincia": "Puntarenas",
+   "canton": "Osa",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "hospital-de-la-anexion",
+   "nombre_oficial": "Hospital de La Anexión",
+   "alias": [
+    "Hospital La Anexión",
+    "Hospital de Nicoya"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "periferico",
+   "provincia": "Guanacaste",
+   "canton": "Nicoya",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "hospital-de-guapiles",
+   "nombre_oficial": "Hospital de Guápiles",
+   "alias": [],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "periferico",
+   "provincia": "Limón",
+   "canton": "Pococí",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": ""
+  },
+  {
+   "id": "hospital-de-ciudad-neilly",
+   "nombre_oficial": "Hospital de Ciudad Neilly",
+   "alias": [
+    "Hospital de Corredores",
+    "Hospital Ciudad Neily"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "periferico",
+   "provincia": "Puntarenas",
+   "canton": "Corredores",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": "La Junta Directiva de la CCSS elevó su categoría en años recientes; se mantiene como periférico en la clasificación vigente."
+  },
+  {
+   "id": "hospital-carlos-luis-valverde-vega",
+   "nombre_oficial": "Hospital Carlos Luis Valverde Vega",
+   "alias": [
+    "Hospital de San Ramón",
+    "Hospital Valverde Vega"
+   ],
+   "tipo": "publico",
+   "red": "CCSS",
+   "clasificacion": "periferico",
+   "provincia": "Alajuela",
+   "canton": "San Ramón",
+   "sitio_web": "",
+   "fuentes": [
+    "https://www.ccss.sa.cr/hospitales",
+    "https://ach.sa.cr/directorio/categorias/publico"
+   ],
+   "confianza": "alta",
+   "notas": "Periférico tipo 3 según clasificación interna de CCSS."
+  },
+  {
+   "id": "hospital-del-trauma-ins",
+   "nombre_oficial": "Hospital del Trauma",
+   "alias": [
+    "Hospital del Trauma INS",
+    "Hospital de Trauma"
+   ],
+   "tipo": "publico",
+   "red": "INS",
+   "clasificacion": "otro",
+   "provincia": "San José",
+   "canton": "San José",
+   "sitio_web": "https://salud.grupoins.com/hospitalizacion",
+   "fuentes": [
+    "https://salud.grupoins.com/hospitalizacion",
+    "https://www.paho.org/es/noticias/12-7-2022-hospital-trauma-ins-recibe-reconocimiento-como-hospital-seguro-organizacion"
+   ],
+   "confianza": "alta",
+   "notas": "La Uruca, contiguo al Hospital México. Único hospital de trauma de Centroamérica y el Caribe; 229 camas. Administrado por el Instituto Nacional de Seguros."
+  },
+  {
+   "id": "hospital-cima-escazu",
+   "nombre_oficial": "Hospital CIMA San José",
+   "alias": [
+    "Hospital CIMA",
+    "CIMA Escazú",
+    "Hospital San José S.A."
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "San José",
+   "canton": "Escazú",
+   "sitio_web": "https://hospitalcima.com/es/",
+   "fuentes": [
+    "https://ach.sa.cr/directorio/categorias/privado",
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "alta",
+   "notas": "San Rafael de Escazú. Cerró una sucursal en Guanacaste en 2018; hoy opera solo esta sede."
+  },
+  {
+   "id": "hospital-clinica-biblica-san-jose",
+   "nombre_oficial": "Hospital Clínica Bíblica",
+   "alias": [
+    "Clínica Bíblica",
+    "Hospital Clínica Bíblica San José"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "San José",
+   "canton": "San José",
+   "sitio_web": "https://www.clinicabiblica.com/es-cr/",
+   "fuentes": [
+    "https://ach.sa.cr/directorio/categorias/privado",
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "alta",
+   "notas": "Sede San José centro, Av. 14.",
+   "cid": "0x8fa0e368060ebcc1:0xf9defc9ecd48e56e",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Cl%C3%ADnica+B%C3%ADblica/data=!4m7!3m6!1s0x8fa0e368060ebcc1:0xf9defc9ecd48e56e!8m2!3d9.9275385!4d-84.0795396!16s%2Fm%2F06w7wlc!19sChIJwbwOBmjjoI8RbuVIzZ783vk?hl=es",
+   "nombre_google": "Hospital Clínica Bíblica"
+  },
+  {
+   "id": "hospital-clinica-biblica-santa-ana",
+   "nombre_oficial": "Hospital Clínica Bíblica Santa Ana",
+   "alias": [
+    "Clínica Bíblica Santa Ana"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "San José",
+   "canton": "Santa Ana",
+   "sitio_web": "https://www.clinicabiblica.com/es-cr/",
+   "fuentes": [
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/",
+    "https://www.instagram.com/p/DNOedGeSgPV/"
+   ],
+   "confianza": "alta",
+   "notas": "",
+   "cid": "0x8fa0f906f0b359e3:0x5f50c053344378ba",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Cl%C3%ADnica+B%C3%ADblica/data=!4m7!3m6!1s0x8fa0f906f0b359e3:0x5f50c053344378ba!8m2!3d9.9460374!4d-84.1885095!16s%2Fg%2F11g0vzs1lz!19sChIJ41mz8Ab5oI8RunhDNFPAUF8?hl=es",
+   "nombre_google": "Hospital Clínica Bíblica"
+  },
+  {
+   "id": "hospital-clinica-biblica-aleste-curridabat",
+   "nombre_oficial": "Hospital Clínica Bíblica Aleste",
+   "alias": [
+    "Clínica Bíblica Curridabat",
+    "Clínica Bíblica Aleste"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "San José",
+   "canton": "Curridabat",
+   "sitio_web": "https://www.clinicabiblica.com/es/sedes/aleste",
+   "fuentes": [
+    "https://www.clinicabiblica.com/es/sedes/aleste",
+    "https://delfino.cr/2025/08/clinica-biblica-inaugura-sede-en-aleste-curridabat-con-servicios-de-emergencias-24-7-laboratorio-y-farmacia"
+   ],
+   "confianza": "alta",
+   "notas": "Inaugurada en agosto de 2025 en el complejo Aleste. Ofrece emergencias 24/7, banco de sangre, maternidad y cirugía."
+  },
+  {
+   "id": "hospital-clinico-san-rafael-arcangel-liberia",
+   "nombre_oficial": "Hospital Clínico San Rafael Arcángel",
+   "alias": [
+    "Hospital San Rafael Arcángel",
+    "HCSRA"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "Guanacaste",
+   "canton": "Liberia",
+   "sitio_web": "https://www.hcsanrafael.com/",
+   "fuentes": [
+    "https://ach.sa.cr/directorio/categorias/privado",
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "alta",
+   "notas": "Perfil de Google se busca por nombre (el cruce automático tomó un sublistado).",
+   "cid": null,
+   "maps_url": null,
+   "buscar_por_nombre": true
+  },
+  {
+   "id": "hospital-clinica-senora-de-los-angeles-cartago",
+   "nombre_oficial": "Hospital Clínica Señora de los Ángeles",
+   "alias": [
+    "Clínica Nuestra Señora de los Ángeles",
+    "Clínica Señora de los Ángeles",
+    "CONMED"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "Cartago",
+   "canton": "Cartago",
+   "sitio_web": "https://www.hospitalclinicalosangeles.com/",
+   "fuentes": [
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/",
+    "https://www.hospitalclinicalosangeles.com/"
+   ],
+   "confianza": "alta",
+   "notas": "El sitio propio confirma hospitalización, cirugía general y emergencias 24/7."
+  },
+  {
+   "id": "hospital-metropolitano-san-jose",
+   "nombre_oficial": "Hospital Metropolitano Sede San José y Torres Médicas",
+   "alias": [
+    "Hospital Metropolitano",
+    "Hospital Metropolitano San José"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "San José",
+   "canton": "San José",
+   "sitio_web": "https://metropolitanocr.com/sede-san-jose/",
+   "fuentes": [
+    "https://metropolitanocr.com/nuestras-sedes/",
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "alta",
+   "notas": "Sede original. 300 m sur del Parque La Merced.",
+   "cid": "0x8fa0e35c7b9a49af:0x5c9078152bba0ab6",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Metropolitano/data=!4m7!3m6!1s0x8fa0e35c7b9a49af:0x5c9078152bba0ab6!8m2!3d9.9312321!4d-84.0851842!16s%2Fg%2F11xhq6yvy!19sChIJr0mae1zjoI8Rtgq6KxV4kFw?hl=es",
+   "nombre_google": "Hospital Metropolitano"
+  },
+  {
+   "id": "hospital-metropolitano-lindora",
+   "nombre_oficial": "Hospital Metropolitano Sede Lindora",
+   "alias": [
+    "Hospital Metropolitano Lindora"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "San José",
+   "canton": "Santa Ana",
+   "sitio_web": "https://metropolitanocr.com/sede-lindora/",
+   "fuentes": [
+    "https://metropolitanocr.com/nuestras-sedes/",
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "alta",
+   "notas": "Distrito Lindora, cantón Santa Ana. Sede con salas de operaciones y maternidad; alberga el Centro del Cáncer y el Centro de Salud Mental del grupo.",
+   "cid": "0x8fa0f959ec938e61:0xe2b96b54530cd099",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Metropolitano/data=!4m7!3m6!1s0x8fa0f959ec938e61:0xe2b96b54530cd099!8m2!3d9.9534134!4d-84.190058!16s%2Fg%2F11cjp8thsz!19sChIJYY6T7Fn5oI8RmdAMU1RrueI?hl=es",
+   "nombre_google": "Hospital Metropolitano"
+  },
+  {
+   "id": "hospital-metropolitano-liberia",
+   "nombre_oficial": "Hospital Metropolitano Sede Liberia",
+   "alias": [
+    "Hospital Metropolitano Liberia"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "Guanacaste",
+   "canton": "Liberia",
+   "sitio_web": "https://metropolitanocr.com/sede-liberia/",
+   "fuentes": [
+    "https://metropolitanocr.com/nuestras-sedes/",
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "alta",
+   "notas": "Frente al Estadio Edgardo Baltodano."
+  },
+  {
+   "id": "hospital-metropolitano-huacas",
+   "nombre_oficial": "Hospital Metropolitano Sede Huacas",
+   "alias": [
+    "Hospital Metropolitano Huacas"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "Guanacaste",
+   "canton": "Santa Cruz",
+   "sitio_web": "https://metropolitanocr.com/sede-huacas/",
+   "fuentes": [
+    "https://metropolitanocr.com/nuestras-sedes/",
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "alta",
+   "notas": "Cabo Velas, distrito de Huacas, cantón Santa Cruz."
+  },
+  {
+   "id": "hospital-metropolitano-quepos",
+   "nombre_oficial": "Hospital Metropolitano Sede Quepos",
+   "alias": [
+    "Hospital Metropolitano Quepos"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "Puntarenas",
+   "canton": "Quepos",
+   "sitio_web": "https://metropolitanocr.com/sede-quepos/",
+   "fuentes": [
+    "https://metropolitanocr.com/nuestras-sedes/",
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "media",
+   "notas": "Marina Pez Vela, local 206."
+  },
+  {
+   "id": "hospital-metropolitano-lincoln-plaza-moravia",
+   "nombre_oficial": "Hospital Metropolitano Sede Lincoln Plaza",
+   "alias": [
+    "Hospital Metropolitano Lincoln Plaza",
+    "Hospital Metropolitano Moravia"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "San José",
+   "canton": "Moravia",
+   "sitio_web": "https://metropolitanocr.com/sede-lincoln-plaza/",
+   "fuentes": [
+    "https://metropolitanocr.com/nuestras-sedes/",
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "media",
+   "notas": "San Vicente de Moravia, Mall Lincoln Plaza. No se confirmó de forma independiente si esta sede hospitaliza; verificar categoría en el perfil de Google."
+  },
+  {
+   "id": "hospital-metropolitano-plaza-del-sol-curridabat",
+   "nombre_oficial": "Hospital Metropolitano Sede Plaza del Sol",
+   "alias": [
+    "Hospital Metropolitano Plaza del Sol",
+    "Hospital Metropolitano Curridabat"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "San José",
+   "canton": "Curridabat",
+   "sitio_web": "https://metropolitanocr.com/sede-plaza-del-sol/",
+   "fuentes": [
+    "https://metropolitanocr.com/nuestras-sedes/",
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "media",
+   "notas": "Centro Comercial Plaza del Sol, Curridabat. No se confirmó de forma independiente si esta sede hospitaliza; verificar categoría en el perfil de Google."
+  },
+  {
+   "id": "hospital-metropolitano-san-carlos",
+   "nombre_oficial": "Hospital Metropolitano Sede San Carlos",
+   "alias": [
+    "Hospital Metropolitano San Carlos"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "Alajuela",
+   "canton": "San Carlos",
+   "sitio_web": "https://metropolitanocr.com/sede-san-carlos/",
+   "fuentes": [
+    "https://metropolitanocr.com/nuestras-sedes/",
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "media",
+   "notas": "Centro Comercial El Encuentro, Ciudad Quesada. No confundir con el Hospital de San Carlos de la CCSS. No se confirmó de forma independiente si esta sede hospitaliza."
+  },
+  {
+   "id": "hospital-metropolitano-cariari-belen",
+   "nombre_oficial": "Hospital Metropolitano Sede Cariari",
+   "alias": [
+    "Hospital Metropolitano Cariari",
+    "Hospital Metropolitano Belén"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "Heredia",
+   "canton": "Belén",
+   "sitio_web": "https://metropolitanocr.com/sede-cariari-belen/",
+   "fuentes": [
+    "https://metropolitanocr.com/nuestras-sedes/",
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "media",
+   "notas": "Cariari C3 Corporate Center, San Antonio de Belén. No se confirmó de forma independiente si esta sede hospitaliza.",
+   "cid": "0x8fa0fbc7c2bb7ccd:0xd38f64de938443bb",
+   "maps_url": "https://www.google.com/maps/place/Hospital+Metropolitano+%E2%80%A2+Heredia/data=!4m7!3m6!1s0x8fa0fbc7c2bb7ccd:0xd38f64de938443bb!8m2!3d9.9809541!4d-84.1601983!16s%2Fg%2F11yb95wzk1!19sChIJzXy7wsf7oI8Ru0OEk95kj9M?hl=es",
+   "nombre_google": "Hospital Metropolitano • Heredia"
+  },
+  {
+   "id": "hospital-metropolitano-escazu",
+   "nombre_oficial": "Hospital Metropolitano Sede Escazú",
+   "alias": [
+    "Hospital Metropolitano Escazú"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "San José",
+   "canton": "Escazú",
+   "sitio_web": "https://metropolitanocr.com/sede-multiplaza-escazu/",
+   "fuentes": [
+    "https://metropolitanocr.com/nuestras-sedes/",
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "media",
+   "notas": "Costado suroeste de Multiplaza Escazú. No se confirmó de forma independiente si esta sede hospitaliza."
+  },
+  {
+   "id": "hospital-las-americas-perez-zeledon",
+   "nombre_oficial": "Hospital Las Américas",
+   "alias": [],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "San José",
+   "canton": "Pérez Zeledón",
+   "sitio_web": "https://www.hospitallasamericas.com/",
+   "fuentes": [
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "alta",
+   "notas": "Registrado en 2022. Cerca del Ministerio de Salud de Pérez Zeledón."
+  },
+  {
+   "id": "hospital-unibe-tibas",
+   "nombre_oficial": "Hospital Unibe",
+   "alias": [
+    "Hospital Universitario Unibe",
+    "Hospital UNIBE"
+   ],
+   "tipo": "privado",
+   "red": "Universitario",
+   "clasificacion": "privado",
+   "provincia": "San José",
+   "canton": "Tibás",
+   "sitio_web": "https://hospitalunibecr.com/",
+   "fuentes": [
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "alta",
+   "notas": "Instalaciones de la Universidad de Iberoamérica (UNIBE). Hospital desde 2019."
+  },
+  {
+   "id": "hospital-universal-cartago",
+   "nombre_oficial": "Hospital Universal",
+   "alias": [],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "Cartago",
+   "canton": "Cartago",
+   "sitio_web": "https://hospitaluniversal.com/",
+   "fuentes": [
+    "https://ach.sa.cr/directorio/categorias/privado",
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "alta",
+   "notas": "Grupo Médico Universal también opera Centro Médico Universal en San Rafael de Oreamuno y en Tobosi (Tejar de El Guarco), ambos ambulatorios y no incluidos aquí."
+  },
+  {
+   "id": "hospital-cooperativo-consalud-san-carlos",
+   "nombre_oficial": "Hospital Cooperativo Consalud R.L.",
+   "alias": [
+    "Hospital Cooperativo",
+    "Hospital Monte Sinaí de San Carlos"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "Alajuela",
+   "canton": "San Carlos",
+   "sitio_web": "https://www.hospitalcooperativo.com/",
+   "fuentes": [
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "alta",
+   "notas": "Ciudad Quesada. Fundado en 1993 como Hospital Monte Sinaí; pasó a administración cooperativa (Consalud R.L.) en 2003 y cambió de nombre."
+  },
+  {
+   "id": "hospital-internacional-la-catolica-guadalupe",
+   "nombre_oficial": "Hospital Internacional La Católica",
+   "alias": [
+    "Hospital La Católica",
+    "Hospital Hotel La Católica",
+    "HILC"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "San José",
+   "canton": "Goicoechea",
+   "sitio_web": "https://hilc.cr/",
+   "fuentes": [
+    "https://ach.sa.cr/directorio/categorias/privado",
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/"
+   ],
+   "confianza": "alta",
+   "notas": "Guadalupe, Goicoechea."
+  },
+  {
+   "id": "hospital-clinica-santa-rita-san-jose",
+   "nombre_oficial": "Hospital Clínica Santa Rita",
+   "alias": [
+    "Clínica Santa Rita"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "San José",
+   "canton": "San José",
+   "sitio_web": "",
+   "fuentes": [
+    "https://contenidos.bupasalud.com/hospital-clinica-santa-rita-sa",
+    "https://www.instagram.com/explore/locations/10673456/hospital-clinica-santa-rita/"
+   ],
+   "confianza": "media",
+   "notas": "Avenida 8, calles 15 y 17, frente a Tribunales de Justicia, San José. No se encontró sitio web oficial propio; confirmado por directorio de seguros (Bupa) y redes sociales. Abierto 24 horas."
+  },
+  {
+   "id": "hospital-cristiano-jerusalen-guadalupe",
+   "nombre_oficial": "Hospital Cristiano Jerusalén",
+   "alias": [
+    "Clínica Jerusalén",
+    "Hospital Jerusalem"
+   ],
+   "tipo": "privado",
+   "red": "Privado",
+   "clasificacion": "privado",
+   "provincia": "San José",
+   "canton": "Goicoechea",
+   "sitio_web": "https://clinicajerusalen.com/",
+   "fuentes": [
+    "https://clinicajerusalen.com/",
+    "https://www.instagram.com/hospitalcristianojerusalen/?hl=en"
+   ],
+   "confianza": "alta",
+   "notas": "Alto de Guadalupe, 100 m este de la antigua gasolinera Delta. Más de 30 años operando; el sitio propio se describe como Hospital Básico, con cirugía general, ginecología con partos y cesáreas, y atención 24 horas."
+  }
+ ],
+ "dudosos": [
+  {
+   "nombre": "Hospital Monte Sinaí (Cartago)",
+   "razon": "El nombre 'Hospital Monte Sinaí' original (Ciudad Quesada, San Carlos, 1993) cambió de razón social a Hospital Cooperativo Consalud R.L. en 2003. Hoy 'Hospital Monte Sinaí' en redes sociales aparece descrito como una clínica de dermatología y estética en Cartago, sin evidencia de hospitalización, quirófanos ni emergencias. Puede tratarse de un negocio distinto que reutiliza el nombre.",
+   "fuentes": [
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/",
+    "https://www.instagram.com/reel/DYm4AzFu9Mr/"
+   ]
+  },
+  {
+   "nombre": "Hospital Santa Catalina / Clínica Santa Catalina (Desamparados)",
+   "razon": "El sitio oficial (santacatalinacr.com) se autodenomina 'Clínica Santa Catalina' y lista 'Cirugía Ambulatoria' entre sus servicios, sin mencionar hospitalización ni internamiento. Directorios externos (WhatClinic, HuliHealth) la llaman 'Hospital Santa Catalina' y mencionan urgencias 24/7. No se confirmó que hospitalice.",
+   "fuentes": [
+    "https://www.santacatalinacr.com/servicios/",
+    "https://www.whatclinic.com/doctors/costa-rica/san-jose/clinica-hospital-santa-catalina"
+   ]
+  },
+  {
+   "nombre": "Hospital La California (San José / Escazú)",
+   "razon": "Según El Financiero (2024), bajo el nombre 'Hospital La California' ya no opera ningún centro de salud. La empresa Solumed S.A. ahora opera 'Centro Médico La California' en Escazú y 'Centro Médico Barrio Escalante', sin evidencia confirmada de hospitalización. El directorio de la Asociación Costarricense de Hospitales todavía lista 'Hospital La California' en San José (Jaime Carranza), posiblemente desactualizado.",
+   "fuentes": [
+    "https://www.elfinancierocr.com/negocios/quien-es-quien-entre-los-hospitales-privados-de/CA2WCRPA7BFEVFXB73ZWRO6O3Y/story/",
+    "https://ach.sa.cr/directorio/categorias/privado"
+   ]
+  },
+  {
+   "nombre": "Clínica Santa Fe (Heredia y Rohrmoser)",
+   "razon": "Aunque en el mercado se le menciona junto a hospitales, el sitio propio (clinicasantafe.co.cr) se describe únicamente como centro de diagnóstico por imágenes (ultrasonido, mamografía, resonancia, tomografía, rayos X). No hay evidencia de hospitalización, quirófanos ni emergencias.",
+   "fuentes": [
+    "https://www.clinicasantafe.co.cr/"
+   ]
+  },
+  {
+   "nombre": "Nuevo Hospital de Cartago (CCSS, en construcción)",
+   "razon": "El Gobierno mencionó esta obra en la cadena nacional del 20 de setiembre de 2026 entre los proyectos de infraestructura de salud en construcción. Todavía no está en operación, por lo que no se incluye en el censo activo; debe agregarse cuando abra.",
+   "fuentes": [
+    "https://www.facebook.com/ImpactChannelCR/videos/el-gobierno-dedic%C3%B3-la-cadena-nacional-de-este-20-de-septiembre-a-los-proyectos-d/1811366656961059/"
+   ]
+  }
+ ]
+}
