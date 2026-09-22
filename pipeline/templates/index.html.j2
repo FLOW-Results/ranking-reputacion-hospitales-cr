@@ -732,9 +732,12 @@ iniciarRanking();
   "use strict";
   var periodoLocal = {{ periodo | tojson }};
   var base = {{ url_actualizacion | tojson }};
-  if (!window.fetch || !window.DOMParser) { return; }
+  if (!window.fetch) { return; }
+  if (!window.DOMParser) { return; }
   fetch(base + "data/latest.json", { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
-    if (!d || !d.periodo || d.periodo <= periodoLocal) { return; }
+    if (!d) { return; }
+    if (!d.periodo) { return; }
+    if (d.periodo <= periodoLocal) { return; }
     return fetch(base, { cache: "no-store" }).then(function (r) { return r.ok ? r.text() : null; }).then(function (html) {
       if (!html) { return; }
       var doc = new DOMParser().parseFromString(html, "text/html");
