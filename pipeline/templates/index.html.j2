@@ -214,9 +214,16 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
     <p class="subtitulo">{{ etiqueta_periodo }}</p>
     <p class="linea-datos">Datos capturados el {{ capturado_fmt }}. Próxima actualización: {{ proxima_fmt }}. Fuente: {{ fuente }}.</p>
     <div class="cifras-universo">
+{%- set solo_privados = (universo.publicos or 0) == 0 %}
+{%- if solo_privados %}
+      <div class="cifra"><span class="cifra-numero">{{ universo.total | fmt_num }}</span><span class="cifra-etiqueta">Hospitales privados en el universo</span></div>
+      <div class="cifra"><span class="cifra-numero">{{ (universo.total - (universo.sin_datos or 0)) | fmt_num }}</span><span class="cifra-etiqueta">En el ranking</span></div>
+      <div class="cifra"><span class="cifra-numero">{{ (universo.sin_datos or 0) | fmt_num }}</span><span class="cifra-etiqueta">Sin datos suficientes</span></div>
+{%- else %}
       <div class="cifra"><span class="cifra-numero">{{ universo.total | fmt_num }}</span><span class="cifra-etiqueta">Hospitales en el universo</span></div>
       <div class="cifra"><span class="cifra-numero">{{ universo.publicos | fmt_num }}</span><span class="cifra-etiqueta">Públicos</span></div>
       <div class="cifra"><span class="cifra-numero">{{ universo.privados | fmt_num }}</span><span class="cifra-etiqueta">Privados</span></div>
+{%- endif %}
     </div>
   </div>
 </header>
@@ -231,7 +238,9 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
         <li class="podio-tarjeta">
           <span class="podio-posicion">{{ h.posicion }}</span>
           <h3 class="podio-nombre">{{ h.nombre_google }}</h3>
+{%- if not solo_privados %}
           <p class="podio-tipo">{{ h.tipo_label }}</p>
+{%- endif %}
           <p class="podio-calificacion">{{ pintar_estrellas(h.estrellas, h.calificacion_fmt) }}<span class="podio-calificacion-num">{{ h.calificacion_fmt }}</span></p>
           <p class="podio-resenas">{{ h.resenas_fmt }} reseñas</p>
           <p class="podio-indice">Índice <strong>{{ h.indice_fmt }}</strong></p>
@@ -245,9 +254,11 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
 
       <div class="controles" aria-label="Controles de la tabla">
         <div class="tabs" role="group" aria-label="Filtrar por tipo de hospital">
+{%- if not solo_privados %}
           <button type="button" class="tab-btn es-activa" data-tab="todos" aria-pressed="true">Todos</button>
           <button type="button" class="tab-btn" data-tab="privado" aria-pressed="false">Privados</button>
           <button type="button" class="tab-btn" data-tab="publico" aria-pressed="false">Públicos (CCSS e INS)</button>
+{%- endif %}
         </div>
         <div class="filtros-secundarios">
           <div class="campo-filtro">
@@ -297,7 +308,9 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
             <td class="col-cambio" data-label="Cambio">{{ celda_cambio(h.cambio) }}</td>
             <td class="col-hospital" data-label="Hospital">
               <span class="hospital-nombre">{{ h.nombre_google }}</span>
+{%- if not solo_privados %}
               <span class="hospital-tipo">{{ h.tipo_label }}</span>
+{%- endif %}
               <span class="hospital-ubicacion">{{ h.provincia }}, {{ h.canton }}</span>
             </td>
             <td class="col-calificacion" data-label="Calificación">{{ pintar_estrellas(h.estrellas, h.calificacion_fmt) }}<span class="calificacion-num">{{ h.calificacion_fmt }}</span></td>
@@ -366,7 +379,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
       <h2 id="titulo-fuera">Fuera del ranking</h2>
       <ul>
         {% for h in fuera %}
-        <li><strong>{{ h.nombre_google }}</strong> ({{ h.tipo_label }}): {{ h.motivo_exclusion }}</li>
+        <li><strong>{{ h.nombre_google }}</strong>{% if not solo_privados %} ({{ h.tipo_label }}){% endif %}: {{ h.motivo_exclusion }}</li>
         {% endfor %}
       </ul>
     </section>
@@ -410,7 +423,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
       <p><strong>Índice de reputación (0 a 100)</strong> = {{ meta.peso_calificacion }}% calificación ajustada, llevada a escala de 0 a 100, más {{ meta.peso_volumen }}% volumen de voz.</p>
       <p>Para entrar al ranking un hospital necesita al menos {{ meta.minimo_resenas_fmt }} reseñas.</p>
       <p>El porcentaje de reseñas de 5 estrellas, el de 1 estrella y si el hospital responde reseñas se muestran como señales complementarias. No forman parte del índice.</p>
-      <p><strong>Límites.</strong> Las reseñas de Google son opiniones voluntarias de pacientes y acompañantes; miden reputación percibida, no calidad clínica. Los hospitales públicos y privados atienden poblaciones y volúmenes distintos, por eso también se pueden ver por separado.</p>
+      <p><strong>Límites.</strong> Las reseñas de Google son opiniones voluntarias de pacientes y acompañantes; miden reputación percibida, no calidad clínica. {% if solo_privados %}Esta edición cubre únicamente hospitales privados; los hospitales públicos de la CCSS y del INS quedan fuera del alcance publicado.{% else %}Los hospitales públicos y privados atienden poblaciones y volúmenes distintos, por eso también se pueden ver por separado.{% endif %}</p>
       <p>Los nombres son los que muestra Google en el perfil de cada hospital.</p>
     </section>
 

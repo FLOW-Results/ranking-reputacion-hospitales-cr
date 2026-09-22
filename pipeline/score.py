@@ -65,10 +65,13 @@ def main():
     censo = {h["id"]: h for h in json.load(open(args.censo, encoding="utf-8"))}
     pesos = cfg.get("pesos", {"calificacion_ajustada": 0.75, "volumen": 0.25})
     minimo = int(cfg.get("minimo_resenas_para_ranking", 10))
+    tipos = set(cfg.get("tipos_incluidos") or ["publico", "privado"])
 
     filas = []
     for s in snap["hospitales"]:
         c = censo.get(s["id"], {})
+        if c.get("tipo") not in tipos:
+            continue
         fila = {
             "id": s["id"], "cid": s.get("cid") or c.get("cid"),
             "nombre_google": s.get("nombre_google") or c.get("nombre_google"),
@@ -152,7 +155,7 @@ def main():
             "privados": sum(1 for f in filas if f["tipo"] == "privado"),
             "sin_datos": sum(1 for f in filas if not f["en_ranking"]),
         },
-        "parametros": {"m": round(m, 1), "C": round(C, 3), "pesos": pesos, "minimo_resenas": minimo},
+        "parametros": {"m": round(m, 1), "C": round(C, 3), "pesos": pesos, "minimo_resenas": minimo, "tipos_incluidos": sorted(tipos)},
         "hospitales": filas,
     }
     out = os.path.join(RAIZ, "data", "ranking", f"{periodo}.json")

@@ -227,13 +227,21 @@ def construir_tendencias(cid, historial):
 # Preparación de cada hospital para la plantilla.
 # ---------------------------------------------------------------------------
 
-def preparar_hospital(h, historial):
+def nombre_para_mostrar(h, repetidos):
+    """Nombre tal como lo muestra Google; si varios perfiles comparten nombre, se distingue por cantón."""
+    nombre = limpiar_texto(h.get("nombre_google")) or "(sin nombre)"
+    if repetidos.get(nombre, 0) > 1 and h.get("canton"):
+        return f"{nombre} ({limpiar_texto(h.get('canton'))})"
+    return nombre
+
+
+def preparar_hospital(h, historial, repetidos=None):
     indice = h.get("indice")
     indice_bar = max(0, min(100, indice)) if isinstance(indice, (int, float)) else 0
     return {
         "id": h.get("id") or "",
         "cid": h.get("cid"),
-        "nombre_google": limpiar_texto(h.get("nombre_google")) or "(sin nombre)",
+        "nombre_google": nombre_para_mostrar(h, repetidos or {}),
         "tipo": h.get("tipo") or "",
         "tipo_label": etiqueta_tipo(h),
         "red": h.get("red"),
@@ -300,7 +308,11 @@ def construir_contexto(config, ranking, historial):
         key=lambda h: (h.get("posicion") is None, h.get("posicion") if isinstance(h.get("posicion"), (int, float)) else 0),
     )
 
-    hospitales = [preparar_hospital(h, historial) for h in raw_en_ranking]
+    repetidos = {}
+    for h in raw_en_ranking:
+        n = limpiar_texto(h.get("nombre_google")) or "(sin nombre)"
+        repetidos[n] = repetidos.get(n, 0) + 1
+    hospitales = [preparar_hospital(h, historial, repetidos) for h in raw_en_ranking]
     fuera = [preparar_hospital_fuera(h) for h in raw_fuera]
 
     podio = hospitales[:3]

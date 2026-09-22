@@ -316,6 +316,10 @@ def capturar_uno(h: dict, respaldo: dict = None) -> dict:
 
 def op_capturar(args):
     censo = json.load(open(args.censo, encoding="utf-8"))
+    if not args.todos:
+        cfg_path = os.path.join(RAIZ, "config.json")
+        tipos = set((json.load(open(cfg_path, encoding="utf-8")).get("tipos_incluidos") if os.path.exists(cfg_path) else None) or ["publico", "privado"])
+        censo = [h for h in censo if h.get("tipo") in tipos]
     periodo = args.periodo or periodo_actual()
     solo = set(args.solo.split(",")) if args.solo else None
     salida = os.path.join(RAIZ, "data", "snapshots", f"{periodo}.json")
@@ -392,6 +396,7 @@ def main():
     c.add_argument("--censo", default=os.path.join(RAIZ, "data", "hospitales.json"))
     c.add_argument("--periodo"); c.add_argument("--solo"); c.add_argument("--reiniciar", action="store_true")
     c.add_argument("--hilos", type=int, default=4)
+    c.add_argument("--todos", action="store_true", help="captura todos los tipos aunque config.json limite el alcance")
     f = sub.add_parser("ficha"); f.add_argument("url")
     args = ap.parse_args()
     if args.op == "descubrir":
