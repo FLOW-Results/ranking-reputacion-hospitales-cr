@@ -46,12 +46,13 @@ Lista de hospitales que ENTRAN al ranking. Es la lista blanca: el scraper solo r
       "direccion": "...", "telefono": "+506 2522 1000", "sitio_web": "https://www.clinicabiblica.com/",
       "maps_url": "https://www.google.com/maps/place/...",
       "muestra_resenas": {"visibles": 8, "con_respuesta": 3},
+      "estado": "abierto",
       "error": null
     }
   ]
 }
 ```
-`distribucion` y `muestra_resenas` pueden venir `null` si Google no los mostró ese mes. `error` trae texto si el perfil no se pudo leer.
+`distribucion` y `muestra_resenas` pueden venir `null` si Google no los mostró ese mes. `error` trae texto si el perfil no se pudo leer. `estado` es `abierto`, `cerrado_temporalmente` o `cerrado_permanentemente` (los cerrados quedan fuera del ranking). Solo se rankean los `tipo` incluidos en `config.json` (`tipos_incluidos`); el resto cuenta en `universo.fuera_de_alcance`.
 
 ## `data/ranking/AAAA-MM.json` (lo escribe `score.py`; es lo que consume el sitio)
 ```json
@@ -62,8 +63,10 @@ Lista de hospitales que ENTRAN al ranking. Es la lista blanca: el scraper solo r
   "capturado": "2026-09-21T22:40:00-06:00",
   "proxima_actualizacion": "2026-10-01",
   "fuente": "Google Business Profile (Google Maps) vía Firecrawl",
-  "universo": {"total": 62, "publicos": 30, "privados": 32, "sin_datos": 1},
-  "parametros": {"m": 250, "C": 3.87, "pesos": {"calificacion_ajustada": 0.75, "volumen": 0.25}, "minimo_resenas": 10},
+  "hay_edicion_anterior": false,
+  "periodo_anterior": null,
+  "universo": {"total": 24, "publicos": 0, "privados": 24, "sin_datos": 1, "fuera_de_alcance": 30},
+  "parametros": {"m": 141, "C": 4.01, "pesos": {"calificacion_ajustada": 0.75, "volumen": 0.25}, "minimo_resenas": 30, "tipos_incluidos": ["privado"]},
   "hospitales": [
     {
       "id": "hospital-clinica-biblica-san-jose",

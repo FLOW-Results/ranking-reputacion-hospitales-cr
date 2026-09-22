@@ -74,6 +74,7 @@ def main():
             "sitio_web": (match or {}).get("sitio_web") or h.get("sitio_web"),
             "maps_url": (match.get("maps_url") if match else None) or h.get("maps_url"), "cid": match["cid"] if match else None,
             "categoria_google": (match or {}).get("categoria_google"),
+            "grupo": h.get("grupo"),
             "fuentes": h.get("fuentes", []), "confianza": h.get("confianza"), "notas": h.get("notas", ""),
         }
         if match:

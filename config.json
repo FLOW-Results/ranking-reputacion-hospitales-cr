@@ -12,7 +12,7 @@
     "calificacion_ajustada": 0.75,
     "volumen": 0.25
   },
-  "minimo_resenas_para_ranking": 10,
+  "minimo_resenas_para_ranking": 30,
   "tipos_incluidos": [
     "privado"
   ]

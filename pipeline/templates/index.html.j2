@@ -43,7 +43,7 @@
   --color-bg: #ffffff;
   --color-texto: #111111;
   --color-muted: #5b5b5b;
-  --color-muted-claro: #8a8a8a;
+  --color-muted-claro: #6f6f6f;
   --color-borde: #e2e2e2;
   --color-borde-fuerte: #c9c9c9;
   --color-acento: #123B6D;
@@ -121,6 +121,7 @@ table.ranking-table th[aria-sort="ascending"]::after { content: " ▲"; }
 table.ranking-table th[aria-sort="descending"]::after { content: " ▼"; }
 .hospital-nombre { display: block; font-weight: 600; }
 .hospital-tipo { display: block; font-size: .8rem; color: var(--color-muted); margin-top: .1rem; }
+.hospital-grupo { display: block; font-size: .78rem; color: var(--color-muted); margin-top: .1rem; }
 .hospital-ubicacion { display: block; font-size: .8rem; color: var(--color-muted-claro); }
 .calificacion-num { font-weight: 600; margin-left: .2rem; }
 .delta-chico { display: block; font-size: .75rem; color: var(--color-muted); margin-top: .15rem; }
@@ -253,13 +254,13 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
       <h2 id="titulo-tabla">Ranking completo</h2>
 
       <div class="controles" aria-label="Controles de la tabla">
-        <div class="tabs" role="group" aria-label="Filtrar por tipo de hospital">
 {%- if not solo_privados %}
+        <div class="tabs" role="group" aria-label="Filtrar por tipo de hospital">
           <button type="button" class="tab-btn es-activa" data-tab="todos" aria-pressed="true">Todos</button>
           <button type="button" class="tab-btn" data-tab="privado" aria-pressed="false">Privados</button>
           <button type="button" class="tab-btn" data-tab="publico" aria-pressed="false">Públicos (CCSS e INS)</button>
-{%- endif %}
         </div>
+{%- endif %}
         <div class="filtros-secundarios">
           <div class="campo-filtro">
             <label for="filtro-provincia">Provincia</label>
@@ -310,6 +311,9 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
               <span class="hospital-nombre">{{ h.nombre_google }}</span>
 {%- if not solo_privados %}
               <span class="hospital-tipo">{{ h.tipo_label }}</span>
+{%- endif %}
+{%- if h.grupo %}
+              <span class="hospital-grupo">Red {{ h.grupo }}</span>
 {%- endif %}
               <span class="hospital-ubicacion">{{ h.provincia }}, {{ h.canton }}</span>
             </td>
@@ -379,7 +383,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
       <h2 id="titulo-fuera">Fuera del ranking</h2>
       <ul>
         {% for h in fuera %}
-        <li><strong>{{ h.nombre_google }}</strong>{% if not solo_privados %} ({{ h.tipo_label }}){% endif %}: {{ h.motivo_exclusion }}</li>
+        <li><strong>{{ h.nombre_google }}</strong>{% if not solo_privados %} ({{ h.tipo_label }}){% endif %}: {{ h.motivo_exclusion }}{% if h.ultima_posicion %} {{ h.ultima_posicion }}{% endif %}</li>
         {% endfor %}
       </ul>
     </section>
@@ -453,6 +457,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
   var tabla = document.querySelector(".ranking-table");
   if (!tabla) { return; }
   var cuerpo = tabla.querySelector("tbody");
+  function sinTildes(t) { var texto = t ? String(t) : ""; return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
   var botonesTab = Array.prototype.slice.call(document.querySelectorAll(".tab-btn"));
   var selectorProvincia = document.getElementById("filtro-provincia");
   var buscador = document.getElementById("buscador-nombre");
@@ -477,7 +482,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
       total += 1;
       var coincideTipo = estado.tab === "todos" ? true : fila.dataset.tipo === estado.tab;
       var coincideProvincia = estado.provincia === "" ? true : fila.dataset.provincia === estado.provincia;
-      var coincideTexto = estado.texto === "" ? true : fila.dataset.nombre.indexOf(estado.texto) !== -1;
+      var coincideTexto = estado.texto === "" ? true : sinTildes(fila.dataset.nombre).indexOf(estado.texto) !== -1;
       var visible = coincideTipo && coincideProvincia && coincideTexto;
       fila.hidden = !visible;
       var detalle = detalleDe(fila);
@@ -521,7 +526,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
 
   if (buscador) {
     buscador.addEventListener("input", function () {
-      estado.texto = buscador.value.trim().toLowerCase();
+      estado.texto = sinTildes(buscador.value.trim());
       aplicarFiltros();
     });
   }

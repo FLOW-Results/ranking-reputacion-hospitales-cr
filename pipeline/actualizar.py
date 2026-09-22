@@ -40,6 +40,29 @@ def main():
     print(f"Fichas leídas: {ok}/{total}")
     if total == 0 or ok / total < args.umbral:
         sys.exit(f"Captura insuficiente ({ok}/{total}); no se publica el ranking de {args.periodo}")
+    # Plausibilidad: calificación dentro de 1 a 5 y sin saltos raros de reseñas contra el mes anterior
+    carpeta = os.path.join(RAIZ, "data", "snapshots")
+    previos = sorted(f for f in os.listdir(carpeta) if f.endswith(".json") and f[:-5] < args.periodo)
+    anterior = {}
+    if previos:
+        anterior = {h.get("cid"): h for h in json.load(open(os.path.join(carpeta, previos[-1]), encoding="utf-8"))["hospitales"] if h.get("cid")}
+    sospechosos = []
+    for h in snap["hospitales"]:
+        if h.get("error"):
+            continue
+        cal, n = h.get("calificacion"), h.get("resenas")
+        if cal is not None and not (1.0 <= cal <= 5.0):
+            sospechosos.append(f"{h['id']}: calificación fuera de rango ({cal})")
+        p = anterior.get(h.get("cid"))
+        if p and p.get("resenas") and n is not None:
+            if n < p["resenas"] * 0.7 or n > p["resenas"] * 1.6 + 20:
+                sospechosos.append(f"{h['id']}: reseñas pasaron de {p['resenas']} a {n}")
+            if p.get("calificacion") is not None and cal is not None and abs(cal - p["calificacion"]) >= 0.6:
+                sospechosos.append(f"{h['id']}: calificación pasó de {p['calificacion']} a {cal}")
+    for s in sospechosos:
+        print("AVISO plausibilidad:", s)
+    if ok and len(sospechosos) > ok * 0.25:
+        sys.exit(f"Demasiados datos implausibles ({len(sospechosos)} de {ok}); revisar el extractor antes de publicar")
     correr(PY, "pipeline/score.py", "--periodo", args.periodo)
     correr(PY, "pipeline/build_site.py", "--out", "docs")
     print("Actualización completa.")

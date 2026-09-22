@@ -172,6 +172,11 @@ def parsear_ficha(html: str) -> dict:
     dire = soup.select_one('button[aria-label^="Dirección"]')
     tel = soup.select_one('button[aria-label^="Teléfono"]')
     web = soup.select_one('a[aria-label^="Sitio web"]')
+    estado = "abierto"
+    if soup.find_all(string=re.compile(r"^\s*Cerrado permanentemente\s*$")):
+        estado = "cerrado_permanentemente"
+    elif soup.find_all(string=re.compile(r"^\s*Cerrado temporalmente\s*$")):
+        estado = "cerrado_temporalmente"
     revs = soup.select("div.jftiEf")
     muestra = None
     if revs:
@@ -187,6 +192,7 @@ def parsear_ficha(html: str) -> dict:
         "telefono": tel["aria-label"].split(":", 1)[1].strip() if tel else None,
         "sitio_web": web.get("href") if web else None,
         "muestra_resenas": muestra,
+        "estado": estado,
     }
 
 

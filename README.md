@@ -1,8 +1,11 @@
 # Ranking de Reputación Hospitalaria de Costa Rica
 
-Sitio estático que ordena todos los hospitales de Costa Rica (públicos y privados) según la reputación que
-muestran sus perfiles públicos de Google (Google Business Profile). Se actualiza solo el día 1 de cada mes
-con GitHub Actions y se publica en GitHub Pages desde la carpeta `docs/`.
+Sitio estático que ordena los hospitales privados de Costa Rica según la reputación que muestran sus
+perfiles públicos de Google (Google Business Profile). Se actualiza solo el día 1 de cada mes con GitHub
+Actions y se publica en GitHub Pages desde la carpeta `docs/`.
+
+Alcance: `config.json` fija `tipos_incluidos: ["privado"]`. El censo (`data/hospitales.json`) también trae los
+30 hospitales públicos (CCSS e INS) por si algún día se amplía el alcance, pero no se capturan ni se rankean.
 
 ## Cómo funciona
 
@@ -35,7 +38,8 @@ Costo aproximado: una lectura de Firecrawl por hospital al mes (menos de 200 cr�
    reseñas se acerca al promedio nacional hasta que acumula evidencia.
 2. Volumen de voz: `log10(n+1) / log10(n_max+1)`.
 3. Índice = 75% calificación ajustada (llevada a 0 a 100) + 25% volumen. Pesos en `config.json`.
-4. Mínimo 10 reseñas para entrar al ranking.
+4. Mínimo 30 reseñas para entrar al ranking (`minimo_resenas_para_ranking` en `config.json`).
+5. Un perfil que Google marca como cerrado (permanente o temporalmente) queda fuera ese mes.
 
 El porcentaje de reseñas de 5 y de 1 estrella y la tasa de respuesta son señales complementarias; no entran al índice.
 

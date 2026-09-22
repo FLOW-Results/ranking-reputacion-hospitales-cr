@@ -12,14 +12,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "dateModified": "2026-09-21T23:29:59-06:00", "description": "Ranking mensual de la reputaci\u00f3n de los hospitales privados de Costa Rica seg\u00fan las rese\u00f1as p\u00fablicas de Google. Se actualiza el primer d\u00eda de cada mes.", "distribution": {"@type": "DataDownload", "contentUrl": "https://flow-results.github.io/ranking-reputacion-hospitales-cr/data/latest.csv", "encodingFormat": "text/csv"}, "name": "Ranking de Reputaci\u00f3n de Hospitales Privados de Costa Rica", "url": "https://flow-results.github.io/ranking-reputacion-hospitales-cr/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "dateModified": "2026-09-21T23:52:02-06:00", "description": "Ranking mensual de la reputaci\u00f3n de los hospitales privados de Costa Rica seg\u00fan las rese\u00f1as p\u00fablicas de Google. Se actualiza el primer d\u00eda de cada mes.", "distribution": {"@type": "DataDownload", "contentUrl": "https://flow-results.github.io/ranking-reputacion-hospitales-cr/data/latest.csv", "encodingFormat": "text/csv"}, "name": "Ranking de Reputaci\u00f3n de Hospitales Privados de Costa Rica", "url": "https://flow-results.github.io/ranking-reputacion-hospitales-cr/"}</script>
 <style>
 :root {
   color-scheme: light;
   --color-bg: #ffffff;
   --color-texto: #111111;
   --color-muted: #5b5b5b;
-  --color-muted-claro: #8a8a8a;
+  --color-muted-claro: #6f6f6f;
   --color-borde: #e2e2e2;
   --color-borde-fuerte: #c9c9c9;
   --color-acento: #123B6D;
@@ -97,6 +97,7 @@ table.ranking-table th[aria-sort="ascending"]::after { content: " ▲"; }
 table.ranking-table th[aria-sort="descending"]::after { content: " ▼"; }
 .hospital-nombre { display: block; font-weight: 600; }
 .hospital-tipo { display: block; font-size: .8rem; color: var(--color-muted); margin-top: .1rem; }
+.hospital-grupo { display: block; font-size: .78rem; color: var(--color-muted); margin-top: .1rem; }
 .hospital-ubicacion { display: block; font-size: .8rem; color: var(--color-muted-claro); }
 .calificacion-num { font-weight: 600; margin-left: .2rem; }
 .delta-chico { display: block; font-size: .75rem; color: var(--color-muted); margin-top: .15rem; }
@@ -189,9 +190,9 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
     <h1>Ranking de Reputación de Hospitales Privados de Costa Rica</h1>
     <p class="subtitulo">Edición de septiembre de 2026</p>
     <p class="linea-datos">Datos capturados el 21 de septiembre de 2026. Próxima actualización: 1 de octubre de 2026. Fuente: Google Business Profile (Google Maps) vía Firecrawl.</p>
-    <div class="cifras-universo">      <div class="cifra"><span class="cifra-numero">25</span><span class="cifra-etiqueta">Hospitales privados en el universo</span></div>
-      <div class="cifra"><span class="cifra-numero">24</span><span class="cifra-etiqueta">En el ranking</span></div>
-      <div class="cifra"><span class="cifra-numero">1</span><span class="cifra-etiqueta">Sin datos suficientes</span></div>    </div>
+    <div class="cifras-universo">      <div class="cifra"><span class="cifra-numero">24</span><span class="cifra-etiqueta">Hospitales privados en el universo</span></div>
+      <div class="cifra"><span class="cifra-numero">20</span><span class="cifra-etiqueta">En el ranking</span></div>
+      <div class="cifra"><span class="cifra-numero">4</span><span class="cifra-etiqueta">Sin datos suficientes</span></div>    </div>
   </div>
 </header>
 
@@ -205,19 +206,19 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
           <span class="podio-posicion">1</span>
           <h3 class="podio-nombre">Hospital Clínica Bíblica (San José)</h3>          <p class="podio-calificacion"><span class="estrellas" aria-hidden="true">★★★★★</span><span class="sr-only">4.6 de 5 estrellas</span><span class="podio-calificacion-num">4.6</span></p>
           <p class="podio-resenas">2,001 reseñas</p>
-          <p class="podio-indice">Índice <strong>91.8</strong></p>
+          <p class="podio-indice">Índice <strong>91.5</strong></p>
         </li>
         <li class="podio-tarjeta">
           <span class="podio-posicion">2</span>
           <h3 class="podio-nombre">Hospital Metropolitano • San Carlos</h3>          <p class="podio-calificacion"><span class="estrellas" aria-hidden="true">★★★★★</span><span class="sr-only">4.9 de 5 estrellas</span><span class="podio-calificacion-num">4.9</span></p>
           <p class="podio-resenas">247 reseñas</p>
-          <p class="podio-indice">Índice <strong>85.2</strong></p>
+          <p class="podio-indice">Índice <strong>84.0</strong></p>
         </li>
         <li class="podio-tarjeta">
           <span class="podio-posicion">3</span>
-          <h3 class="podio-nombre">Hospital Metropolitano • Liberia</h3>          <p class="podio-calificacion"><span class="estrellas" aria-hidden="true">★★★★★</span><span class="sr-only">4.5 de 5 estrellas</span><span class="podio-calificacion-num">4.5</span></p>
-          <p class="podio-resenas">151 reseñas</p>
-          <p class="podio-indice">Índice <strong>77.8</strong></p>
+          <h3 class="podio-nombre">Hospital Metropolitano (San José)</h3>          <p class="podio-calificacion"><span class="estrellas" aria-hidden="true">★★★★☆</span><span class="sr-only">4.0 de 5 estrellas</span><span class="podio-calificacion-num">4.0</span></p>
+          <p class="podio-resenas">598 reseñas</p>
+          <p class="podio-indice">Índice <strong>77.4</strong></p>
         </li>
       </ol>
     </section>
@@ -225,14 +226,12 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
     <section class="tabla-ranking" aria-labelledby="titulo-tabla">
       <h2 id="titulo-tabla">Ranking completo</h2>
 
-      <div class="controles" aria-label="Controles de la tabla">
-        <div class="tabs" role="group" aria-label="Filtrar por tipo de hospital">        </div>
-        <div class="filtros-secundarios">
+      <div class="controles" aria-label="Controles de la tabla">        <div class="filtros-secundarios">
           <div class="campo-filtro">
             <label for="filtro-provincia">Provincia</label>
             <select id="filtro-provincia">
               <option value="">Todas las provincias</option>
-<option value="Alajuela">Alajuela</option><option value="Cartago">Cartago</option><option value="Guanacaste">Guanacaste</option><option value="Heredia">Heredia</option><option value="Puntarenas">Puntarenas</option><option value="San José">San José</option>            </select>
+<option value="Alajuela">Alajuela</option><option value="Cartago">Cartago</option><option value="Guanacaste">Guanacaste</option><option value="Heredia">Heredia</option><option value="San José">San José</option>            </select>
           </div>
           <div class="campo-filtro">
             <label for="buscador-nombre">Buscar hospital</label>
@@ -268,17 +267,17 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
               data-resenas="2001"
               data-pct5="85.7"
               data-pct1="6.8"
-              data-indice="91.8">
+              data-indice="91.5">
             <td class="col-posicion" data-label="Posición"><span class="valor-pos">1</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
-              <span class="hospital-nombre">Hospital Clínica Bíblica (San José)</span>              <span class="hospital-ubicacion">San José, San José</span>
+              <span class="hospital-nombre">Hospital Clínica Bíblica (San José)</span>              <span class="hospital-grupo">Red Hospital Clínica Bíblica</span>              <span class="hospital-ubicacion">San José, San José</span>
             </td>
             <td class="col-calificacion" data-label="Calificación"><span class="estrellas" aria-hidden="true">★★★★★</span><span class="sr-only">4.6 de 5 estrellas</span><span class="calificacion-num">4.6</span></td>
             <td class="col-resenas" data-label="Reseñas">2,001</td>
             <td class="col-pct5" data-label="% 5 estrellas">85.7%</td>
             <td class="col-pct1" data-label="% 1 estrella">6.8%</td>
-            <td class="col-indice" data-label="Índice"><strong>91.8</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 91.8%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>91.5</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 91.5%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-clinica-biblica-san-jose">Ver detalle</button>
             </td>
@@ -313,8 +312,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>4.56</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>89.0</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>4.55</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>88.7</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>100.0</dd></div>
                   </dl>
                 </div>
@@ -339,17 +338,17 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
               data-resenas="247"
               data-pct5=""
               data-pct1=""
-              data-indice="85.2">
+              data-indice="84.0">
             <td class="col-posicion" data-label="Posición"><span class="valor-pos">2</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
-              <span class="hospital-nombre">Hospital Metropolitano • San Carlos</span>              <span class="hospital-ubicacion">Alajuela, San Carlos</span>
+              <span class="hospital-nombre">Hospital Metropolitano • San Carlos</span>              <span class="hospital-grupo">Red Hospital Metropolitano</span>              <span class="hospital-ubicacion">Alajuela, San Carlos</span>
             </td>
             <td class="col-calificacion" data-label="Calificación"><span class="estrellas" aria-hidden="true">★★★★★</span><span class="sr-only">4.9 de 5 estrellas</span><span class="calificacion-num">4.9</span></td>
             <td class="col-resenas" data-label="Reseñas">247</td>
             <td class="col-pct5" data-label="% 5 estrellas">N/D</td>
             <td class="col-pct1" data-label="% 1 estrella">N/D</td>
-            <td class="col-indice" data-label="Índice"><strong>85.2</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 85.2%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>84.0</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 84.0%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-metropolitano-san-carlos">Ver detalle</button>
             </td>
@@ -362,8 +361,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>4.58</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>89.5</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>4.51</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>87.9</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>72.5</dd></div>
                   </dl>
                 </div>
@@ -380,96 +379,25 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
           </tr>
           <tr class="row-main"
               data-tipo="privado"
-              data-provincia="Guanacaste"
-              data-nombre="hospital metropolitano • liberia"
-              data-pos-todos="3"
-              data-pos-tipo="3"
-              data-calificacion="4.5"
-              data-resenas="151"
-              data-pct5="83.4"
-              data-pct1="11.9"
-              data-indice="77.8">
-            <td class="col-posicion" data-label="Posición"><span class="valor-pos">3</span></td>
-            <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
-            <td class="col-hospital" data-label="Hospital">
-              <span class="hospital-nombre">Hospital Metropolitano • Liberia</span>              <span class="hospital-ubicacion">Guanacaste, Liberia</span>
-            </td>
-            <td class="col-calificacion" data-label="Calificación"><span class="estrellas" aria-hidden="true">★★★★★</span><span class="sr-only">4.5 de 5 estrellas</span><span class="calificacion-num">4.5</span></td>
-            <td class="col-resenas" data-label="Reseñas">151</td>
-            <td class="col-pct5" data-label="% 5 estrellas">83.4%</td>
-            <td class="col-pct1" data-label="% 1 estrella">11.9%</td>
-            <td class="col-indice" data-label="Índice"><strong>77.8</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 77.8%;"></div></div></td>
-            <td class="col-detalle">
-              <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-metropolitano-liberia">Ver detalle</button>
-            </td>
-          </tr>
-          <tr class="row-detalle" id="detalle-hospital-metropolitano-liberia" data-abierta="0" hidden>
-            <td colspan="9">
-              <div class="detalle-contenido">
-                <div class="detalle-bloque">
-                  <h4>Distribución de reseñas</h4>
-<div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">5<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 83.4%;"></span></span>
-<span class="fila-distribucion-valor">126 (83.4%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">4<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 3.3%;"></span></span>
-<span class="fila-distribucion-valor">5 (3.3%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">3<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 1.3%;"></span></span>
-<span class="fila-distribucion-valor">2 (1.3%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">2<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 0.0%;"></span></span>
-<span class="fila-distribucion-valor">0 (0.0%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">1<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 11.9%;"></span></span>
-<span class="fila-distribucion-valor">18 (11.9%)</span>
-</div>                </div>
-
-                <div class="detalle-bloque detalle-cifras">
-                  <h4>Cómo se calculó el índice</h4>
-                  <dl>
-                    <div><dt>Calificación ajustada</dt><dd>4.27</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>81.6</dd></div>
-                    <div><dt>Puntaje de volumen</dt><dd>66.1</dd></div>
-                  </dl>
-                </div>
-
-                <div class="detalle-bloque">
-                  <h4>Contacto</h4>
-                  <p>Frente al Estadio Edgardo Baltodano, Provincia de Guanacaste, Liberia, Moracia, 50101, Costa Rica<br>+506 2521 9595</p>
-                  <p class="detalle-enlaces">
-<a href="https://metropolitanocr.com/">Sitio web</a><a href="https://www.google.com/maps/place/Hospital+Metropolitano+%E2%80%A2+Liberia/data=!4m7!3m6!1s0x8f7563f7202f0d5b:0xea47763bff7f1fff!8m2!3d10.6364031!4d-85.4323226!16s%2Fg%2F11j2fgj4_b!19sChIJWw0vIPdjdY8R_x9__zt2R-o?hl=es">Ver en Google Maps</a>                  </p>
-<p class="detalle-nota">Responde reseñas: 3 de 3 visibles.</p>                </div>
-
-              </div>
-            </td>
-          </tr>
-          <tr class="row-main"
-              data-tipo="privado"
               data-provincia="San José"
               data-nombre="hospital metropolitano (san josé)"
-              data-pos-todos="4"
-              data-pos-tipo="4"
+              data-pos-todos="3"
+              data-pos-tipo="3"
               data-calificacion="4.0"
               data-resenas="598"
               data-pct5="70.2"
               data-pct1="20.4"
-              data-indice="77.3">
-            <td class="col-posicion" data-label="Posición"><span class="valor-pos">4</span></td>
+              data-indice="77.4">
+            <td class="col-posicion" data-label="Posición"><span class="valor-pos">3</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
-              <span class="hospital-nombre">Hospital Metropolitano (San José)</span>              <span class="hospital-ubicacion">San José, San José</span>
+              <span class="hospital-nombre">Hospital Metropolitano (San José)</span>              <span class="hospital-grupo">Red Hospital Metropolitano</span>              <span class="hospital-ubicacion">San José, San José</span>
             </td>
             <td class="col-calificacion" data-label="Calificación"><span class="estrellas" aria-hidden="true">★★★★☆</span><span class="sr-only">4.0 de 5 estrellas</span><span class="calificacion-num">4.0</span></td>
             <td class="col-resenas" data-label="Reseñas">598</td>
             <td class="col-pct5" data-label="% 5 estrellas">70.2%</td>
             <td class="col-pct1" data-label="% 1 estrella">20.4%</td>
-            <td class="col-indice" data-label="Índice"><strong>77.3</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 77.3%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>77.4</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 77.4%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-metropolitano-san-jose">Ver detalle</button>
             </td>
@@ -504,8 +432,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>4.00</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>75.1</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>4.01</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>75.2</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>84.1</dd></div>
                   </dl>
                 </div>
@@ -522,6 +450,77 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
           </tr>
           <tr class="row-main"
               data-tipo="privado"
+              data-provincia="Guanacaste"
+              data-nombre="hospital metropolitano • liberia"
+              data-pos-todos="4"
+              data-pos-tipo="4"
+              data-calificacion="4.5"
+              data-resenas="151"
+              data-pct5="83.4"
+              data-pct1="11.9"
+              data-indice="77.1">
+            <td class="col-posicion" data-label="Posición"><span class="valor-pos">4</span></td>
+            <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
+            <td class="col-hospital" data-label="Hospital">
+              <span class="hospital-nombre">Hospital Metropolitano • Liberia</span>              <span class="hospital-grupo">Red Hospital Metropolitano</span>              <span class="hospital-ubicacion">Guanacaste, Liberia</span>
+            </td>
+            <td class="col-calificacion" data-label="Calificación"><span class="estrellas" aria-hidden="true">★★★★★</span><span class="sr-only">4.5 de 5 estrellas</span><span class="calificacion-num">4.5</span></td>
+            <td class="col-resenas" data-label="Reseñas">151</td>
+            <td class="col-pct5" data-label="% 5 estrellas">83.4%</td>
+            <td class="col-pct1" data-label="% 1 estrella">11.9%</td>
+            <td class="col-indice" data-label="Índice"><strong>77.1</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 77.1%;"></div></div></td>
+            <td class="col-detalle">
+              <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-metropolitano-liberia">Ver detalle</button>
+            </td>
+          </tr>
+          <tr class="row-detalle" id="detalle-hospital-metropolitano-liberia" data-abierta="0" hidden>
+            <td colspan="9">
+              <div class="detalle-contenido">
+                <div class="detalle-bloque">
+                  <h4>Distribución de reseñas</h4>
+<div class="fila-distribucion">
+<span class="fila-distribucion-etiqueta">5<span aria-hidden="true"> ★</span></span>
+<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 83.4%;"></span></span>
+<span class="fila-distribucion-valor">126 (83.4%)</span>
+</div><div class="fila-distribucion">
+<span class="fila-distribucion-etiqueta">4<span aria-hidden="true"> ★</span></span>
+<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 3.3%;"></span></span>
+<span class="fila-distribucion-valor">5 (3.3%)</span>
+</div><div class="fila-distribucion">
+<span class="fila-distribucion-etiqueta">3<span aria-hidden="true"> ★</span></span>
+<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 1.3%;"></span></span>
+<span class="fila-distribucion-valor">2 (1.3%)</span>
+</div><div class="fila-distribucion">
+<span class="fila-distribucion-etiqueta">2<span aria-hidden="true"> ★</span></span>
+<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 0.0%;"></span></span>
+<span class="fila-distribucion-valor">0 (0.0%)</span>
+</div><div class="fila-distribucion">
+<span class="fila-distribucion-etiqueta">1<span aria-hidden="true"> ★</span></span>
+<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 11.9%;"></span></span>
+<span class="fila-distribucion-valor">18 (11.9%)</span>
+</div>                </div>
+
+                <div class="detalle-bloque detalle-cifras">
+                  <h4>Cómo se calculó el índice</h4>
+                  <dl>
+                    <div><dt>Calificación ajustada</dt><dd>4.23</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>80.8</dd></div>
+                    <div><dt>Puntaje de volumen</dt><dd>66.1</dd></div>
+                  </dl>
+                </div>
+
+                <div class="detalle-bloque">
+                  <h4>Contacto</h4>
+                  <p>Frente al Estadio Edgardo Baltodano, Provincia de Guanacaste, Liberia, Moracia, 50101, Costa Rica<br>+506 2521 9595</p>
+                  <p class="detalle-enlaces">
+<a href="https://metropolitanocr.com/">Sitio web</a><a href="https://www.google.com/maps/place/Hospital+Metropolitano+%E2%80%A2+Liberia/data=!4m7!3m6!1s0x8f7563f7202f0d5b:0xea47763bff7f1fff!8m2!3d10.6364031!4d-85.4323226!16s%2Fg%2F11j2fgj4_b!19sChIJWw0vIPdjdY8R_x9__zt2R-o?hl=es">Ver en Google Maps</a>                  </p>
+<p class="detalle-nota">Responde reseñas: 3 de 3 visibles.</p>                </div>
+
+              </div>
+            </td>
+          </tr>
+          <tr class="row-main"
+              data-tipo="privado"
               data-provincia="San José"
               data-nombre="hospital clínica bíblica (santa ana)"
               data-pos-todos="5"
@@ -530,17 +529,17 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
               data-resenas="239"
               data-pct5="75.7"
               data-pct1="16.3"
-              data-indice="76.7">
+              data-indice="76.6">
             <td class="col-posicion" data-label="Posición"><span class="valor-pos">5</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
-              <span class="hospital-nombre">Hospital Clínica Bíblica (Santa Ana)</span>              <span class="hospital-ubicacion">San José, Santa Ana</span>
+              <span class="hospital-nombre">Hospital Clínica Bíblica (Santa Ana)</span>              <span class="hospital-grupo">Red Hospital Clínica Bíblica</span>              <span class="hospital-ubicacion">San José, Santa Ana</span>
             </td>
             <td class="col-calificacion" data-label="Calificación"><span class="estrellas" aria-hidden="true">★★★★☆</span><span class="sr-only">4.2 de 5 estrellas</span><span class="calificacion-num">4.2</span></td>
             <td class="col-resenas" data-label="Reseñas">239</td>
             <td class="col-pct5" data-label="% 5 estrellas">75.7%</td>
             <td class="col-pct1" data-label="% 1 estrella">16.3%</td>
-            <td class="col-indice" data-label="Índice"><strong>76.7</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 76.7%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>76.6</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 76.6%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-clinica-biblica-santa-ana">Ver detalle</button>
             </td>
@@ -575,8 +574,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>4.13</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>78.3</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>4.12</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>78.0</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>72.1</dd></div>
                   </dl>
                 </div>
@@ -601,17 +600,17 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
               data-resenas="381"
               data-pct5="69.0"
               data-pct1="25.2"
-              data-indice="74.5">
+              data-indice="74.7">
             <td class="col-posicion" data-label="Posición"><span class="valor-pos">6</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
-              <span class="hospital-nombre">Hospital Metropolitano • Curridabat</span>              <span class="hospital-ubicacion">San José, Curridabat</span>
+              <span class="hospital-nombre">Hospital Metropolitano • Curridabat</span>              <span class="hospital-grupo">Red Hospital Metropolitano</span>              <span class="hospital-ubicacion">San José, Curridabat</span>
             </td>
             <td class="col-calificacion" data-label="Calificación"><span class="estrellas" aria-hidden="true">★★★★☆</span><span class="sr-only">3.9 de 5 estrellas</span><span class="calificacion-num">3.9</span></td>
             <td class="col-resenas" data-label="Reseñas">381</td>
             <td class="col-pct5" data-label="% 5 estrellas">69.0%</td>
             <td class="col-pct1" data-label="% 1 estrella">25.2%</td>
-            <td class="col-indice" data-label="Índice"><strong>74.5</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 74.5%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>74.7</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 74.7%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-metropolitano-plaza-del-sol-curridabat">Ver detalle</button>
             </td>
@@ -646,8 +645,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>3.93</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>73.3</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>3.94</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>73.6</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>78.2</dd></div>
                   </dl>
                 </div>
@@ -672,17 +671,17 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
               data-resenas="131"
               data-pct5="72.5"
               data-pct1="19.8"
-              data-indice="72.5">
+              data-indice="72.6">
             <td class="col-posicion" data-label="Posición"><span class="valor-pos">7</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
-              <span class="hospital-nombre">Hospital Metropolitano • Huacas de Santa Cruz</span>              <span class="hospital-ubicacion">Guanacaste, Santa Cruz</span>
+              <span class="hospital-nombre">Hospital Metropolitano • Huacas de Santa Cruz</span>              <span class="hospital-grupo">Red Hospital Metropolitano</span>              <span class="hospital-ubicacion">Guanacaste, Santa Cruz</span>
             </td>
             <td class="col-calificacion" data-label="Calificación"><span class="estrellas" aria-hidden="true">★★★★☆</span><span class="sr-only">4.0 de 5 estrellas</span><span class="calificacion-num">4.0</span></td>
             <td class="col-resenas" data-label="Reseñas">131</td>
             <td class="col-pct5" data-label="% 5 estrellas">72.5%</td>
             <td class="col-pct1" data-label="% 1 estrella">19.8%</td>
-            <td class="col-indice" data-label="Índice"><strong>72.5</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 72.5%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>72.6</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 72.6%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-metropolitano-huacas">Ver detalle</button>
             </td>
@@ -717,8 +716,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>4.01</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>75.2</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>4.02</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>75.4</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>64.2</dd></div>
                   </dl>
                 </div>
@@ -743,7 +742,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
               data-resenas="260"
               data-pct5="60.4"
               data-pct1="27.3"
-              data-indice="71.0">
+              data-indice="71.5">
             <td class="col-posicion" data-label="Posición"><span class="valor-pos">8</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
@@ -753,7 +752,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
             <td class="col-resenas" data-label="Reseñas">260</td>
             <td class="col-pct5" data-label="% 5 estrellas">60.4%</td>
             <td class="col-pct1" data-label="% 1 estrella">27.3%</td>
-            <td class="col-indice" data-label="Índice"><strong>71.0</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 71.0%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>71.5</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 71.5%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-universal-cartago">Ver detalle</button>
             </td>
@@ -788,8 +787,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>3.81</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>70.3</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>3.84</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>71.0</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>73.2</dd></div>
                   </dl>
                 </div>
@@ -814,7 +813,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
               data-resenas="155"
               data-pct5="63.9"
               data-pct1="27.1"
-              data-indice="70.0">
+              data-indice="70.6">
             <td class="col-posicion" data-label="Posición"><span class="valor-pos">9</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
@@ -824,7 +823,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
             <td class="col-resenas" data-label="Reseñas">155</td>
             <td class="col-pct5" data-label="% 5 estrellas">63.9%</td>
             <td class="col-pct1" data-label="% 1 estrella">27.1%</td>
-            <td class="col-indice" data-label="Índice"><strong>70.0</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 70.0%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>70.6</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 70.6%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-clinica-alpha-alajuela">Ver detalle</button>
             </td>
@@ -859,8 +858,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>3.85</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>71.2</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>3.88</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>72.0</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>66.4</dd></div>
                   </dl>
                 </div>
@@ -885,17 +884,17 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
               data-resenas="105"
               data-pct5="57.1"
               data-pct1="24.8"
-              data-indice="69.3">
+              data-indice="69.9">
             <td class="col-posicion" data-label="Posición"><span class="valor-pos">10</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
-              <span class="hospital-nombre">Clínica Bíblica Liberia</span>              <span class="hospital-ubicacion">Guanacaste, Liberia</span>
+              <span class="hospital-nombre">Clínica Bíblica Liberia</span>              <span class="hospital-grupo">Red Hospital Clínica Bíblica</span>              <span class="hospital-ubicacion">Guanacaste, Liberia</span>
             </td>
             <td class="col-calificacion" data-label="Calificación"><span class="estrellas" aria-hidden="true">★★★★☆</span><span class="sr-only">3.7 de 5 estrellas</span><span class="calificacion-num">3.7</span></td>
             <td class="col-resenas" data-label="Reseñas">105</td>
             <td class="col-pct5" data-label="% 5 estrellas">57.1%</td>
             <td class="col-pct1" data-label="% 1 estrella">24.8%</td>
-            <td class="col-indice" data-label="Índice"><strong>69.3</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 69.3%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>69.9</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 69.9%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-clinico-san-rafael-arcangel-liberia">Ver detalle</button>
             </td>
@@ -930,8 +929,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>3.88</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>72.0</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>3.91</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>72.8</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>61.3</dd></div>
                   </dl>
                 </div>
@@ -956,7 +955,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
               data-resenas="84"
               data-pct5=""
               data-pct1=""
-              data-indice="68.9">
+              data-indice="69.5">
             <td class="col-posicion" data-label="Posición"><span class="valor-pos">11</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
@@ -966,7 +965,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
             <td class="col-resenas" data-label="Reseñas">84</td>
             <td class="col-pct5" data-label="% 5 estrellas">N/D</td>
             <td class="col-pct1" data-label="% 1 estrella">N/D</td>
-            <td class="col-indice" data-label="Índice"><strong>68.9</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 68.9%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>69.5</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 69.5%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-las-americas-perez-zeledon">Ver detalle</button>
             </td>
@@ -979,8 +978,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>3.90</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>72.4</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>3.93</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>73.2</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>58.4</dd></div>
                   </dl>
                 </div>
@@ -1005,7 +1004,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
               data-resenas="307"
               data-pct5="50.5"
               data-pct1="29.0"
-              data-indice="68.8">
+              data-indice="69.5">
             <td class="col-posicion" data-label="Posición"><span class="valor-pos">12</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
@@ -1015,7 +1014,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
             <td class="col-resenas" data-label="Reseñas">307</td>
             <td class="col-pct5" data-label="% 5 estrellas">50.5%</td>
             <td class="col-pct1" data-label="% 1 estrella">29.0%</td>
-            <td class="col-indice" data-label="Índice"><strong>68.8</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 68.8%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>69.5</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 69.5%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-internacional-la-catolica-guadalupe">Ver detalle</button>
             </td>
@@ -1050,8 +1049,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>3.66</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>66.5</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>3.70</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>67.6</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>75.4</dd></div>
                   </dl>
                 </div>
@@ -1076,17 +1075,17 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
               data-resenas="234"
               data-pct5=""
               data-pct1=""
-              data-indice="68.5">
+              data-indice="69.3">
             <td class="col-posicion" data-label="Posición"><span class="valor-pos">13</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
-              <span class="hospital-nombre">Hospital Metropolitano (Moravia)</span>              <span class="hospital-ubicacion">San José, Moravia</span>
+              <span class="hospital-nombre">Hospital Metropolitano (Moravia)</span>              <span class="hospital-grupo">Red Hospital Metropolitano</span>              <span class="hospital-ubicacion">San José, Moravia</span>
             </td>
             <td class="col-calificacion" data-label="Calificación"><span class="estrellas" aria-hidden="true">★★★★☆</span><span class="sr-only">3.5 de 5 estrellas</span><span class="calificacion-num">3.5</span></td>
             <td class="col-resenas" data-label="Reseñas">234</td>
             <td class="col-pct5" data-label="% 5 estrellas">N/D</td>
             <td class="col-pct1" data-label="% 1 estrella">N/D</td>
-            <td class="col-indice" data-label="Índice"><strong>68.5</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 68.5%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>69.3</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 69.3%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-metropolitano-lincoln-plaza-moravia">Ver detalle</button>
             </td>
@@ -1099,8 +1098,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>3.69</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>67.3</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>3.74</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>68.5</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>71.8</dd></div>
                   </dl>
                 </div>
@@ -1125,7 +1124,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
               data-resenas="86"
               data-pct5="57.0"
               data-pct1="23.3"
-              data-indice="68.3">
+              data-indice="69.0">
             <td class="col-posicion" data-label="Posición"><span class="valor-pos">14</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
@@ -1135,7 +1134,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
             <td class="col-resenas" data-label="Reseñas">86</td>
             <td class="col-pct5" data-label="% 5 estrellas">57.0%</td>
             <td class="col-pct1" data-label="% 1 estrella">23.3%</td>
-            <td class="col-indice" data-label="Índice"><strong>68.3</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 68.3%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>69.0</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 69.0%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-unibe-tibas">Ver detalle</button>
             </td>
@@ -1170,8 +1169,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>3.86</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>71.4</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>3.90</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>72.4</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>58.7</dd></div>
                   </dl>
                 </div>
@@ -1189,86 +1188,15 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
           <tr class="row-main"
               data-tipo="privado"
               data-provincia="San José"
-              data-nombre="hospital metropolitano escazú"
+              data-nombre="hospital cima"
               data-pos-todos="15"
               data-pos-tipo="15"
-              data-calificacion="4.3"
-              data-resenas="23"
-              data-pct5="78.3"
-              data-pct1="17.4"
-              data-indice="67.7">
-            <td class="col-posicion" data-label="Posición"><span class="valor-pos">15</span></td>
-            <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
-            <td class="col-hospital" data-label="Hospital">
-              <span class="hospital-nombre">Hospital Metropolitano Escazú</span>              <span class="hospital-ubicacion">San José, Escazú</span>
-            </td>
-            <td class="col-calificacion" data-label="Calificación"><span class="estrellas" aria-hidden="true">★★★★☆</span><span class="sr-only">4.3 de 5 estrellas</span><span class="calificacion-num">4.3</span></td>
-            <td class="col-resenas" data-label="Reseñas">23</td>
-            <td class="col-pct5" data-label="% 5 estrellas">78.3%</td>
-            <td class="col-pct1" data-label="% 1 estrella">17.4%</td>
-            <td class="col-indice" data-label="Índice"><strong>67.7</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 67.7%;"></div></div></td>
-            <td class="col-detalle">
-              <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-metropolitano-escazu">Ver detalle</button>
-            </td>
-          </tr>
-          <tr class="row-detalle" id="detalle-hospital-metropolitano-escazu" data-abierta="0" hidden>
-            <td colspan="9">
-              <div class="detalle-contenido">
-                <div class="detalle-bloque">
-                  <h4>Distribución de reseñas</h4>
-<div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">5<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 78.3%;"></span></span>
-<span class="fila-distribucion-valor">18 (78.3%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">4<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 4.3%;"></span></span>
-<span class="fila-distribucion-valor">1 (4.3%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">3<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 0.0%;"></span></span>
-<span class="fila-distribucion-valor">0 (0.0%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">2<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 0.0%;"></span></span>
-<span class="fila-distribucion-valor">0 (0.0%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">1<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 17.4%;"></span></span>
-<span class="fila-distribucion-valor">4 (17.4%)</span>
-</div>                </div>
-
-                <div class="detalle-bloque detalle-cifras">
-                  <h4>Cómo se calculó el índice</h4>
-                  <dl>
-                    <div><dt>Calificación ajustada</dt><dd>4.05</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>76.4</dd></div>
-                    <div><dt>Puntaje de volumen</dt><dd>41.8</dd></div>
-                  </dl>
-                </div>
-
-                <div class="detalle-bloque">
-                  <h4>Contacto</h4>
-                  <p>FRENTE A ESQUINA S.O. DEL CENTRO COMERCIAL MULTIPLAZA, San José, Escazú, 10201, Costa Rica<br>+506 2521 9595</p>
-                  <p class="detalle-enlaces">
-<a href="https://metropolitanocr.com/">Sitio web</a><a href="https://www.google.com/maps/place/Hospital+Metropolitano+Escaz%C3%BA/data=!4m7!3m6!1s0x8fa0fb43bb584e67:0xe72ac349f53a82c3!8m2!3d9.9431973!4d-84.1524378!16s%2Fg%2F11z2stclhc!19sChIJZ05Yu0P7oI8Rw4I69UnDKuc?hl=es">Ver en Google Maps</a>                  </p>
-<p class="detalle-nota">Responde reseñas: 3 de 3 visibles.</p>                </div>
-
-              </div>
-            </td>
-          </tr>
-          <tr class="row-main"
-              data-tipo="privado"
-              data-provincia="San José"
-              data-nombre="hospital cima"
-              data-pos-todos="16"
-              data-pos-tipo="16"
               data-calificacion="3.4"
               data-resenas="377"
               data-pct5="48.0"
               data-pct1="31.8"
-              data-indice="67.7">
-            <td class="col-posicion" data-label="Posición"><span class="valor-pos">16</span></td>
+              data-indice="68.5">
+            <td class="col-posicion" data-label="Posición"><span class="valor-pos">15</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
               <span class="hospital-nombre">Hospital CIMA</span>              <span class="hospital-ubicacion">San José, Escazú</span>
@@ -1277,7 +1205,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
             <td class="col-resenas" data-label="Reseñas">377</td>
             <td class="col-pct5" data-label="% 5 estrellas">48.0%</td>
             <td class="col-pct1" data-label="% 1 estrella">31.8%</td>
-            <td class="col-indice" data-label="Índice"><strong>67.7</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 67.7%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>68.5</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 68.5%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-cima-escazu">Ver detalle</button>
             </td>
@@ -1312,8 +1240,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>3.57</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>64.2</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>3.61</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>65.3</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>78.1</dd></div>
                   </dl>
                 </div>
@@ -1330,87 +1258,16 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
           </tr>
           <tr class="row-main"
               data-tipo="privado"
-              data-provincia="Puntarenas"
-              data-nombre="hospital metropolitano • quepos"
-              data-pos-todos="17"
-              data-pos-tipo="17"
-              data-calificacion="3.6"
-              data-resenas="45"
-              data-pct5="60.0"
-              data-pct1="33.3"
-              data-indice="67.2">
-            <td class="col-posicion" data-label="Posición"><span class="valor-pos">17</span></td>
-            <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
-            <td class="col-hospital" data-label="Hospital">
-              <span class="hospital-nombre">Hospital Metropolitano • Quepos</span>              <span class="hospital-ubicacion">Puntarenas, Quepos</span>
-            </td>
-            <td class="col-calificacion" data-label="Calificación"><span class="estrellas" aria-hidden="true">★★★★☆</span><span class="sr-only">3.6 de 5 estrellas</span><span class="calificacion-num">3.6</span></td>
-            <td class="col-resenas" data-label="Reseñas">45</td>
-            <td class="col-pct5" data-label="% 5 estrellas">60.0%</td>
-            <td class="col-pct1" data-label="% 1 estrella">33.3%</td>
-            <td class="col-indice" data-label="Índice"><strong>67.2</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 67.2%;"></div></div></td>
-            <td class="col-detalle">
-              <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-metropolitano-quepos">Ver detalle</button>
-            </td>
-          </tr>
-          <tr class="row-detalle" id="detalle-hospital-metropolitano-quepos" data-abierta="0" hidden>
-            <td colspan="9">
-              <div class="detalle-contenido">
-                <div class="detalle-bloque">
-                  <h4>Distribución de reseñas</h4>
-<div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">5<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 60.0%;"></span></span>
-<span class="fila-distribucion-valor">27 (60.0%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">4<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 6.7%;"></span></span>
-<span class="fila-distribucion-valor">3 (6.7%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">3<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 0.0%;"></span></span>
-<span class="fila-distribucion-valor">0 (0.0%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">2<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 0.0%;"></span></span>
-<span class="fila-distribucion-valor">0 (0.0%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">1<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 33.3%;"></span></span>
-<span class="fila-distribucion-valor">15 (33.3%)</span>
-</div>                </div>
-
-                <div class="detalle-bloque detalle-cifras">
-                  <h4>Cómo se calculó el índice</h4>
-                  <dl>
-                    <div><dt>Calificación ajustada</dt><dd>3.91</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>72.9</dd></div>
-                    <div><dt>Puntaje de volumen</dt><dd>50.4</dd></div>
-                  </dl>
-                </div>
-
-                <div class="detalle-bloque">
-                  <h4>Contacto</h4>
-                  <p>P.º del Mar, Provincia de Puntarenas, Quepos, Costa Rica<br>+506 2521 9595</p>
-                  <p class="detalle-enlaces">
-<a href="https://metropolitanocr.com/">Sitio web</a><a href="https://www.google.com/maps/place/Hospital+Metropolitano+%E2%80%A2+Quepos/@9.4263265,-84.1668227,17z/data=!3m1!4b1!4m6!3m5!1s0x8fa173ea492152b7:0x6efd729e574f01a!8m2!3d9.4263265!4d-84.1668227!16s%2Fg%2F11cnbvt7r3?hl=es">Ver en Google Maps</a>                  </p>
-<p class="detalle-nota">Responde reseñas: 3 de 3 visibles.</p>                </div>
-
-              </div>
-            </td>
-          </tr>
-          <tr class="row-main"
-              data-tipo="privado"
               data-provincia="Alajuela"
               data-nombre="hospital cooperativo"
-              data-pos-todos="18"
-              data-pos-tipo="18"
+              data-pos-todos="16"
+              data-pos-tipo="16"
               data-calificacion="3.6"
               data-resenas="37"
               data-pct5=""
               data-pct1=""
-              data-indice="66.9">
-            <td class="col-posicion" data-label="Posición"><span class="valor-pos">18</span></td>
+              data-indice="67.4">
+            <td class="col-posicion" data-label="Posición"><span class="valor-pos">16</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
               <span class="hospital-nombre">Hospital Cooperativo</span>              <span class="hospital-ubicacion">Alajuela, San Carlos</span>
@@ -1419,7 +1276,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
             <td class="col-resenas" data-label="Reseñas">37</td>
             <td class="col-pct5" data-label="% 5 estrellas">N/D</td>
             <td class="col-pct1" data-label="% 1 estrella">N/D</td>
-            <td class="col-indice" data-label="Índice"><strong>66.9</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 66.9%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>67.4</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 67.4%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-cooperativo-consalud-san-carlos">Ver detalle</button>
             </td>
@@ -1432,8 +1289,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>3.93</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>73.2</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>3.96</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>73.9</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>47.9</dd></div>
                   </dl>
                 </div>
@@ -1452,14 +1309,14 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
               data-tipo="privado"
               data-provincia="San José"
               data-nombre="hospital jerusalem"
-              data-pos-todos="19"
-              data-pos-tipo="19"
+              data-pos-todos="17"
+              data-pos-tipo="17"
               data-calificacion="3.1"
               data-resenas="42"
               data-pct5="38.1"
               data-pct1="38.1"
-              data-indice="65.0">
-            <td class="col-posicion" data-label="Posición"><span class="valor-pos">19</span></td>
+              data-indice="66.0">
+            <td class="col-posicion" data-label="Posición"><span class="valor-pos">17</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
               <span class="hospital-nombre">Hospital Jerusalem</span>              <span class="hospital-ubicacion">San José, Goicoechea</span>
@@ -1468,7 +1325,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
             <td class="col-resenas" data-label="Reseñas">42</td>
             <td class="col-pct5" data-label="% 5 estrellas">38.1%</td>
             <td class="col-pct1" data-label="% 1 estrella">38.1%</td>
-            <td class="col-indice" data-label="Índice"><strong>65.0</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 65.0%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>66.0</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 66.0%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-cristiano-jerusalen-guadalupe">Ver detalle</button>
             </td>
@@ -1503,8 +1360,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>3.81</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>70.1</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>3.86</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>71.5</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>49.5</dd></div>
                   </dl>
                 </div>
@@ -1521,158 +1378,16 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
           </tr>
           <tr class="row-main"
               data-tipo="privado"
-              data-provincia="San José"
-              data-nombre="hospital clínica labrador"
-              data-pos-todos="20"
-              data-pos-tipo="20"
-              data-calificacion="3.5"
-              data-resenas="15"
-              data-pct5="46.7"
-              data-pct1="33.3"
-              data-indice="64.7">
-            <td class="col-posicion" data-label="Posición"><span class="valor-pos">20</span></td>
-            <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
-            <td class="col-hospital" data-label="Hospital">
-              <span class="hospital-nombre">Hospital Clínica Labrador</span>              <span class="hospital-ubicacion">San José, Pérez Zeledón</span>
-            </td>
-            <td class="col-calificacion" data-label="Calificación"><span class="estrellas" aria-hidden="true">★★★★☆</span><span class="sr-only">3.5 de 5 estrellas</span><span class="calificacion-num">3.5</span></td>
-            <td class="col-resenas" data-label="Reseñas">15</td>
-            <td class="col-pct5" data-label="% 5 estrellas">46.7%</td>
-            <td class="col-pct1" data-label="% 1 estrella">33.3%</td>
-            <td class="col-indice" data-label="Índice"><strong>64.7</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 64.7%;"></div></div></td>
-            <td class="col-detalle">
-              <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-clinica-labrador-perez-zeledon">Ver detalle</button>
-            </td>
-          </tr>
-          <tr class="row-detalle" id="detalle-hospital-clinica-labrador-perez-zeledon" data-abierta="0" hidden>
-            <td colspan="9">
-              <div class="detalle-contenido">
-                <div class="detalle-bloque">
-                  <h4>Distribución de reseñas</h4>
-<div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">5<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 46.7%;"></span></span>
-<span class="fila-distribucion-valor">7 (46.7%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">4<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 20.0%;"></span></span>
-<span class="fila-distribucion-valor">3 (20.0%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">3<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 0.0%;"></span></span>
-<span class="fila-distribucion-valor">0 (0.0%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">2<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 0.0%;"></span></span>
-<span class="fila-distribucion-valor">0 (0.0%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">1<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 33.3%;"></span></span>
-<span class="fila-distribucion-valor">5 (33.3%)</span>
-</div>                </div>
-
-                <div class="detalle-bloque detalle-cifras">
-                  <h4>Cómo se calculó el índice</h4>
-                  <dl>
-                    <div><dt>Calificación ajustada</dt><dd>3.96</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>74.1</dd></div>
-                    <div><dt>Puntaje de volumen</dt><dd>36.5</dd></div>
-                  </dl>
-                </div>
-
-                <div class="detalle-bloque">
-                  <h4>Contacto</h4>
-                  <p>97HW+3G5, San José, San Isidro de El General, Costa Rica<br>+506 2772 6464</p>
-                  <p class="detalle-enlaces">
-<a href="https://www.google.com/maps/place/Hospital+Cl%C3%ADnica+Labrador/data=!4m7!3m6!1s0x8fa14eea03f6c763:0x5cae3735513cd915!8m2!3d9.3776379!4d-83.7036484!16s%2Fg%2F11g67xp48z!19sChIJY8f2A-pOoY8RFdk8UTU3rlw?hl=es">Ver en Google Maps</a>                  </p>
-<p class="detalle-nota">Responde reseñas: 0 de 3 visibles.</p>                </div>
-
-              </div>
-            </td>
-          </tr>
-          <tr class="row-main"
-              data-tipo="privado"
-              data-provincia="San José"
-              data-nombre="hospital metropolitano (santa ana)"
-              data-pos-todos="21"
-              data-pos-tipo="21"
-              data-calificacion="3.1"
-              data-resenas="300"
-              data-pct5="45.7"
-              data-pct1="40.0"
-              data-indice="63.6">
-            <td class="col-posicion" data-label="Posición"><span class="valor-pos">21</span></td>
-            <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
-            <td class="col-hospital" data-label="Hospital">
-              <span class="hospital-nombre">Hospital Metropolitano (Santa Ana)</span>              <span class="hospital-ubicacion">San José, Santa Ana</span>
-            </td>
-            <td class="col-calificacion" data-label="Calificación"><span class="estrellas" aria-hidden="true">★★★☆☆</span><span class="sr-only">3.1 de 5 estrellas</span><span class="calificacion-num">3.1</span></td>
-            <td class="col-resenas" data-label="Reseñas">300</td>
-            <td class="col-pct5" data-label="% 5 estrellas">45.7%</td>
-            <td class="col-pct1" data-label="% 1 estrella">40.0%</td>
-            <td class="col-indice" data-label="Índice"><strong>63.6</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 63.6%;"></div></div></td>
-            <td class="col-detalle">
-              <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-metropolitano-lindora">Ver detalle</button>
-            </td>
-          </tr>
-          <tr class="row-detalle" id="detalle-hospital-metropolitano-lindora" data-abierta="0" hidden>
-            <td colspan="9">
-              <div class="detalle-contenido">
-                <div class="detalle-bloque">
-                  <h4>Distribución de reseñas</h4>
-<div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">5<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 45.7%;"></span></span>
-<span class="fila-distribucion-valor">137 (45.7%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">4<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 7.3%;"></span></span>
-<span class="fila-distribucion-valor">22 (7.3%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">3<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 2.7%;"></span></span>
-<span class="fila-distribucion-valor">8 (2.7%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">2<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 4.3%;"></span></span>
-<span class="fila-distribucion-valor">13 (4.3%)</span>
-</div><div class="fila-distribucion">
-<span class="fila-distribucion-etiqueta">1<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 40.0%;"></span></span>
-<span class="fila-distribucion-valor">120 (40.0%)</span>
-</div>                </div>
-
-                <div class="detalle-bloque detalle-cifras">
-                  <h4>Cómo se calculó el índice</h4>
-                  <dl>
-                    <div><dt>Calificación ajustada</dt><dd>3.39</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>59.8</dd></div>
-                    <div><dt>Puntaje de volumen</dt><dd>75.1</dd></div>
-                  </dl>
-                </div>
-
-                <div class="detalle-bloque">
-                  <h4>Contacto</h4>
-                  <p>300 norte de Iglesia de Pozos, Edificio Pekin Santa Ana San José CR 10903, San José, Santa Ana, Costa Rica<br>+506 2521 9595</p>
-                  <p class="detalle-enlaces">
-<a href="https://metropolitanocr.com/">Sitio web</a><a href="https://www.google.com/maps/place/Hospital+Metropolitano/data=!4m7!3m6!1s0x8fa0f959ec938e61:0xe2b96b54530cd099!8m2!3d9.9534134!4d-84.190058!16s%2Fg%2F11cjp8thsz!19sChIJYY6T7Fn5oI8RmdAMU1RrueI?hl=es">Ver en Google Maps</a>                  </p>
-<p class="detalle-nota">Responde reseñas: 3 de 3 visibles.</p>                </div>
-
-              </div>
-            </td>
-          </tr>
-          <tr class="row-main"
-              data-tipo="privado"
               data-provincia="Cartago"
               data-nombre="hospital clínica señora de los ángeles"
-              data-pos-todos="22"
-              data-pos-tipo="22"
+              data-pos-todos="18"
+              data-pos-tipo="18"
               data-calificacion="3.0"
               data-resenas="122"
               data-pct5="41.0"
               data-pct1="39.3"
-              data-indice="63.5">
-            <td class="col-posicion" data-label="Posición"><span class="valor-pos">22</span></td>
+              data-indice="65.1">
+            <td class="col-posicion" data-label="Posición"><span class="valor-pos">18</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
               <span class="hospital-nombre">Hospital Clínica Señora de los Ángeles</span>              <span class="hospital-ubicacion">Cartago, Cartago</span>
@@ -1681,7 +1396,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
             <td class="col-resenas" data-label="Reseñas">122</td>
             <td class="col-pct5" data-label="% 5 estrellas">41.0%</td>
             <td class="col-pct1" data-label="% 1 estrella">39.3%</td>
-            <td class="col-indice" data-label="Índice"><strong>63.5</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 63.5%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>65.1</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 65.1%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-clinica-senora-de-los-angeles-cartago">Ver detalle</button>
             </td>
@@ -1716,8 +1431,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>3.54</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>63.6</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>3.63</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>65.8</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>63.3</dd></div>
                   </dl>
                 </div>
@@ -1735,70 +1450,70 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
           <tr class="row-main"
               data-tipo="privado"
               data-provincia="San José"
-              data-nombre="clinica biblica aleste"
-              data-pos-todos="23"
-              data-pos-tipo="23"
-              data-calificacion="2.2"
-              data-resenas="26"
-              data-pct5="26.9"
-              data-pct1="61.5"
-              data-indice="62.1">
-            <td class="col-posicion" data-label="Posición"><span class="valor-pos">23</span></td>
+              data-nombre="hospital metropolitano (santa ana)"
+              data-pos-todos="19"
+              data-pos-tipo="19"
+              data-calificacion="3.1"
+              data-resenas="300"
+              data-pct5="45.7"
+              data-pct1="40.0"
+              data-indice="65.0">
+            <td class="col-posicion" data-label="Posición"><span class="valor-pos">19</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
-              <span class="hospital-nombre">Clinica Biblica Aleste</span>              <span class="hospital-ubicacion">San José, Curridabat</span>
+              <span class="hospital-nombre">Hospital Metropolitano (Santa Ana)</span>              <span class="hospital-grupo">Red Hospital Metropolitano</span>              <span class="hospital-ubicacion">San José, Santa Ana</span>
             </td>
-            <td class="col-calificacion" data-label="Calificación"><span class="estrellas" aria-hidden="true">★★☆☆☆</span><span class="sr-only">2.2 de 5 estrellas</span><span class="calificacion-num">2.2</span></td>
-            <td class="col-resenas" data-label="Reseñas">26</td>
-            <td class="col-pct5" data-label="% 5 estrellas">26.9%</td>
-            <td class="col-pct1" data-label="% 1 estrella">61.5%</td>
-            <td class="col-indice" data-label="Índice"><strong>62.1</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 62.1%;"></div></div></td>
+            <td class="col-calificacion" data-label="Calificación"><span class="estrellas" aria-hidden="true">★★★☆☆</span><span class="sr-only">3.1 de 5 estrellas</span><span class="calificacion-num">3.1</span></td>
+            <td class="col-resenas" data-label="Reseñas">300</td>
+            <td class="col-pct5" data-label="% 5 estrellas">45.7%</td>
+            <td class="col-pct1" data-label="% 1 estrella">40.0%</td>
+            <td class="col-indice" data-label="Índice"><strong>65.0</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 65.0%;"></div></div></td>
             <td class="col-detalle">
-              <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-clinica-biblica-aleste-curridabat">Ver detalle</button>
+              <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-metropolitano-lindora">Ver detalle</button>
             </td>
           </tr>
-          <tr class="row-detalle" id="detalle-hospital-clinica-biblica-aleste-curridabat" data-abierta="0" hidden>
+          <tr class="row-detalle" id="detalle-hospital-metropolitano-lindora" data-abierta="0" hidden>
             <td colspan="9">
               <div class="detalle-contenido">
                 <div class="detalle-bloque">
                   <h4>Distribución de reseñas</h4>
 <div class="fila-distribucion">
 <span class="fila-distribucion-etiqueta">5<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 26.9%;"></span></span>
-<span class="fila-distribucion-valor">7 (26.9%)</span>
+<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 45.7%;"></span></span>
+<span class="fila-distribucion-valor">137 (45.7%)</span>
 </div><div class="fila-distribucion">
 <span class="fila-distribucion-etiqueta">4<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 0.0%;"></span></span>
-<span class="fila-distribucion-valor">0 (0.0%)</span>
+<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 7.3%;"></span></span>
+<span class="fila-distribucion-valor">22 (7.3%)</span>
 </div><div class="fila-distribucion">
 <span class="fila-distribucion-etiqueta">3<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 3.8%;"></span></span>
-<span class="fila-distribucion-valor">1 (3.8%)</span>
+<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 2.7%;"></span></span>
+<span class="fila-distribucion-valor">8 (2.7%)</span>
 </div><div class="fila-distribucion">
 <span class="fila-distribucion-etiqueta">2<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 7.7%;"></span></span>
-<span class="fila-distribucion-valor">2 (7.7%)</span>
+<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 4.3%;"></span></span>
+<span class="fila-distribucion-valor">13 (4.3%)</span>
 </div><div class="fila-distribucion">
 <span class="fila-distribucion-etiqueta">1<span aria-hidden="true"> ★</span></span>
-<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 61.5%;"></span></span>
-<span class="fila-distribucion-valor">16 (61.5%)</span>
+<span class="barra-distribucion"><span class="barra-distribucion-relleno" style="width: 40.0%;"></span></span>
+<span class="fila-distribucion-valor">120 (40.0%)</span>
 </div>                </div>
 
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>3.73</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>68.3</dd></div>
-                    <div><dt>Puntaje de volumen</dt><dd>43.4</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>3.46</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>61.6</dd></div>
+                    <div><dt>Puntaje de volumen</dt><dd>75.1</dd></div>
                   </dl>
                 </div>
 
                 <div class="detalle-bloque">
                   <h4>Contacto</h4>
-                  <p>WXCH+PMJ Torre 201, WXCH+MVF, Aleste, San José, Curridabat, Costa Rica<br>+506 2522 1000</p>
+                  <p>300 norte de Iglesia de Pozos, Edificio Pekin Santa Ana San José CR 10903, San José, Santa Ana, Costa Rica<br>+506 2521 9595</p>
                   <p class="detalle-enlaces">
-<a href="http://www.clinicabiblica.com/">Sitio web</a><a href="https://www.google.com/maps/place/Clinica+Biblica+Aleste/data=!4m7!3m6!1s0x8fa0e3005ad0314b:0x9fde28536dd17f21!8m2!3d9.9218367!4d-84.020846!16s%2Fg%2F11l_4n7x0q!19sChIJSzHQWgDjoI8RIX_RbVMo3p8?hl=es">Ver en Google Maps</a>                  </p>
-<p class="detalle-nota">Responde reseñas: 0 de 3 visibles.</p>                </div>
+<a href="https://metropolitanocr.com/">Sitio web</a><a href="https://www.google.com/maps/place/Hospital+Metropolitano/data=!4m7!3m6!1s0x8fa0f959ec938e61:0xe2b96b54530cd099!8m2!3d9.9534134!4d-84.190058!16s%2Fg%2F11cjp8thsz!19sChIJYY6T7Fn5oI8RmdAMU1RrueI?hl=es">Ver en Google Maps</a>                  </p>
+<p class="detalle-nota">Responde reseñas: 3 de 3 visibles.</p>                </div>
 
               </div>
             </td>
@@ -1807,23 +1522,23 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
               data-tipo="privado"
               data-provincia="Heredia"
               data-nombre="hospital metropolitano • heredia"
-              data-pos-todos="24"
-              data-pos-tipo="24"
+              data-pos-todos="20"
+              data-pos-tipo="20"
               data-calificacion="1.6"
               data-resenas="82"
               data-pct5="13.4"
               data-pct1="79.3"
-              data-indice="54.4">
-            <td class="col-posicion" data-label="Posición"><span class="valor-pos">24</span></td>
+              data-indice="57.8">
+            <td class="col-posicion" data-label="Posición"><span class="valor-pos">20</span></td>
             <td class="col-cambio" data-label="Cambio"><span class="cambio cambio-nuevo">nuevo</span></td>
             <td class="col-hospital" data-label="Hospital">
-              <span class="hospital-nombre">Hospital Metropolitano • Heredia</span>              <span class="hospital-ubicacion">Heredia, Belén</span>
+              <span class="hospital-nombre">Hospital Metropolitano • Heredia</span>              <span class="hospital-grupo">Red Hospital Metropolitano</span>              <span class="hospital-ubicacion">Heredia, Belén</span>
             </td>
             <td class="col-calificacion" data-label="Calificación"><span class="estrellas" aria-hidden="true">★★☆☆☆</span><span class="sr-only">1.6 de 5 estrellas</span><span class="calificacion-num">1.6</span></td>
             <td class="col-resenas" data-label="Reseñas">82</td>
             <td class="col-pct5" data-label="% 5 estrellas">13.4%</td>
             <td class="col-pct1" data-label="% 1 estrella">79.3%</td>
-            <td class="col-indice" data-label="Índice"><strong>54.4</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 54.4%;"></div></div></td>
+            <td class="col-indice" data-label="Índice"><strong>57.8</strong><div class="barra-indice"><div class="barra-indice-relleno" style="width: 57.8%;"></div></div></td>
             <td class="col-detalle">
               <button type="button" class="btn-detalle" aria-expanded="false" aria-controls="detalle-hospital-metropolitano-cariari-belen">Ver detalle</button>
             </td>
@@ -1858,8 +1573,8 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
                 <div class="detalle-bloque detalle-cifras">
                   <h4>Cómo se calculó el índice</h4>
                   <dl>
-                    <div><dt>Calificación ajustada</dt><dd>3.13</dd></div>
-                    <div><dt>Puntaje de calificación</dt><dd>53.2</dd></div>
+                    <div><dt>Calificación ajustada</dt><dd>3.31</dd></div>
+                    <div><dt>Puntaje de calificación</dt><dd>57.7</dd></div>
                     <div><dt>Puntaje de volumen</dt><dd>58.1</dd></div>
                   </dl>
                 </div>
@@ -1881,7 +1596,10 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
     <section class="fuera-ranking" aria-labelledby="titulo-fuera">
       <h2 id="titulo-fuera">Fuera del ranking</h2>
       <ul>
-        <li><strong>Clínica Santa Rita</strong>: Menos de 10 reseñas (8)</li>
+        <li><strong>Clinica Biblica Aleste</strong>: Menos de 30 reseñas (26) Última posición conocida: puesto 23 en sep 2026.</li>
+        <li><strong>Clínica Santa Rita</strong>: Menos de 30 reseñas (8)</li>
+        <li><strong>Hospital Clínica Labrador</strong>: Menos de 30 reseñas (15) Última posición conocida: puesto 20 en sep 2026.</li>
+        <li><strong>Hospital Metropolitano Escazú</strong>: Menos de 30 reseñas (23) Última posición conocida: puesto 15 en sep 2026.</li>
       </ul>
     </section>
 
@@ -1893,10 +1611,10 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
     <section class="metodologia" aria-labelledby="titulo-metodologia">
       <h2 id="titulo-metodologia">Metodología</h2>
       <p>Cada mes leemos el perfil público de Google (Google Business Profile) de cada hospital: calificación promedio, número total de reseñas y distribución por estrellas.</p>
-      <p><strong>Calificación ajustada.</strong> La calificación promedio se ajusta por la cantidad de reseñas con un promedio bayesiano: un hospital con pocas reseñas se acerca al promedio nacional hasta que acumula evidencia. La fórmula es ajustada = (n / (n + m)) × calificación + (m / (n + m)) × C, donde n es el número de reseñas del hospital, m es la mediana de reseñas del universo (este mes: 141) y C es el promedio nacional ponderado (este mes: 4.01).</p>
+      <p><strong>Calificación ajustada.</strong> La calificación promedio se ajusta por la cantidad de reseñas con un promedio bayesiano: un hospital con pocas reseñas se acerca al promedio nacional hasta que acumula evidencia. La fórmula es ajustada = (n / (n + m)) × calificación + (m / (n + m)) × C, donde n es el número de reseñas del hospital, m es la mediana de reseñas del universo (este mes: 194) y C es el promedio nacional ponderado (este mes: 4.03).</p>
       <p><strong>Volumen de voz.</strong> Cuántas personas han opinado, en escala logarítmica respecto al hospital con más reseñas.</p>
       <p><strong>Índice de reputación (0 a 100)</strong> = 75% calificación ajustada, llevada a escala de 0 a 100, más 25% volumen de voz.</p>
-      <p>Para entrar al ranking un hospital necesita al menos 10 reseñas.</p>
+      <p>Para entrar al ranking un hospital necesita al menos 30 reseñas.</p>
       <p>El porcentaje de reseñas de 5 estrellas, el de 1 estrella y si el hospital responde reseñas se muestran como señales complementarias. No forman parte del índice.</p>
       <p><strong>Límites.</strong> Las reseñas de Google son opiniones voluntarias de pacientes y acompañantes; miden reputación percibida, no calidad clínica. Esta edición cubre únicamente hospitales privados; los hospitales públicos de la CCSS y del INS quedan fuera del alcance publicado.</p>
       <p>Los nombres son los que muestra Google en el perfil de cada hospital.</p>
@@ -1928,6 +1646,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
   var tabla = document.querySelector(".ranking-table");
   if (!tabla) { return; }
   var cuerpo = tabla.querySelector("tbody");
+  function sinTildes(t) { var texto = t ? String(t) : ""; return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
   var botonesTab = Array.prototype.slice.call(document.querySelectorAll(".tab-btn"));
   var selectorProvincia = document.getElementById("filtro-provincia");
   var buscador = document.getElementById("buscador-nombre");
@@ -1952,7 +1671,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
       total += 1;
       var coincideTipo = estado.tab === "todos" ? true : fila.dataset.tipo === estado.tab;
       var coincideProvincia = estado.provincia === "" ? true : fila.dataset.provincia === estado.provincia;
-      var coincideTexto = estado.texto === "" ? true : fila.dataset.nombre.indexOf(estado.texto) !== -1;
+      var coincideTexto = estado.texto === "" ? true : sinTildes(fila.dataset.nombre).indexOf(estado.texto) !== -1;
       var visible = coincideTipo && coincideProvincia && coincideTexto;
       fila.hidden = !visible;
       var detalle = detalleDe(fila);
@@ -1996,7 +1715,7 @@ tr.row-detalle td { background: #fafafa; border-bottom: 1px solid var(--color-bo
 
   if (buscador) {
     buscador.addEventListener("input", function () {
-      estado.texto = buscador.value.trim().toLowerCase();
+      estado.texto = sinTildes(buscador.value.trim());
       aplicarFiltros();
     });
   }

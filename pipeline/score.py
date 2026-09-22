@@ -68,14 +68,16 @@ def main():
     tipos = set(cfg.get("tipos_incluidos") or ["publico", "privado"])
 
     filas = []
+    fuera_de_alcance = 0
     for s in snap["hospitales"]:
         c = censo.get(s["id"], {})
         if c.get("tipo") not in tipos:
+            fuera_de_alcance += 1
             continue
         fila = {
             "id": s["id"], "cid": s.get("cid") or c.get("cid"),
             "nombre_google": s.get("nombre_google") or c.get("nombre_google"),
-            "tipo": c.get("tipo"), "red": c.get("red"), "clasificacion": c.get("clasificacion"),
+            "tipo": c.get("tipo"), "red": c.get("red"), "clasificacion": c.get("clasificacion"), "grupo": c.get("grupo"),
             "categoria_google": s.get("categoria_google"),
             "provincia": c.get("provincia"), "canton": c.get("canton"),
             "direccion": s.get("direccion"), "sitio_web": s.get("sitio_web") or c.get("sitio_web"),
@@ -95,7 +97,11 @@ def main():
         mr = s.get("muestra_resenas")
         if mr and mr.get("visibles"):
             fila["muestra_resenas"] = {**mr, "pct_respuesta": round(mr["con_respuesta"] / mr["visibles"] * 100, 1)}
-        if s.get("error"):
+        if s.get("estado") == "cerrado_permanentemente":
+            fila["motivo_exclusion"] = "Google marca el perfil como cerrado permanentemente"
+        elif s.get("estado") == "cerrado_temporalmente":
+            fila["motivo_exclusion"] = "Google marca el perfil como cerrado temporalmente"
+        elif s.get("error"):
             fila["motivo_exclusion"] = f"Sin datos este mes: {s['error']}"
         elif fila["calificacion"] is None or fila["resenas"] is None:
             fila["motivo_exclusion"] = "Google no mostró calificación o reseñas"
@@ -149,11 +155,14 @@ def main():
         "capturado": snap.get("capturado"),
         "proxima_actualizacion": proxima_fecha(periodo, int(cfg.get("dia_actualizacion", 1))),
         "fuente": snap.get("fuente"),
+        "hay_edicion_anterior": bool(ant),
+        "periodo_anterior": ant["periodo"] if ant else None,
         "universo": {
             "total": len(filas),
             "publicos": sum(1 for f in filas if f["tipo"] == "publico"),
             "privados": sum(1 for f in filas if f["tipo"] == "privado"),
             "sin_datos": sum(1 for f in filas if not f["en_ranking"]),
+            "fuera_de_alcance": fuera_de_alcance,
         },
         "parametros": {"m": round(m, 1), "C": round(C, 3), "pesos": pesos, "minimo_resenas": minimo, "tipos_incluidos": sorted(tipos)},
         "hospitales": filas,

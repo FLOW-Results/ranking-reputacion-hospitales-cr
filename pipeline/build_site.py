@@ -20,6 +20,8 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+RAIZ = Path(__file__).resolve().parent.parent
+
 from jinja2 import Environment, FileSystemLoader
 from markupsafe import Markup
 
@@ -170,15 +172,20 @@ def construir_nota_respuesta(h):
     return f"Responde reseñas: {int(con_respuesta)} de {int(visibles)} visibles."
 
 
-def construir_sparkline(serie, campo, invertir=False, ancho=100, alto=28, color="#123B6D"):
-    """Devuelve un <svg> de línea simple con la serie de `campo`, o None si hay menos de 2 valores."""
-    puntos_validos = [(i, p.get(campo)) for i, p in enumerate(serie) if isinstance(p.get(campo), (int, float))]
+def construir_sparkline(serie, campo, invertir=False, ancho=100, alto=28, color="#123B6D", periodos=None):
+    """Devuelve un <svg> de línea simple con la serie de `campo`, o None si hay menos de 2 valores.
+    Cada punto se ubica según su periodo real dentro de `periodos` (lista global de meses), así un mes
+    sin dato deja un hueco visible en vez de pegar los puntos."""
+    periodos = list(periodos or [p.get("periodo") for p in serie])
+    indice_periodo = {per: i for i, per in enumerate(periodos)}
+    puntos_validos = [(indice_periodo.get(p.get("periodo"), i), p.get(campo)) for i, p in enumerate(serie)
+                      if isinstance(p.get(campo), (int, float))]
     if len(puntos_validos) < 2:
         return None
     valores = [v for _, v in puntos_validos]
     minimo, maximo = min(valores), max(valores)
     rango = (maximo - minimo) or 1
-    n = len(serie)
+    n = len(periodos)
     paso = ancho / (n - 1) if n > 1 else 0
     coords = []
     for i, valor in puntos_validos:
@@ -210,8 +217,9 @@ def construir_tendencias(cid, historial):
     if len(serie) < 2:
         return None
     serie = sorted(serie, key=lambda p: p["periodo"])
-    svg_indice = construir_sparkline(serie, "indice", invertir=False)
-    svg_posicion = construir_sparkline(serie, "posicion", invertir=True)
+    periodos = historial.get("periodos") or [p["periodo"] for p in serie]
+    svg_indice = construir_sparkline(serie, "indice", invertir=False, periodos=periodos)
+    svg_posicion = construir_sparkline(serie, "posicion", invertir=True, periodos=periodos)
     if not svg_indice and not svg_posicion:
         return None
     return {
@@ -242,6 +250,7 @@ def preparar_hospital(h, historial, repetidos=None):
         "id": h.get("id") or "",
         "cid": h.get("cid"),
         "nombre_google": nombre_para_mostrar(h, repetidos or {}),
+        "grupo": limpiar_texto(h.get("grupo")) if h.get("grupo") else None,
         "tipo": h.get("tipo") or "",
         "tipo_label": etiqueta_tipo(h),
         "red": h.get("red"),
@@ -278,17 +287,25 @@ def preparar_hospital(h, historial, repetidos=None):
     }
 
 
-def preparar_hospital_fuera(h):
+def preparar_hospital_fuera(h, historial=None):
+    ultima = None
+    registro = ((historial or {}).get("hospitales") or {}).get(h.get("cid")) if h.get("cid") else None
+    if registro:
+        puntos = [p for p in (registro.get("serie") or []) if p.get("posicion") is not None]
+        if puntos:
+            p = sorted(puntos, key=lambda x: x["periodo"])[-1]
+            ultima = f"Última posición conocida: puesto {p['posicion']} en {etiqueta_periodo_corta(p['periodo'])}."
     return {
         "nombre_google": limpiar_texto(h.get("nombre_google")) or "(sin nombre)",
         "tipo_label": etiqueta_tipo(h),
         "motivo_exclusion": limpiar_texto(h.get("motivo_exclusion")) or "Sin datos suficientes este mes.",
+        "ultima_posicion": ultima,
     }
 
 
 def limpiar_config(config):
     vista = dict(config)
-    for llave in ("nombre_sitio", "nombre_corto", "descripcion", "editor"):
+    for llave in ("nombre_sitio", "nombre_corto", "descripcion", "editor", "contacto", "editor_url", "url_publica"):
         if isinstance(vista.get(llave), str):
             vista[llave] = limpiar_texto(vista[llave])
     return vista
@@ -313,7 +330,7 @@ def construir_contexto(config, ranking, historial):
         n = limpiar_texto(h.get("nombre_google")) or "(sin nombre)"
         repetidos[n] = repetidos.get(n, 0) + 1
     hospitales = [preparar_hospital(h, historial, repetidos) for h in raw_en_ranking]
-    fuera = [preparar_hospital_fuera(h) for h in raw_fuera]
+    fuera = [preparar_hospital_fuera(h, historial) for h in raw_fuera]
 
     podio = hospitales[:3]
     provincias = sorted({h["provincia"] for h in hospitales if h["provincia"] and h["provincia"] != "N/D"})
@@ -326,7 +343,10 @@ def construir_contexto(config, ranking, historial):
         (h for h in hospitales if h["cambio"]["tipo"] == "bajo"),
         key=lambda h: h["cambio"]["valor"], reverse=True,
     )[:3]
-    primera_edicion = not subidas and not bajadas
+    if "hay_edicion_anterior" in ranking:
+        primera_edicion = not ranking.get("hay_edicion_anterior")
+    else:
+        primera_edicion = not any(h.get("posicion_anterior") is not None for h in raw_en_ranking)
 
     parametros = ranking.get("parametros") or {}
     pesos = parametros.get("pesos") or config.get("pesos") or {}
@@ -435,11 +455,11 @@ def parse_args(argv=None):
         help="Ruta al JSON de ranking del mes. Por defecto: el data/ranking/AAAA-MM.json más reciente (ignora fixture.json).",
     )
     p.add_argument(
-        "--historial", type=Path, default=Path("data/historial.json"),
+        "--historial", type=Path, default=RAIZ / "data" / "historial.json",
         help="Ruta al historial. Por defecto data/historial.json; si no existe, el sitio se genera sin historial.",
     )
-    p.add_argument("--config", type=Path, default=Path("config.json"), help="Ruta a config.json.")
-    p.add_argument("--out", type=Path, default=Path("docs"), help="Carpeta de salida (por defecto docs).")
+    p.add_argument("--config", type=Path, default=RAIZ / "config.json", help="Ruta a config.json.")
+    p.add_argument("--out", type=Path, default=RAIZ / "docs", help="Carpeta de salida (por defecto docs).")
     return p.parse_args(argv)
 
 
@@ -450,7 +470,7 @@ def main(argv=None):
         sys.exit(f"No existe config.json en: {args.config}")
     config = cargar_json(args.config)
 
-    ranking_path = args.ranking or encontrar_ranking_mas_reciente(Path("data/ranking"))
+    ranking_path = args.ranking or encontrar_ranking_mas_reciente(RAIZ / "data" / "ranking")
     if not ranking_path.exists():
         sys.exit(f"No existe el archivo de ranking: {ranking_path}")
     ranking = cargar_json(ranking_path)
