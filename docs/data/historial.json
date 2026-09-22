@@ -93,7 +93,7 @@
         {
           "periodo": "2026-09",
           "posicion": 8,
-          "indice": 71.2,
+          "indice": 71.1,
           "calificacion": 3.7,
           "resenas": 260
         }
@@ -176,7 +176,7 @@
       "serie": [
         {
           "periodo": "2026-09",
-          "posicion": 15,
+          "posicion": 16,
           "indice": 67.7,
           "calificacion": 4.3,
           "resenas": 23
@@ -212,7 +212,7 @@
       "serie": [
         {
           "periodo": "2026-09",
-          "posicion": 16,
+          "posicion": 17,
           "indice": 67.0,
           "calificacion": 3.6,
           "resenas": 37
@@ -224,7 +224,7 @@
       "serie": [
         {
           "periodo": "2026-09",
-          "posicion": 17,
+          "posicion": 18,
           "indice": 65.3,
           "calificacion": 3.1,
           "resenas": 42
@@ -248,7 +248,7 @@
       "serie": [
         {
           "periodo": "2026-09",
-          "posicion": 19,
+          "posicion": 20,
           "indice": 64.0,
           "calificacion": 3.1,
           "resenas": 300
@@ -260,7 +260,7 @@
       "serie": [
         {
           "periodo": "2026-09",
-          "posicion": 18,
+          "posicion": 19,
           "indice": 64.0,
           "calificacion": 3.0,
           "resenas": 122
@@ -272,7 +272,7 @@
       "serie": [
         {
           "periodo": "2026-09",
-          "posicion": 20,
+          "posicion": 21,
           "indice": 62.5,
           "calificacion": 2.2,
           "resenas": 26
@@ -284,8 +284,8 @@
       "serie": [
         {
           "periodo": "2026-09",
-          "posicion": 21,
-          "indice": 55.4,
+          "posicion": 22,
+          "indice": 55.3,
           "calificacion": 1.6,
           "resenas": 82
         }
