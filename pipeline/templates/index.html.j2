@@ -220,6 +220,11 @@ tr.row-detalle td { background: var(--paper); border-bottom: 1px solid var(--bor
 .metodologia ul { padding-left: 1.2rem; max-width: 70ch; }
 .metodologia strong { font-family: var(--display); font-weight: 700; }
 
+/* Descargo */
+.descargo { border-top: 1px solid var(--borde); padding-top: 2rem; }
+.descargo p { max-width: 70ch; font-size: 1.02rem; color: var(--texto-suave); }
+.descargo h2 { font-size: 1.1rem; letter-spacing: .04em; }
+
 /* Datos abiertos */
 .datos-abiertos ul { padding-left: 1.1rem; }
 .datos-abiertos li { margin-bottom: .3rem; }
@@ -529,6 +534,13 @@ tr.row-detalle td { background: var(--paper); border-bottom: 1px solid var(--bor
       <p>Los nombres son los que muestra Google en el perfil de cada hospital.</p>
     </section>
 
+    <section class="descargo" aria-labelledby="titulo-descargo">
+      <h2 id="titulo-descargo">Descargo de responsabilidad</h2>
+      <p>Este ranking presenta únicamente información que proviene directamente de Google: la calificación promedio, el número de reseñas y la distribución por estrellas que muestra el perfil público (Google Business Profile) de cada hospital en la fecha de captura. {{ config.editor }} no genera, edita ni pondera esas reseñas.</p>
+      <p>No constituye una opinión, una recomendación ni una evaluación de calidad médica por parte de {{ config.editor }}. Es solamente el resultado de extraer y ordenar información pública con la metodología descrita en esta página. Las reseñas reflejan la experiencia que cada persona decidió compartir en Google y pueden cambiar en cualquier momento.</p>
+      <p>Si usted representa a un hospital y observa algún detalle que deba ajustarse (un nombre, un perfil duplicado, una sede que ya no opera o cualquier dato que no coincida con lo que muestra Google), escríbanos a <a href="mailto:{{ config.contacto }}">{{ config.contacto }}</a> y lo revisamos.</p>
+    </section>
+
     <section class="datos-abiertos" aria-labelledby="titulo-datos">
       <h2 id="titulo-datos">Datos abiertos</h2>
       <p>Puede descargar los datos de esta edición:</p>
@@ -546,7 +558,7 @@ tr.row-detalle td { background: var(--paper); border-bottom: 1px solid var(--bor
   <div class="contenedor">
     <div>
       <img src="{{ logo_blanco }}" alt="Flow Results" width="1920" height="696">
-      <p>Elaborado por <a href="{{ config.editor_url }}">{{ config.editor }}</a> con datos públicos de Google Business Profile. Contacto: <a href="mailto:{{ config.contacto }}">{{ config.contacto }}</a>.</p>
+      <p>Elaborado por <a href="{{ config.editor_url }}">{{ config.editor }}</a> con datos públicos de Google Business Profile. La información proviene directamente de Google y no representa una opinión de {{ config.editor }}. Contacto: <a href="mailto:{{ config.contacto }}">{{ config.contacto }}</a>.</p>
       <p>Se actualiza el {{ config.dia_actualizacion }} de cada mes. Generado el {{ generado_fmt }}.</p>
       <p class="pie-meta">© {{ generado_fmt[-4:] }} Flow Results · AI Native Clinic Growth Studio</p>
     </div>
@@ -556,6 +568,7 @@ tr.row-detalle td { background: var(--paper); border-bottom: 1px solid var(--bor
       <a href="https://flowresults.com/casos">Casos</a>
       <a href="https://flowresults.com/diagnostico">Diagnóstico IA gratis</a>
       <a href="#titulo-metodologia">Metodología</a>
+      <a href="#titulo-descargo">Descargo de responsabilidad</a>
       <a href="#titulo-datos">Datos abiertos</a>
     </nav>
   </div>
