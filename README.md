@@ -38,7 +38,7 @@ Costo aproximado: una lectura de Firecrawl por hospital al mes (menos de 200 cr�
    reseñas se acerca al promedio nacional hasta que acumula evidencia.
 2. Volumen de voz: `log10(n+1) / log10(n_max+1)`.
 3. Índice = 75% calificación ajustada (llevada a 0 a 100) + 25% volumen. Pesos en `config.json`.
-4. Mínimo 30 reseñas para entrar al ranking (`minimo_resenas_para_ranking` en `config.json`).
+4. Mínimo 25 reseñas para entrar al ranking (`minimo_resenas_para_ranking` en `config.json`).
 5. Un perfil que Google marca como cerrado (permanente o temporalmente) queda fuera ese mes.
 
 El porcentaje de reseñas de 5 y de 1 estrella y la tasa de respuesta son señales complementarias; no entran al índice.

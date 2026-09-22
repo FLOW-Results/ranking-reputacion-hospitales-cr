@@ -9,7 +9,7 @@
         {
           "periodo": "2026-09",
           "posicion": 1,
-          "indice": 91.5,
+          "indice": 91.7,
           "calificacion": 4.6,
           "resenas": 2001
         }
@@ -21,7 +21,7 @@
         {
           "periodo": "2026-09",
           "posicion": 2,
-          "indice": 84.0,
+          "indice": 84.9,
           "calificacion": 4.9,
           "resenas": 247
         }
@@ -32,8 +32,8 @@
       "serie": [
         {
           "periodo": "2026-09",
-          "posicion": 4,
-          "indice": 77.1,
+          "posicion": 3,
+          "indice": 77.6,
           "calificacion": 4.5,
           "resenas": 151
         }
@@ -44,7 +44,7 @@
       "serie": [
         {
           "periodo": "2026-09",
-          "posicion": 3,
+          "posicion": 4,
           "indice": 77.4,
           "calificacion": 4.0,
           "resenas": 598
@@ -57,7 +57,7 @@
         {
           "periodo": "2026-09",
           "posicion": 5,
-          "indice": 76.6,
+          "indice": 76.7,
           "calificacion": 4.2,
           "resenas": 239
         }
@@ -69,7 +69,7 @@
         {
           "periodo": "2026-09",
           "posicion": 6,
-          "indice": 74.7,
+          "indice": 74.6,
           "calificacion": 3.9,
           "resenas": 381
         }
@@ -81,7 +81,7 @@
         {
           "periodo": "2026-09",
           "posicion": 7,
-          "indice": 72.6,
+          "indice": 72.5,
           "calificacion": 4.0,
           "resenas": 131
         }
@@ -93,7 +93,7 @@
         {
           "periodo": "2026-09",
           "posicion": 8,
-          "indice": 71.5,
+          "indice": 71.2,
           "calificacion": 3.7,
           "resenas": 260
         }
@@ -105,7 +105,7 @@
         {
           "periodo": "2026-09",
           "posicion": 9,
-          "indice": 70.6,
+          "indice": 70.2,
           "calificacion": 3.7,
           "resenas": 155
         }
@@ -117,7 +117,7 @@
         {
           "periodo": "2026-09",
           "posicion": 10,
-          "indice": 69.9,
+          "indice": 69.5,
           "calificacion": 3.7,
           "resenas": 105
         }
@@ -129,7 +129,7 @@
         {
           "periodo": "2026-09",
           "posicion": 11,
-          "indice": 69.5,
+          "indice": 69.1,
           "calificacion": 3.7,
           "resenas": 84
         }
@@ -141,7 +141,7 @@
         {
           "periodo": "2026-09",
           "posicion": 12,
-          "indice": 69.5,
+          "indice": 69.0,
           "calificacion": 3.5,
           "resenas": 307
         }
@@ -153,7 +153,7 @@
         {
           "periodo": "2026-09",
           "posicion": 13,
-          "indice": 69.3,
+          "indice": 68.7,
           "calificacion": 3.5,
           "resenas": 234
         }
@@ -165,7 +165,7 @@
         {
           "periodo": "2026-09",
           "posicion": 14,
-          "indice": 69.0,
+          "indice": 68.5,
           "calificacion": 3.6,
           "resenas": 86
         }
@@ -189,7 +189,7 @@
         {
           "periodo": "2026-09",
           "posicion": 15,
-          "indice": 68.5,
+          "indice": 67.9,
           "calificacion": 3.4,
           "resenas": 377
         }
@@ -213,7 +213,7 @@
         {
           "periodo": "2026-09",
           "posicion": 16,
-          "indice": 67.4,
+          "indice": 67.0,
           "calificacion": 3.6,
           "resenas": 37
         }
@@ -225,7 +225,7 @@
         {
           "periodo": "2026-09",
           "posicion": 17,
-          "indice": 66.0,
+          "indice": 65.3,
           "calificacion": 3.1,
           "resenas": 42
         }
@@ -249,7 +249,7 @@
         {
           "periodo": "2026-09",
           "posicion": 19,
-          "indice": 65.0,
+          "indice": 64.0,
           "calificacion": 3.1,
           "resenas": 300
         }
@@ -261,7 +261,7 @@
         {
           "periodo": "2026-09",
           "posicion": 18,
-          "indice": 65.1,
+          "indice": 64.0,
           "calificacion": 3.0,
           "resenas": 122
         }
@@ -272,8 +272,8 @@
       "serie": [
         {
           "periodo": "2026-09",
-          "posicion": 23,
-          "indice": 62.1,
+          "posicion": 20,
+          "indice": 62.5,
           "calificacion": 2.2,
           "resenas": 26
         }
@@ -284,8 +284,8 @@
       "serie": [
         {
           "periodo": "2026-09",
-          "posicion": 20,
-          "indice": 57.8,
+          "posicion": 21,
+          "indice": 55.4,
           "calificacion": 1.6,
           "resenas": 82
         }

@@ -66,7 +66,7 @@ Lista de hospitales que ENTRAN al ranking. Es la lista blanca: el scraper solo r
   "hay_edicion_anterior": false,
   "periodo_anterior": null,
   "universo": {"total": 24, "publicos": 0, "privados": 24, "sin_datos": 1, "fuera_de_alcance": 30},
-  "parametros": {"m": 141, "C": 4.01, "pesos": {"calificacion_ajustada": 0.75, "volumen": 0.25}, "minimo_resenas": 30, "tipos_incluidos": ["privado"]},
+  "parametros": {"m": 141, "C": 4.01, "pesos": {"calificacion_ajustada": 0.75, "volumen": 0.25}, "minimo_resenas": 25, "tipos_incluidos": ["privado"]},
   "hospitales": [
     {
       "id": "hospital-clinica-biblica-san-jose",
