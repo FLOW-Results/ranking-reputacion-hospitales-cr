@@ -17,7 +17,6 @@
     "privado"
   ],
   "ruta_fuentes": "/fonts/",
-  "logo_blanco": "/logos/flow-logo-white.png",
   "url_datos_base": "https://flow-results.github.io/ranking-reputacion-hospitales-cr",
   "url_actualizacion": "https://flow-results.github.io/ranking-reputacion-hospitales-cr/"
 }
